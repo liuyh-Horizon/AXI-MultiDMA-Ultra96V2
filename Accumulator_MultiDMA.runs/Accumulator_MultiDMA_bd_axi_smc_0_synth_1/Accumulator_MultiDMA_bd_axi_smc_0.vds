@@ -1,0 +1,1615 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Aug 29 03:55:30 2022
+# Process ID: 163567
+# Current directory: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1
+# Command line: vivado -log Accumulator_MultiDMA_bd_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Accumulator_MultiDMA_bd_axi_smc_0.tcl
+# Log file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/Accumulator_MultiDMA_bd_axi_smc_0.vds
+# Journal file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Accumulator_MultiDMA_bd_axi_smc_0.tcl -notrace
+Command: synth_design -top Accumulator_MultiDMA_bd_axi_smc_0 -part xczu3eg-sbva484-1-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 163835
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2716.734 ; gain = 28.906 ; free physical = 34464 ; free virtual = 162530
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_smc_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/synth/Accumulator_MultiDMA_bd_axi_smc_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1RHVE3N' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1576]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_one_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_0/synth/bd_6c3f_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_one_0' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_0/synth/bd_6c3f_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_6c3f_psr_aclk_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/synth/bd_6c3f_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/synth/bd_6c3f_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at '/usr/software/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/usr/software/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/usr/software/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78018]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_6c3f_psr_aclk_0' (9#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/synth/bd_6c3f_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_6c3f_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1635]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_6c3f_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1635]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_6c3f_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1635]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_6c3f_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1635]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_6c3f_psr_aclk_0' has 10 connections declared, but only 6 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1635]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1RHVE3N' (10#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1576]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_7WC7P4' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1644]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00e_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_44/synth/bd_6c3f_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (11#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00e_0' (20#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_44/synth/bd_6c3f_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_7WC7P4' (21#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1644]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_L5Q2MS' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2015]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00arn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_39/synth/bd_6c3f_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 32 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 1 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 1 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 4 - type: integer 
+	Parameter rstb_loop_iter bound to: 4 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 5 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (27#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (28#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 5184 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 162 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 162 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 162 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 162 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 162 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 162 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 162 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 162 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 162 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 162 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 162 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 162 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 164 - type: integer 
+	Parameter rstb_loop_iter bound to: 164 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 162 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (31#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (31#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00arn_0' (37#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_39/synth/bd_6c3f_m00arn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00awn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_41/synth/bd_6c3f_m00awn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00awn_0' (38#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_41/synth/bd_6c3f_m00awn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00bn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_43/synth/bd_6c3f_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 704 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 22 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 22 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 22 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 22 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 22 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 22 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 22 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 22 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 22 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 22 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 22 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 22 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 24 - type: integer 
+	Parameter rstb_loop_iter bound to: 24 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 22 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (38#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (38#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 352 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 11 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 11 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 11 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 11 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 11 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 11 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 11 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 11 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 11 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 11 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 12 - type: integer 
+	Parameter rstb_loop_iter bound to: 12 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 11 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (38#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (38#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00bn_0' (39#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_43/synth/bd_6c3f_m00bn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00rn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_40/synth/bd_6c3f_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2848 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 89 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 89 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 89 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 89 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 89 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 89 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 89 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 89 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 89 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 89 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 89 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 89 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 92 - type: integer 
+	Parameter rstb_loop_iter bound to: 92 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 89 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (39#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (39#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00rn_0' (40#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_40/synth/bd_6c3f_m00rn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00wn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_42/synth/bd_6c3f_m00wn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 1 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 2 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 0 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 1 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 1 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 4 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 1 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 2 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 4 - type: integer 
+	Parameter rstb_loop_iter bound to: 4 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 5 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized4' (40#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized4' (40#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized5' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized5' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 3456 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 108 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 108 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 108 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 108 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 108 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 108 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 108 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 108 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 108 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 108 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 108 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 108 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 108 - type: integer 
+	Parameter rstb_loop_iter bound to: 108 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 108 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized5' (40#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized5' (40#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00wn_0' (41#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_42/synth/bd_6c3f_m00wn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_L5Q2MS' (42#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2015]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_m00s2a_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_38/synth/bd_6c3f_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_m00s2a_0' (44#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_38/synth/bd_6c3f_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s00a2s_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_10/synth/bd_6c3f_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s00a2s_0' (46#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_10/synth/bd_6c3f_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_187WFLN' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2320]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s00mmu_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_7/synth/bd_6c3f_s00mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s00mmu_0' (50#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_7/synth/bd_6c3f_s00mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s00sic_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_9/synth/bd_6c3f_s00sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s00sic_0' (53#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_9/synth/bd_6c3f_s00sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s00tr_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_8/synth/bd_6c3f_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s00tr_0' (56#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_8/synth/bd_6c3f_s00tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6c3f_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2567]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_6c3f_s00tr_0' has 38 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2567]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_187WFLN' (57#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2320]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_12JHOF5' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2607]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_sarn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_11/synth/bd_6c3f_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 576 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 18 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 18 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 18 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 18 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 18 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 18 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 18 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 18 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 20 - type: integer 
+	Parameter rstb_loop_iter bound to: 20 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 18 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized6' (57#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized6' (57#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4544 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 142 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 142 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 142 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 142 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 142 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 142 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 142 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 142 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 142 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 144 - type: integer 
+	Parameter rstb_loop_iter bound to: 144 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 142 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (57#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized7' (57#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_sarn_0' (58#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_11/synth/bd_6c3f_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_srn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_12/synth/bd_6c3f_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized8' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 3424 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 107 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 107 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 107 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 107 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 107 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 107 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 107 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 107 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 107 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 107 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 107 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 107 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 108 - type: integer 
+	Parameter rstb_loop_iter bound to: 108 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 107 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized8' (58#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized8' (58#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_srn_0' (59#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_12/synth/bd_6c3f_srn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_12JHOF5' (60#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2607]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s01a2s_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_16/synth/bd_6c3f_s01a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s01a2s_0' (61#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_16/synth/bd_6c3f_s01a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_15PZ5B' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2738]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s01mmu_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_13/synth/bd_6c3f_s01mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s01mmu_0' (62#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_13/synth/bd_6c3f_s01mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s01sic_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_15/synth/bd_6c3f_s01sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s01sic_0' (63#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_15/synth/bd_6c3f_s01sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s01tr_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_14/synth/bd_6c3f_s01tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s01tr_0' (64#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_14/synth/bd_6c3f_s01tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_6c3f_s01tr_0' is unconnected for instance 's01_transaction_regulator' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3036]
+WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_6c3f_s01tr_0' has 46 connections declared, but only 45 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3036]
+INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_15PZ5B' (65#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:2738]
+INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_6MSJVB' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3084]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_sawn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_17/synth/bd_6c3f_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_sawn_0' (66#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_17/synth/bd_6c3f_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_sbn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_19/synth/bd_6c3f_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized9' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized9' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 928 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 29 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 29 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 29 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 29 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 29 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 29 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 29 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 29 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 29 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 29 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 29 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 29 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 32 - type: integer 
+	Parameter rstb_loop_iter bound to: 32 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 29 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized9' (66#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized9' (66#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_sbn_0' (67#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_19/synth/bd_6c3f_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_swn_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_18/synth/bd_6c3f_swn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized10' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized10' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2816 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 1 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 88 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 88 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 88 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 88 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 88 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 88 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 5 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: distributed - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 88 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 88 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 88 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 5 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 88 - type: integer 
+	Parameter rstb_loop_iter bound to: 88 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 88 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized10' (67#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized10' (67#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_swn_0' (68#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_18/synth/bd_6c3f_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_6MSJVB' (69#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3084]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s02a2s_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_23/synth/bd_6c3f_s02a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s02a2s_0' (70#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_23/synth/bd_6c3f_s02a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's02_entry_pipeline_imp_VUJC42' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3270]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s02mmu_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_20/synth/bd_6c3f_s02mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s02mmu_0' (71#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_20/synth/bd_6c3f_s02mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s02sic_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_22/synth/bd_6c3f_s02sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s02sic_0' (72#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_22/synth/bd_6c3f_s02sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s02tr_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_21/synth/bd_6c3f_s02tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s02tr_0' (73#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_21/synth/bd_6c3f_s02tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6c3f_s02tr_0' is unconnected for instance 's02_transaction_regulator' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3517]
+WARNING: [Synth 8-7023] instance 's02_transaction_regulator' of module 'bd_6c3f_s02tr_0' has 38 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3517]
+INFO: [Synth 8-6155] done synthesizing module 's02_entry_pipeline_imp_VUJC42' (74#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3270]
+INFO: [Synth 8-6157] synthesizing module 's02_nodes_imp_TU56X8' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3557]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_sarn_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_24/synth/bd_6c3f_sarn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_sarn_1' (75#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_24/synth/bd_6c3f_sarn_1.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_srn_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_25/synth/bd_6c3f_srn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_srn_1' (76#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_25/synth/bd_6c3f_srn_1.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's02_nodes_imp_TU56X8' (77#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3557]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s03a2s_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_29/synth/bd_6c3f_s03a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s03a2s_0' (78#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_29/synth/bd_6c3f_s03a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's03_entry_pipeline_imp_1SUOVRA' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3688]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s03mmu_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_26/synth/bd_6c3f_s03mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s03mmu_0' (79#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_26/synth/bd_6c3f_s03mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s03sic_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_28/synth/bd_6c3f_s03sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s03sic_0' (80#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_28/synth/bd_6c3f_s03sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s03tr_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_27/synth/bd_6c3f_s03tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s03tr_0' (81#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_27/synth/bd_6c3f_s03tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6c3f_s03tr_0' is unconnected for instance 's03_transaction_regulator' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3935]
+WARNING: [Synth 8-7023] instance 's03_transaction_regulator' of module 'bd_6c3f_s03tr_0' has 38 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3935]
+INFO: [Synth 8-6155] done synthesizing module 's03_entry_pipeline_imp_1SUOVRA' (82#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3688]
+INFO: [Synth 8-6157] synthesizing module 's03_nodes_imp_1WEHF7E' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3975]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_sarn_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_30/synth/bd_6c3f_sarn_2.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_sarn_2' (83#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_30/synth/bd_6c3f_sarn_2.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_srn_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_31/synth/bd_6c3f_srn_2.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_srn_2' (84#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_31/synth/bd_6c3f_srn_2.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's03_nodes_imp_1WEHF7E' (85#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:3975]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s04a2s_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_35/synth/bd_6c3f_s04a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s04a2s_0' (86#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_35/synth/bd_6c3f_s04a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's04_entry_pipeline_imp_184ABFS' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4106]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s04mmu_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_32/synth/bd_6c3f_s04mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s04mmu_0' (87#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_32/synth/bd_6c3f_s04mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s04sic_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_34/synth/bd_6c3f_s04sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s04sic_0' (88#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_34/synth/bd_6c3f_s04sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_s04tr_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_33/synth/bd_6c3f_s04tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_s04tr_0' (89#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_33/synth/bd_6c3f_s04tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_6c3f_s04tr_0' is unconnected for instance 's04_transaction_regulator' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4353]
+WARNING: [Synth 8-7023] instance 's04_transaction_regulator' of module 'bd_6c3f_s04tr_0' has 38 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4353]
+INFO: [Synth 8-6155] done synthesizing module 's04_entry_pipeline_imp_184ABFS' (90#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4106]
+INFO: [Synth 8-6157] synthesizing module 's04_nodes_imp_14VA9YY' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4393]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_sarn_3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_36/synth/bd_6c3f_sarn_3.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_sarn_3' (91#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_36/synth/bd_6c3f_sarn_3.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_srn_3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_37/synth/bd_6c3f_srn_3.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_srn_3' (92#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_37/synth/bd_6c3f_srn_3.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's04_nodes_imp_14VA9YY' (93#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4393]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1QG3PX1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4524]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_arsw_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_2/synth/bd_6c3f_arsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_arsw_0' (96#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_2/synth/bd_6c3f_arsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_awsw_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_4/synth/bd_6c3f_awsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_awsw_0' (97#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_4/synth/bd_6c3f_awsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_bsw_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_6/synth/bd_6c3f_bsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_bsw_0' (98#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_6/synth/bd_6c3f_bsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_rsw_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_3/synth/bd_6c3f_rsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_rsw_0' (99#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_3/synth/bd_6c3f_rsw_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_6c3f_wsw_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_5/synth/bd_6c3f_wsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f_wsw_0' (100#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_5/synth/bd_6c3f_wsw_0.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1QG3PX1' (101#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:4524]
+WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M02_SC_B_info' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M02_SC_B_payld' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M02_SC_B_req' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M02_SC_B_send' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M03_SC_B_info' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M03_SC_B_payld' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M03_SC_B_req' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M03_SC_B_send' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M04_SC_B_info' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M04_SC_B_payld' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M04_SC_B_req' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'M04_SC_B_send' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S02_SC_AW_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S02_SC_W_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S03_SC_AW_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S03_SC_W_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S04_SC_AW_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7071] port 'S04_SC_W_recv' of module 'switchboards_imp_1QG3PX1' is unconnected for instance 'switchboards' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1QG3PX1' has 152 connections declared, but only 123 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:1450]
+INFO: [Synth 8-6155] done synthesizing module 'bd_6c3f' (102#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/synth/bd_6c3f.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_smc_0' (103#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/synth/Accumulator_MultiDMA_bd_axi_smc_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2903.578 ; gain = 215.750 ; free physical = 37013 ; free virtual = 165084
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2918.422 ; gain = 230.594 ; free physical = 37507 ; free virtual = 165578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2918.422 ; gain = 230.594 ; free physical = 37506 ; free virtual = 165577
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3270.484 ; gain = 0.000 ; free physical = 34775 ; free virtual = 162866
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/bd_6c3f_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/bd_6c3f_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/bd_6c3f_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/bd_0/ip/ip_1/bd_6c3f_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/dont_touch.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_axi_smc_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Accumulator_MultiDMA_bd_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3847.781 ; gain = 0.000 ; free physical = 33334 ; free virtual = 161457
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3847.781 ; gain = 0.000 ; free physical = 33423 ; free virtual = 161547
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 34874 ; free virtual = 162996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 34914 ; free virtual = 163036
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/dont_touch.xdc, line 207).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_entry_pipeline/s01_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_entry_pipeline/s02_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_entry_pipeline/s02_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_entry_pipeline/s02_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_entry_pipeline/s03_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_entry_pipeline/s03_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_entry_pipeline/s03_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_entry_pipeline/s04_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_entry_pipeline/s04_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_entry_pipeline/s04_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_r_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_r_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_r_node/inst/inst_mi_handler/\gen_normal_area.gen_node_prog_full.inst_node_prog_full /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[2].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[3].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_w_node/inst/inst_si_handler/\gen_si_handler.gen_request_fifos.gen_req_fifo[4].inst_req_fifo /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_ar_node/inst/inst_mi_handler/\gen_normal_area.gen_fifo_req.inst_fifo_req /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s03_nodes/s03_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s04_nodes/s04_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 37163 ; free virtual = 165284
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_10_decerr_slave'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_10_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 36432 ; free virtual = 164568
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 10    
+	   2 Input    6 Bit       Adders := 193   
+	   2 Input    5 Bit       Adders := 15    
+	   2 Input    4 Bit       Adders := 24    
+	   2 Input    3 Bit       Adders := 30    
+	   2 Input    2 Bit       Adders := 10    
+	   3 Input    1 Bit       Adders := 7     
++---XORs : 
+	   2 Input      1 Bit         XORs := 296   
++---Registers : 
+	             2178 Bit    Registers := 80    
+	              162 Bit    Registers := 2     
+	              142 Bit    Registers := 7     
+	              108 Bit    Registers := 1     
+	              107 Bit    Registers := 4     
+	               89 Bit    Registers := 6     
+	               88 Bit    Registers := 2     
+	               47 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               22 Bit    Registers := 2     
+	               18 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 5     
+	               11 Bit    Registers := 6     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 97    
+	                5 Bit    Registers := 28    
+	                4 Bit    Registers := 24    
+	                3 Bit    Registers := 74    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 819   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 40    
+	   2 Input   89 Bit        Muxes := 5     
+	   2 Input   64 Bit        Muxes := 5     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 5     
+	   2 Input   11 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    7 Bit        Muxes := 10    
+	   4 Input    7 Bit        Muxes := 20    
+	   2 Input    6 Bit        Muxes := 33    
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 18    
+	  11 Input    3 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 19    
+	   2 Input    2 Bit        Muxes := 170   
+	   7 Input    2 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 200   
+	   4 Input    1 Bit        Muxes := 100   
+	  10 Input    1 Bit        Muxes := 120   
+	   7 Input    1 Bit        Muxes := 80    
+	  12 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 332   
+	   3 Input    1 Bit        Muxes := 45    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49943 ; free virtual = 178136
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 162             | RAM32M16 x 12	 | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 162             | RAM32M16 x 12	 | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 22              | RAM32M16 x 2	  | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 11              | RAM32M16 x 1	  | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 22              | RAM32M16 x 2	  | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 89              | RAM32M16 x 7	  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1	  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 108             | RAM32M16 x 8	  | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 29              | RAM32M16 x 3	  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M16 x 2	  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M16 x 7	  | 
+|inst/i_0/\s02_nodes/s02_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s02_nodes/s02_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s03_nodes/s03_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s03_nodes/s03_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s04_nodes/s04_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s04_nodes/s04_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49434 ; free virtual = 177626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:19 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49371 ; free virtual = 177564
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                                                             | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|inst/i_0/\s02_nodes/s02_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s02_nodes/s02_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s03_nodes/s03_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s03_nodes/s03_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s04_nodes/s04_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s04_nodes/s04_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 107             | RAM32M16 x 8	  | 
+|inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 142             | RAM32M16 x 11	 | 
+|inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 29              | RAM32M16 x 3	  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M16 x 2	  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M16 x 7	  | 
+|inst/i_0/\m00_nodes/m00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 162             | RAM32M16 x 12	 | 
+|inst/i_0/\m00_nodes/m00_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 162             | RAM32M16 x 12	 | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 22              | RAM32M16 x 2	  | 
+|inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 11              | RAM32M16 x 1	  | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 22              | RAM32M16 x 2	  | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 89              | RAM32M16 x 7	  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1	  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 108             | RAM32M16 x 8	  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |   278|
+|2     |LUT2     |   200|
+|3     |LUT3     |  1195|
+|4     |LUT4     |   404|
+|5     |LUT5     |   738|
+|6     |LUT6     |   728|
+|7     |RAM16X1D |     1|
+|8     |RAM32M16 |    98|
+|9     |SRL16    |     1|
+|10    |SRL16E   |    35|
+|11    |FDCE     |   144|
+|12    |FDR      |     4|
+|13    |FDRE     |  4503|
+|14    |FDSE     |   332|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49415 ; free virtual = 177607
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:06 . Memory (MB): peak = 3847.781 ; gain = 230.594 ; free physical = 49456 ; free virtual = 177648
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 3847.781 ; gain = 1159.953 ; free physical = 49456 ; free virtual = 177648
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3847.781 ; gain = 0.000 ; free physical = 49519 ; free virtual = 177711
+INFO: [Netlist 29-17] Analyzing 104 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3847.781 ; gain = 0.000 ; free physical = 49432 ; free virtual = 177624
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  FDR => FDRE: 4 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 98 instances
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+226 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 3847.781 ; gain = 1416.188 ; free physical = 49608 ; free virtual = 177800
+INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/Accumulator_MultiDMA_bd_axi_smc_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Accumulator_MultiDMA_bd_axi_smc_0, cache-ID = ea4df1e242f2f911
+INFO: [Coretcl 2-1174] Renamed 507 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_smc_0_synth_1/Accumulator_MultiDMA_bd_axi_smc_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Accumulator_MultiDMA_bd_axi_smc_0_utilization_synth.rpt -pb Accumulator_MultiDMA_bd_axi_smc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 03:57:17 2022...
