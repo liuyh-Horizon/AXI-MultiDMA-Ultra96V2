@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Accumulator_MultiDMA_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Accumulator_MultiDMA_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="158500fs"></ZoomStartTime>
+      <ZoomEndTime time="2117501fs"></ZoomEndTime>
+      <Cursor1Time time="485000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/sys_clk">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/sys_rst_n">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/accu_en">
+      <obj_property name="ElementShortName">accu_en</obj_property>
+      <obj_property name="ObjectShortName">accu_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/accu_finished">
+      <obj_property name="ElementShortName">accu_finished</obj_property>
+      <obj_property name="ObjectShortName">accu_finished</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tvalid_0">
+      <obj_property name="ElementShortName">s_axis_tvalid_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tready_0">
+      <obj_property name="ElementShortName">s_axis_tready_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tdata_0">
+      <obj_property name="ElementShortName">s_axis_tdata_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tkeep_0">
+      <obj_property name="ElementShortName">s_axis_tkeep_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tkeep_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tlast_0">
+      <obj_property name="ElementShortName">s_axis_tlast_0</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tvalid_1">
+      <obj_property name="ElementShortName">s_axis_tvalid_1</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tready_1">
+      <obj_property name="ElementShortName">s_axis_tready_1</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tdata_1">
+      <obj_property name="ElementShortName">s_axis_tdata_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tkeep_1">
+      <obj_property name="ElementShortName">s_axis_tkeep_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tkeep_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tlast_1">
+      <obj_property name="ElementShortName">s_axis_tlast_1</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tvalid_2">
+      <obj_property name="ElementShortName">s_axis_tvalid_2</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tready_2">
+      <obj_property name="ElementShortName">s_axis_tready_2</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tdata_2">
+      <obj_property name="ElementShortName">s_axis_tdata_2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata_2[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tkeep_2">
+      <obj_property name="ElementShortName">s_axis_tkeep_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tkeep_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tlast_2">
+      <obj_property name="ElementShortName">s_axis_tlast_2</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tvalid_3">
+      <obj_property name="ElementShortName">s_axis_tvalid_3</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tready_3">
+      <obj_property name="ElementShortName">s_axis_tready_3</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready_3</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tdata_3">
+      <obj_property name="ElementShortName">s_axis_tdata_3[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata_3[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/s_axis_tkeep_3">
+      <obj_property name="ElementShortName">s_axis_tkeep_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tkeep_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tlast_3">
+      <obj_property name="ElementShortName">s_axis_tlast_3</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tlast_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/m_axis_tvalid">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/m_axis_tready">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/m_axis_tdata">
+      <obj_property name="ElementShortName">m_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/m_axis_tkeep">
+      <obj_property name="ElementShortName">m_axis_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tkeep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/m_axis_tlast">
+      <obj_property name="ElementShortName">m_axis_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tlast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/wr_step">
+      <obj_property name="ElementShortName">wr_step[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_step[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/rd_step">
+      <obj_property name="ElementShortName">rd_step[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_step[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/cnt">
+      <obj_property name="ElementShortName">cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/sum">
+      <obj_property name="ElementShortName">sum[63:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_0">
+      <obj_property name="ElementShortName">signed_in_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">signed_in_0[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_1">
+      <obj_property name="ElementShortName">signed_in_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">signed_in_1[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_2">
+      <obj_property name="ElementShortName">signed_in_2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">signed_in_2[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_3">
+      <obj_property name="ElementShortName">signed_in_3[63:0]</obj_property>
+      <obj_property name="ObjectShortName">signed_in_3[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_valid_0">
+      <obj_property name="ElementShortName">signed_in_valid_0</obj_property>
+      <obj_property name="ObjectShortName">signed_in_valid_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_valid_1">
+      <obj_property name="ElementShortName">signed_in_valid_1</obj_property>
+      <obj_property name="ObjectShortName">signed_in_valid_1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_valid_2">
+      <obj_property name="ElementShortName">signed_in_valid_2</obj_property>
+      <obj_property name="ObjectShortName">signed_in_valid_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/signed_in_valid_3">
+      <obj_property name="ElementShortName">signed_in_valid_3</obj_property>
+      <obj_property name="ObjectShortName">signed_in_valid_3</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/Accumulator_MultiDMA/step">
+      <obj_property name="ElementShortName">step[7:0]</obj_property>
+      <obj_property name="ObjectShortName">step[7:0]</obj_property>
+   </wvobject>
+</wave_config>
