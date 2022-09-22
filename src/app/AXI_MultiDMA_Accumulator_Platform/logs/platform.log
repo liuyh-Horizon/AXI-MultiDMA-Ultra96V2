@@ -6760,3 +6760,157 @@ TRACE::2022-09-22.16:28:00::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Project
 /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
 
 TRACE::2022-09-22.16:28:00::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::In reload Mss file.
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+KEYINFO::2022-09-22.16:28:57::SCWMssOS::Could not open the swdb for system
+KEYINFO::2022-09-22.16:28:57::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-09-22.16:28:57::SCWMssOS::No sw design opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::mss exists loading the mss file  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::Opened the sw design from mss  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::Adding the swdes entry /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system
+TRACE::2022-09-22.16:28:57::SCWMssOS::updating the scw layer about changes
+TRACE::2022-09-22.16:28:57::SCWMssOS::Opened the sw design.  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS:: library already available in sw design:  xilfpga:5.3
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS:: library already available in sw design:  xilsecure:4.3
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS:: library already available in sw design:  xilskey:7.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::Saving the mss changes /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-09-22.16:28:57::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-09-22.16:28:57::SCWMssOS::Commit changes completed.
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to open the hw design at /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA given /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA absoulate path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform::DSA directory /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Platform Path /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/hw/Accumulator_MultiDMA_bd_wrapper.xsa
+TRACE::2022-09-22.16:28:57::SCWPlatform:: Unique name xilinx:ultra96v2::0.0
+TRACE::2022-09-22.16:28:57::SCWPlatform::Trying to set the existing hwdb with name Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Opened existing hwdb Accumulator_MultiDMA_bd_wrapper_1
+TRACE::2022-09-22.16:28:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-09-22.16:28:57::SCWMssOS::Checking the sw design at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::DEBUG:  swdes dump  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_0||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_1||
+/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system||
+
+TRACE::2022-09-22.16:28:57::SCWMssOS::Sw design exists and opened at  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2022-09-22.16:28:57::SCWMssOS::Removing the swdes entry for  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss

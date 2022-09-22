@@ -1,0 +1,21 @@
+16:48:33 **** Incremental Build of configuration Debug for project AXI_MultiDMA_Accumulator_app ****
+make all 
+Building file: ../src/AXI_MultiDMA_Accumulator_exe.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AXI_MultiDMA_Accumulator_exe.o" -I/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/export/AXI_MultiDMA_Accumulator_Platform/sw/AXI_MultiDMA_Accumulator_Platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/AXI_MultiDMA_Accumulator_exe.d" -MT"src/AXI_MultiDMA_Accumulator_exe.o" -o "src/AXI_MultiDMA_Accumulator_exe.o" "../src/AXI_MultiDMA_Accumulator_exe.c"
+Finished building: ../src/AXI_MultiDMA_Accumulator_exe.c
+ 
+Building target: AXI_MultiDMA_Accumulator_app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/export/AXI_MultiDMA_Accumulator_Platform/sw/AXI_MultiDMA_Accumulator_Platform/standalone_domain/bsplib/lib -o "AXI_MultiDMA_Accumulator_app.elf"  ./src/AXI_MultiDMA_Accumulator_exe.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: AXI_MultiDMA_Accumulator_app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size AXI_MultiDMA_Accumulator_app.elf  |tee "AXI_MultiDMA_Accumulator_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46024	   4904	  20804	  71732	  11834	AXI_MultiDMA_Accumulator_app.elf
+Finished building: AXI_MultiDMA_Accumulator_app.elf.size
+ 
+
+16:48:33 Build Finished (took 825ms)
+
