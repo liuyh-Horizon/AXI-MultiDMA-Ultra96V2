@@ -2,12 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Aug 29 03:55:30 2022
-# Process ID: 163577
-# Current directory: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1
+# Start of session at: Thu Sep 22 16:05:25 2022
+# Process ID: 67701
+# Current directory: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1
 # Command line: vivado -log Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.tcl
-# Log file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.vds
-# Journal file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/vivado.jou
+# Log file: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.vds
+# Journal file: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.tcl -notrace
 Command: synth_design -top Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0 -part xczu3eg-sbva484-1-i -mode out_of_context
@@ -19,14 +19,14 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 163796
+INFO: [Synth 8-7075] Helper process launched with PID 67910
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2686.730 ; gain = 29.906 ; free physical = 39665 ; free virtual = 167730
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2711.508 ; gain = 29.832 ; free physical = 154 ; free virtual = 16509
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/synth/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/code/Accumulator_MultiDMA.v:23]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_4_top' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/synth/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/code/Accumulator_MultiDMA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_4_top' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -80,7 +80,7 @@ INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_4_top' [/home/yuha
 	Parameter LP_WR_DATA_COUNT_WIDTH bound to: 11 - type: integer 
 	Parameter LP_S_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
 	Parameter LP_M_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
 	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -108,7 +108,7 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken
 	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
 	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
 	Parameter P_TPAYLOAD_WIDTH bound to: 84 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
 	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -141,8 +141,8 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2v
 	Parameter P_TID_INDX bound to: 81 - type: integer 
 	Parameter P_TDEST_INDX bound to: 82 - type: integer 
 	Parameter P_TUSER_INDX bound to: 83 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (1#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (1#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
 	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -175,9 +175,9 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector
 	Parameter P_TID_INDX bound to: 81 - type: integer 
 	Parameter P_TDEST_INDX bound to: 82 - type: integer 
 	Parameter P_TUSER_INDX bound to: 83 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (3#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2339]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (3#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2339]
 	Parameter CLOCKING_MODE bound to: common_clock - type: string 
 	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
 	Parameter PACKET_FIFO bound to: false - type: string 
@@ -217,15 +217,15 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [/usr/software/Xilinx/V
 	Parameter P_PKT_MODE bound to: 0 - type: integer 
 	Parameter AXIS_FINAL_DATA_WIDTH bound to: 84 - type: integer 
 	Parameter TUSER_MAX_WIDTH bound to: 4013 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
 	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
 	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter DEF_VAL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (4#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (4#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 	Parameter COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
 	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
@@ -286,7 +286,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/usr/software/Xilinx/V
 	Parameter EN_RDC bound to: 1'b0 
 	Parameter EN_AE bound to: 1'b0 
 	Parameter EN_DVLD bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
 	Parameter MEMORY_SIZE bound to: 86016 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
@@ -354,73 +354,73 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/usr/software/Xilinx
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 84 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (5#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
-INFO: [Synth 8-226] default block is never used [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
-INFO: [Synth 8-226] default block is never used [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
-INFO: [Synth 8-226] default block is never used [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (5#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
 	Parameter RST_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (6#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (6#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (7#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (7#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
 	Parameter COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter CDC_DEST_SYNC_FF bound to: 3 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (8#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (8#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 11 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (8#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (8#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
 	Parameter RESET_VALUE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (8#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (8#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 10 - type: integer 
 	Parameter RESET_VALUE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (8#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (9#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (10#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2339]
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_4_top' (11#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (12#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA' (13#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/code/Accumulator_MultiDMA.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' (14#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/synth/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (8#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (9#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (10#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2339]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_4_top' (11#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (12#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA' (13#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/code/Accumulator_MultiDMA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' (14#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/synth/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2740.637 ; gain = 83.812 ; free physical = 36563 ; free virtual = 164629
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 2764.414 ; gain = 82.738 ; free physical = 1578 ; free virtual = 17911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2755.480 ; gain = 98.656 ; free physical = 34992 ; free virtual = 163057
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 2779.258 ; gain = 97.582 ; free physical = 2293 ; free virtual = 18648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2755.480 ; gain = 98.656 ; free physical = 34991 ; free virtual = 163057
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 2779.258 ; gain = 97.582 ; free physical = 2293 ; free virtual = 18648
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2755.480 ; gain = 0.000 ; free physical = 34481 ; free virtual = 162556
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2779.258 ; gain = 0.000 ; free physical = 2374 ; free virtual = 18753
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_propImpl.xdc].
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2927.199 ; gain = 0.000 ; free physical = 37058 ; free virtual = 165128
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2920.961 ; gain = 0.000 ; free physical = 2060 ; free virtual = 18557
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2930.168 ; gain = 2.969 ; free physical = 37051 ; free virtual = 165124
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2923.930 ; gain = 2.969 ; free physical = 2054 ; free virtual = 18551
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2930.168 ; gain = 273.344 ; free physical = 36211 ; free virtual = 164285
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2923.930 ; gain = 242.254 ; free physical = 2082 ; free virtual = 18603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -428,12 +428,12 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2930.168 ; gain = 273.344 ; free physical = 36208 ; free virtual = 164283
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2923.930 ; gain = 242.254 ; free physical = 2082 ; free virtual = 18603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/dont_touch.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/dont_touch.xdc, line 12).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/input_fifo_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/input_fifo_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/input_fifo_2. (constraint file  auto generated constraint).
@@ -450,7 +450,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/input_fifo_2/inst/\gen_fifo.
 Applied set_property KEEP_HIERARCHY = SOFT for inst/input_fifo_3/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/output_fifo/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2930.168 ; gain = 273.344 ; free physical = 36187 ; free virtual = 164262
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2923.930 ; gain = 242.254 ; free physical = 2104 ; free virtual = 18625
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
 INFO: [Synth 8-802] inferred FSM for state register 'step_reg' in module 'Accumulator_MultiDMA'
@@ -482,7 +482,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_r
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'step_reg' using encoding 'sequential' in module 'Accumulator_MultiDMA'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2930.168 ; gain = 273.344 ; free physical = 35632 ; free virtual = 163708
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 2923.930 ; gain = 242.254 ; free physical = 2061 ; free virtual = 18615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -508,7 +508,7 @@ Detailed RTL Component Info :
 	              84K Bit	(1024 X 84 bit)          RAMs := 5     
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 19    
-	   8 Input   64 Bit        Muxes := 10    
+	   8 Input   64 Bit        Muxes := 9     
 	   8 Input    8 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 1     
 	  15 Input    3 Bit        Muxes := 1     
@@ -547,7 +547,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2930.168 ; gain = 273.344 ; free physical = 35288 ; free virtual = 163372
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2923.930 ; gain = 242.254 ; free physical = 1779 ; free virtual = 18340
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -582,7 +582,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 3312.676 ; gain = 655.852 ; free physical = 33987 ; free virtual = 162108
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 3336.453 ; gain = 654.777 ; free physical = 539 ; free virtual = 17251
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -598,7 +598,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36892 ; free virtual = 165076
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3941 ; free virtual = 20686
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -621,8 +621,12 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/input_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/input_fifo_1/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/input_fifo_2/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/input_fifo_3/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36856 ; free virtual = 164985
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:10 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3883 ; free virtual = 20632
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -640,37 +644,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36610 ; free virtual = 164744
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3839 ; free virtual = 20608
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36609 ; free virtual = 164743
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3839 ; free virtual = 20608
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36573 ; free virtual = 164707
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3837 ; free virtual = 20606
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36575 ; free virtual = 164709
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3837 ; free virtual = 20606
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36527 ; free virtual = 164661
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3839 ; free virtual = 20608
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36524 ; free virtual = 164658
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3839 ; free virtual = 20608
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -688,41 +692,41 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY8   |    60|
 |2     |LUT1     |    16|
-|3     |LUT2     |    29|
-|4     |LUT3     |   100|
-|5     |LUT4     |   726|
-|6     |LUT5     |   229|
-|7     |LUT6     |   297|
+|3     |LUT2     |    92|
+|4     |LUT3     |    35|
+|5     |LUT4     |   721|
+|6     |LUT5     |   231|
+|7     |LUT6     |   291|
 |8     |RAMB18E2 |     5|
-|9     |RAMB36E2 |    10|
-|10    |FDCE     |   659|
-|11    |FDPE     |     1|
-|12    |FDRE     |   245|
-|13    |FDSE     |    40|
+|10    |RAMB36E2 |    10|
+|11    |FDCE     |   659|
+|12    |FDPE     |     1|
+|13    |FDRE     |   293|
+|14    |FDSE     |    40|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3398.473 ; gain = 741.648 ; free physical = 36524 ; free virtual = 164658
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.898 ; gain = 740.223 ; free physical = 3839 ; free virtual = 20608
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 3398.473 ; gain = 566.961 ; free physical = 36558 ; free virtual = 164692
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 3398.480 ; gain = 741.648 ; free physical = 36558 ; free virtual = 164692
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 3421.898 ; gain = 595.551 ; free physical = 3880 ; free virtual = 20649
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 3421.906 ; gain = 740.223 ; free physical = 3880 ; free virtual = 20649
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3398.480 ; gain = 0.000 ; free physical = 36562 ; free virtual = 164696
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3432.867 ; gain = 0.000 ; free physical = 3963 ; free virtual = 20733
 INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3430.488 ; gain = 0.000 ; free physical = 36439 ; free virtual = 164573
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3432.867 ; gain = 0.000 ; free physical = 3905 ; free virtual = 20675
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-97 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+101 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 3430.488 ; gain = 1033.922 ; free physical = 36577 ; free virtual = 164712
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:27 . Memory (MB): peak = 3432.867 ; gain = 1023.664 ; free physical = 4078 ; free virtual = 20848
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1174] Renamed 61 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_synth_1/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_utilization_synth.rpt -pb Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 03:56:16 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 16:07:16 2022...

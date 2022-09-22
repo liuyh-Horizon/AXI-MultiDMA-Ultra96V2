@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Mon Aug 29 03:56:16 2022
-| Host         : Yuhao running 64-bit Ubuntu 22.04.1 LTS
+| Date         : Thu Sep 22 16:07:15 2022
+| Host         : atlas running 64-bit Ubuntu 20.04.1 LTS
 | Command      : report_utilization -file Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_utilization_synth.rpt -pb Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_utilization_synth.pb
 | Design       : Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0
 | Device       : xczu3egsbva484-1
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               |  916 |     0 |     70560 |  1.30 |
-|   LUT as Logic          |  916 |     0 |     70560 |  1.30 |
+| CLB LUTs*               |  906 |     0 |     70560 |  1.28 |
+|   LUT as Logic          |  906 |     0 |     70560 |  1.28 |
 |   LUT as Memory         |    0 |     0 |     28800 |  0.00 |
-| CLB Registers           |  945 |     0 |    141120 |  0.67 |
-|   Register as Flip Flop |  945 |     0 |    141120 |  0.67 |
+| CLB Registers           |  993 |     0 |    141120 |  0.70 |
+|   Register as Flip Flop |  993 |     0 |    141120 |  0.70 |
 |   Register as Latch     |    0 |     0 |    141120 |  0.00 |
 | CARRY8                  |   60 |     0 |      8820 |  0.68 |
 | F7 Muxes                |    0 |     0 |     35280 |  0.00 |
@@ -60,7 +60,7 @@ Table of Contents
 | 1     |          Yes |           - |          Set |
 | 659   |          Yes |           - |        Reset |
 | 40    |          Yes |         Set |            - |
-| 245   |          Yes |       Reset |            - |
+| 293   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,15 +149,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |  726 |                 CLB |
+| LUT4     |  721 |                 CLB |
 | FDCE     |  659 |            Register |
-| LUT6     |  297 |                 CLB |
-| FDRE     |  245 |            Register |
-| LUT5     |  229 |                 CLB |
-| LUT3     |  100 |                 CLB |
+| FDRE     |  293 |            Register |
+| LUT6     |  291 |                 CLB |
+| LUT5     |  231 |                 CLB |
+| LUT2     |   92 |                 CLB |
 | CARRY8   |   60 |                 CLB |
 | FDSE     |   40 |            Register |
-| LUT2     |   29 |                 CLB |
+| LUT3     |   35 |                 CLB |
 | LUT1     |   16 |                 CLB |
 | RAMB36E2 |   10 |            BLOCKRAM |
 | RAMB18E2 |    5 |            BLOCKRAM |

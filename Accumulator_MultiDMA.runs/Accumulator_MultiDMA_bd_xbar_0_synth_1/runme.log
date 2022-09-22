@@ -16,22 +16,22 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 163924
+INFO: [Synth 8-7075] Helper process launched with PID 67867
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2693.734 ; gain = 28.906 ; free physical = 36355 ; free virtual = 164436
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 2717.418 ; gain = 29.832 ; free physical = 2059 ; free virtual = 18557
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/synth/Accumulator_MultiDMA_bd_xbar_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/synth/Accumulator_MultiDMA_bd_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 6 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 8 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 40 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 384'b000000000000000000000000000000001010000000000101000000000000000000000000000000000000000000000000101000000000010000000000000000000000000000000000000000000000000010100000000000110000000000000000000000000000000000000000000000001010000000000010000000000000000000000000000000000000000000000000101000000000000100000000000000000000000000000000000000000000000010100000000000000000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 192'b000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 512'b00000000000000000000000000000000101000000000011100000000000000000000000000000000000000000000000010100000000001100000000000000000000000000000000000000000000000001010000000000101000000000000000000000000000000000000000000000000101000000000010000000000000000000000000000000000000000000000000010100000000000110000000000000000000000000000000000000000000000001010000000000010000000000000000000000000000000000000000000000000101000000000000100000000000000000000000000000000000000000000000010100000000000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 256'b0000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -40,16 +40,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/h
 	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
 	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
 	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_ISSUING bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_ISSUING bound to: 192'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
 	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
 	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -59,28 +59,28 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [/h
 	Parameter P_AXILITE bound to: 2 - type: integer 
 	Parameter P_AXILITE_SIZE bound to: 3'b010 
 	Parameter P_INCR bound to: 2'b01 
-	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 6'b111111 
-	Parameter P_M_AXI_SUPPORTS_READ bound to: 6'b111111 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 8'b11111111 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 8'b11111111 
 	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
 	Parameter C_DEBUG bound to: 1 - type: integer 
 	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
-	Parameter P_M_AXI_ERR_MODE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_M_AXI_ERR_MODE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 6 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 8 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 40 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 384'b000000000000000000000000000000001010000000000101000000000000000000000000000000000000000000000000101000000000010000000000000000000000000000000000000000000000000010100000000000110000000000000000000000000000000000000000000000001010000000000010000000000000000000000000000000000000000000000000101000000000000100000000000000000000000000000000000000000000000010100000000000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 384'b000000000000000000000000000000001010000000000101111111111111111100000000000000000000000000000000101000000000010011111111111111110000000000000000000000000000000010100000000000111111111111111111000000000000000000000000000000001010000000000010111111111111111100000000000000000000000000000000101000000000000111111111111111110000000000000000000000000000000010100000000000001111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 512'b00000000000000000000000000000000101000000000011100000000000000000000000000000000000000000000000010100000000001100000000000000000000000000000000000000000000000001010000000000101000000000000000000000000000000000000000000000000101000000000010000000000000000000000000000000000000000000000000010100000000000110000000000000000000000000000000000000000000000001010000000000010000000000000000000000000000000000000000000000000101000000000000100000000000000000000000000000000000000000000000010100000000000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 512'b00000000000000000000000000000000101000000000011111111111111111110000000000000000000000000000000010100000000001101111111111111111000000000000000000000000000000001010000000000101111111111111111100000000000000000000000000000000101000000000010011111111111111110000000000000000000000000000000010100000000000111111111111111111000000000000000000000000000000001010000000000010111111111111111100000000000000000000000000000000101000000000000111111111111111110000000000000000000000000000000010100000000000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -91,11 +91,11 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [/
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
-	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 6'b111111 
-	Parameter C_M_AXI_SUPPORTS_READ bound to: 6'b111111 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 8'b11111111 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 8'b11111111 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_M_AXI_ERR_MODE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
@@ -103,9 +103,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [/
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE bound to: 7 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 9 - type: integer 
 	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 3 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 4 - type: integer 
 	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
 	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
 	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
@@ -115,81 +115,97 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [/
 	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
 	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
 	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
-	Parameter P_M_SECURE_MASK bound to: 6'b000000 
-	Parameter P_M_AXILITE_MASK bound to: 6'b000000 
+	Parameter P_M_SECURE_MASK bound to: 8'b00000000 
+	Parameter P_M_AXILITE_MASK bound to: 8'b00000000 
 	Parameter P_FIXED bound to: 2'b00 
 	Parameter P_BYPASS bound to: 0 - type: integer 
 	Parameter P_LIGHTWT bound to: 7 - type: integer 
 	Parameter P_FULLY_REG bound to: 1 - type: integer 
 	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_NUM_TARGETS bound to: 6 - type: integer 
+	Parameter C_NUM_TARGETS bound to: 8 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 3 - type: integer 
 	Parameter C_NUM_RANGES bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 40 - type: integer 
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 384'b000000000000000000000000000000001010000000000101000000000000000000000000000000000000000000000000101000000000010000000000000000000000000000000000000000000000000010100000000000110000000000000000000000000000000000000000000000001010000000000010000000000000000000000000000000000000000000000000101000000000000100000000000000000000000000000000000000000000000010100000000000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 384'b000000000000000000000000000000001010000000000101111111111111111100000000000000000000000000000000101000000000010011111111111111110000000000000000000000000000000010100000000000111111111111111111000000000000000000000000000000001010000000000010111111111111111100000000000000000000000000000000101000000000000111111111111111110000000000000000000000000000000010100000000000001111111111111111 
-	Parameter C_TARGET_QUAL bound to: 7'b0111111 
+	Parameter C_BASE_ADDR bound to: 512'b00000000000000000000000000000000101000000000011100000000000000000000000000000000000000000000000010100000000001100000000000000000000000000000000000000000000000001010000000000101000000000000000000000000000000000000000000000000101000000000010000000000000000000000000000000000000000000000000010100000000000110000000000000000000000000000000000000000000000001010000000000010000000000000000000000000000000000000000000000000101000000000000100000000000000000000000000000000000000000000000010100000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 512'b00000000000000000000000000000000101000000000011111111111111111110000000000000000000000000000000010100000000001101111111111111111000000000000000000000000000000001010000000000101111111111111111100000000000000000000000000000000101000000000010011111111111111110000000000000000000000000000000010100000000000111111111111111111000000000000000000000000000000001010000000000010111111111111111100000000000000000000000000000000101000000000000111111111111111110000000000000000000000000000000010100000000000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 9'b011111111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 38'b00000000101000000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 7 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 38'b00000000101000000000000100000000000000 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 7 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 38'b00000000101000000000001000000000000000 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 7 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 38'b00000000101000000000001100000000000000 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 7 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 38'b00000000101000000000010000000000000000 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 7 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_VALUE bound to: 38'b00000000101000000000010100000000000000 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 7 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' (3#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 38'b00000000101000000000011000000000000000 
+	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 7 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 38'b00000000101000000000011100000000000000 
+	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 7 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 42 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' (3#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -204,8 +220,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [/h
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' (4#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' (4#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_NUM_S bound to: 1 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
@@ -213,75 +229,75 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
 	Parameter P_PRIO_MASK bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' (5#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' (5#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter' (6#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter' (6#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' (6#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' (6#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 7 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_RATIO bound to: 9 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 4 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 7 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_RATIO bound to: 9 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 4 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' (8#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' (8#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 7 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_RATIO bound to: 9 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 4 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' (9#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (10#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' (11#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/synth/Accumulator_MultiDMA_bd_xbar_0.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' (9#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (10#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' (11#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/synth/Accumulator_MultiDMA_bd_xbar_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2834.609 ; gain = 169.781 ; free physical = 34943 ; free virtual = 163033
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 2859.293 ; gain = 171.707 ; free physical = 1869 ; free virtual = 18431
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2849.453 ; gain = 184.625 ; free physical = 34912 ; free virtual = 163002
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 2874.137 ; gain = 186.551 ; free physical = 1821 ; free virtual = 18383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2849.453 ; gain = 184.625 ; free physical = 34912 ; free virtual = 163002
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:38 . Memory (MB): peak = 2874.137 ; gain = 186.551 ; free physical = 1821 ; free virtual = 18383
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2849.453 ; gain = 0.000 ; free physical = 34947 ; free virtual = 163037
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2874.137 ; gain = 0.000 ; free physical = 1800 ; free virtual = 18362
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3006.266 ; gain = 0.000 ; free physical = 34437 ; free virtual = 162533
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2981.965 ; gain = 0.000 ; free physical = 1165 ; free virtual = 17745
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3006.266 ; gain = 0.000 ; free physical = 34425 ; free virtual = 162521
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2981.965 ; gain = 0.000 ; free physical = 1162 ; free virtual = 17742
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 3006.266 ; gain = 341.438 ; free physical = 33886 ; free virtual = 161987
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:51 . Memory (MB): peak = 2981.965 ; gain = 294.379 ; free physical = 1067 ; free virtual = 17653
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -289,17 +305,17 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 3006.266 ; gain = 341.438 ; free physical = 33885 ; free virtual = 161986
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:51 . Memory (MB): peak = 2981.965 ; gain = 294.379 ; free physical = 1066 ; free virtual = 17652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 3006.266 ; gain = 341.438 ; free physical = 33881 ; free virtual = 161982
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:51 . Memory (MB): peak = 2981.965 ; gain = 294.379 ; free physical = 1066 ; free virtual = 17652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 3006.266 ; gain = 341.438 ; free physical = 33850 ; free virtual = 161953
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:51 . Memory (MB): peak = 2981.965 ; gain = 294.379 ; free physical = 1036 ; free virtual = 17625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -308,17 +324,19 @@ Detailed RTL Component Info :
 +---Registers : 
 	               72 Bit    Registers := 1     
 	               36 Bit    Registers := 2     
-	                7 Bit    Registers := 1     
-	                3 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 14    
 +---Muxes : 
 	   2 Input   72 Bit        Muxes := 1     
 	   2 Input   36 Bit        Muxes := 2     
-	   2 Input    7 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 57    
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 71    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -335,25 +353,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 3006.266 ; gain = 341.438 ; free physical = 33671 ; free virtual = 161780
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 2981.965 ; gain = 294.379 ; free physical = 817 ; free virtual = 17431
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 3306.734 ; gain = 641.906 ; free physical = 35441 ; free virtual = 163641
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:21 . Memory (MB): peak = 3330.480 ; gain = 642.895 ; free physical = 3811 ; free virtual = 20606
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 3337.766 ; gain = 672.938 ; free physical = 35356 ; free virtual = 163556
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:22 . Memory (MB): peak = 3365.512 ; gain = 677.926 ; free physical = 4724 ; free virtual = 21529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 35350 ; free virtual = 163550
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:22 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5619 ; free virtual = 22424
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -371,37 +389,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37051 ; free virtual = 165252
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5618 ; free virtual = 22443
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37051 ; free virtual = 165251
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5618 ; free virtual = 22443
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37046 ; free virtual = 165246
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5618 ; free virtual = 22443
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37043 ; free virtual = 165243
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5618 ; free virtual = 22443
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37041 ; free virtual = 165242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5617 ; free virtual = 22443
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37041 ; free virtual = 165241
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5617 ; free virtual = 22442
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -418,35 +436,35 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     2|
-|2     |LUT2 |    14|
-|3     |LUT3 |    11|
-|4     |LUT4 |    69|
-|5     |LUT5 |    41|
-|6     |LUT6 |   129|
-|7     |FDRE |   143|
+|2     |LUT2 |    18|
+|3     |LUT3 |     7|
+|4     |LUT4 |   104|
+|5     |LUT5 |    98|
+|6     |LUT6 |   111|
+|7     |FDRE |   146|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.781 ; gain = 688.953 ; free physical = 37040 ; free virtual = 165241
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.527 ; gain = 693.941 ; free physical = 5617 ; free virtual = 22442
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 3353.781 ; gain = 532.141 ; free physical = 37063 ; free virtual = 165264
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 3353.789 ; gain = 688.953 ; free physical = 37063 ; free virtual = 165263
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:01:18 . Memory (MB): peak = 3381.527 ; gain = 586.113 ; free physical = 5655 ; free virtual = 22480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:26 . Memory (MB): peak = 3381.535 ; gain = 693.941 ; free physical = 5655 ; free virtual = 22480
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3361.781 ; gain = 0.000 ; free physical = 37095 ; free virtual = 165291
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3381.535 ; gain = 0.000 ; free physical = 5740 ; free virtual = 22565
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3399.734 ; gain = 0.000 ; free physical = 37046 ; free virtual = 165242
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3392.434 ; gain = 0.000 ; free physical = 5661 ; free virtual = 22511
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+57 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 3399.734 ; gain = 1003.164 ; free physical = 37182 ; free virtual = 165378
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/Accumulator_MultiDMA_bd_xbar_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:38 . Memory (MB): peak = 3392.434 ; gain = 981.320 ; free physical = 5805 ; free virtual = 22657
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/Accumulator_MultiDMA_bd_xbar_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Accumulator_MultiDMA_bd_xbar_0, cache-ID = 8dbcb962873d7360
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Accumulator_MultiDMA_bd_xbar_0, cache-ID = 00bff43541ba9f7a
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/Accumulator_MultiDMA_bd_xbar_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_xbar_0_synth_1/Accumulator_MultiDMA_bd_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Accumulator_MultiDMA_bd_xbar_0_utilization_synth.rpt -pb Accumulator_MultiDMA_bd_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 03:56:21 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 16:07:26 2022...

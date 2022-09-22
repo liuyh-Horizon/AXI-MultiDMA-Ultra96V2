@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Aug 29 03:58:00 2022
-# Process ID: 165254
-# Current directory: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/impl_1
+# Start of session at: Thu Sep 22 16:08:59 2022
+# Process ID: 68874
+# Current directory: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/impl_1
 # Command line: vivado -log Accumulator_MultiDMA_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Accumulator_MultiDMA_bd_wrapper.tcl -notrace
-# Log file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/impl_1/Accumulator_MultiDMA_bd_wrapper.vdi
-# Journal file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/impl_1/vivado.jou
+# Log file: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/impl_1/Accumulator_MultiDMA_bd_wrapper.vdi
+# Journal file: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source Accumulator_MultiDMA_bd_wrapper.tcl -notrace

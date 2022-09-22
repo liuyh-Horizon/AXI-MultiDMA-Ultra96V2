@@ -60,6 +60,8 @@ module Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0 (
   sys_rst_n,
   accu_en,
   accu_finished,
+  sum_debug,
+  step_debug,
   s_axis_0_aresetn,
   s_axis_0_aclk,
   s_axis_tvalid_0,
@@ -105,6 +107,8 @@ input wire sys_clk;
 input wire sys_rst_n;
 input wire accu_en;
 output wire accu_finished;
+output wire [31 : 0] sum_debug;
+output wire [7 : 0] step_debug;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_0_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 s_axis_0_aresetn RST" *)
 input wire s_axis_0_aresetn;
@@ -196,6 +200,8 @@ output wire m_axis_tlast;
     .sys_rst_n(sys_rst_n),
     .accu_en(accu_en),
     .accu_finished(accu_finished),
+    .sum_debug(sum_debug),
+    .step_debug(step_debug),
     .s_axis_0_aresetn(s_axis_0_aresetn),
     .s_axis_0_aclk(s_axis_0_aclk),
     .s_axis_tvalid_0(s_axis_tvalid_0),

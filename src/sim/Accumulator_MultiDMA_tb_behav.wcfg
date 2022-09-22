@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="158500fs"></ZoomStartTime>
-      <ZoomEndTime time="2117501fs"></ZoomEndTime>
-      <Cursor1Time time="485000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1860001fs"></ZoomEndTime>
+      <Cursor1Time time="366000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="225"></NameColumnWidth>
-      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="42" />
    <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/sys_clk">
@@ -35,6 +35,8 @@
    <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/accu_finished">
       <obj_property name="ElementShortName">accu_finished</obj_property>
       <obj_property name="ObjectShortName">accu_finished</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/Accumulator_MultiDMA_tb/s_axis_tvalid_0">
       <obj_property name="ElementShortName">s_axis_tvalid_0</obj_property>
@@ -128,6 +130,8 @@
       <obj_property name="ElementShortName">m_axis_tdata[63:0]</obj_property>
       <obj_property name="ObjectShortName">m_axis_tdata[63:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/Accumulator_MultiDMA_tb/m_axis_tkeep">
       <obj_property name="ElementShortName">m_axis_tkeep[7:0]</obj_property>

@@ -16,11 +16,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 163727
+INFO: [Synth 8-7075] Helper process launched with PID 35931
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2688.891 ; gain = 29.906 ; free physical = 36930 ; free virtual = 165001
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2713.414 ; gain = 29.832 ; free physical = 1945 ; free virtual = 22751
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/synth/Accumulator_MultiDMA_bd_axi_dma_1_2.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/synth/Accumulator_MultiDMA_bd_axi_dma_1_2.vhd:104]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
@@ -43,7 +43,7 @@ INFO: [Synth 8-638] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' [/
 	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 64 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 1 - type: integer 
 	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
 	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
 	Parameter C_S2MM_BURST_SIZE bound to: 16 - type: integer 
@@ -53,8 +53,8 @@ INFO: [Synth 8-638] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' [/
 	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
 	Parameter C_INCREASE_THROUGHPUT bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-3491] module 'axi_dma' declared at '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:21833' bound to instance 'U0' of component 'axi_dma' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/synth/Accumulator_MultiDMA_bd_axi_dma_1_2.vhd:320]
-INFO: [Synth 8-638] synthesizing module 'axi_dma' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:22178]
+INFO: [Synth 8-3491] module 'axi_dma' declared at '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:21833' bound to instance 'U0' of component 'axi_dma' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/synth/Accumulator_MultiDMA_bd_axi_dma_1_2.vhd:320]
+INFO: [Synth 8-638] synthesizing module 'axi_dma' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:22178]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
@@ -69,7 +69,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma' [/home/yuhao_liu/Projects/Hard
 	Parameter C_S_AXIS_S2MM_STS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
 	Parameter C_INCLUDE_MM2S_SF bound to: 1 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 1 - type: integer 
 	Parameter C_MM2S_BURST_SIZE bound to: 8 - type: integer 
 	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
@@ -88,7 +88,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma' [/home/yuhao_liu/Projects/Hard
 	Parameter C_MICRO_DMA bound to: 0 - type: integer 
 	Parameter C_INCREASE_THROUGHPUT bound to: 0 - type: integer 
 	Parameter C_INSTANCE bound to: axi_dma - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_dma_rst_module' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:1595]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_rst_module' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:1595]
 	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
 	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
 	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
@@ -97,7 +97,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma_rst_module' [/home/yuhao_liu/Pr
 	Parameter C_M_AXI_MM2S_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_M_AXI_S2MM_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_M_AXI_SG_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -105,27 +105,27 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/yuhao_liu/Projects/Har
 	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_reset' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:603]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_reset' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:603]
 	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
 	Parameter C_SG_INCLUDE_STSCNTRL_STRM bound to: 0 - type: integer 
 	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
 	Parameter C_AXI_PRMRY_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_AXI_SCNDRY_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_reset' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:603]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_rst_module' (3#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:1595]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_reg_module' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:8436]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_reset' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_rst_module' (3#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:1595]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_reg_module' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:8436]
 	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
 	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
 	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
@@ -139,13 +139,13 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma_reg_module' [/home/yuhao_liu/Pr
 	Parameter C_NUM_S2MM_CHANNELS bound to: 1 - type: integer 
 	Parameter C_MICRO_DMA bound to: 0 - type: integer 
 	Parameter C_ENABLE_MULTI_CHANNEL bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_dma_lite_if' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:2066]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_lite_if' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:2066]
 	Parameter C_NUM_CE bound to: 23 - type: integer 
 	Parameter C_AXI_LITE_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_lite_if' (4#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:2066]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_register' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:3607]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_lite_if' (4#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:2066]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_register' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:3607]
 	Parameter C_NUM_REGISTERS bound to: 12 - type: integer 
 	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
 	Parameter C_SG_LENGTH_WIDTH bound to: 14 - type: integer 
@@ -153,9 +153,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma_register' [/home/yuhao_liu/Proj
 	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_MICRO_DMA bound to: 0 - type: integer 
 	Parameter C_ENABLE_MULTI_CHANNEL bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_register' (5#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:3607]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_reg_module' (6#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:8436]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_mngr' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:15178]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_register' (5#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:3607]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_reg_module' (6#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:8436]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_mngr' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:15178]
 	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRMY_CMDFIFO_DEPTH bound to: 4 - type: integer 
 	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
@@ -173,26 +173,26 @@ INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_mngr' [/home/yuhao_liu/Pro
 	Parameter C_ENABLE_MULTI_CHANNEL bound to: 0 - type: integer 
 	Parameter C_MICRO_DMA bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_dma_smple_sm' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11972]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_smple_sm' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11972]
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_SG_LENGTH_WIDTH bound to: 14 - type: integer 
 	Parameter C_EXTRA bound to: 1 - type: integer 
 	Parameter C_MICRO_DMA bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_smple_sm' (7#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11972]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_cmdsts_if' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:13960]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_smple_sm' (7#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11972]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_cmdsts_if' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:13960]
 	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_ENABLE_QUEUE bound to: 1 - type: integer 
 	Parameter C_EXTRA bound to: 1 - type: integer 
 	Parameter C_ENABLE_MULTI_CHANNEL bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_cmdsts_if' (8#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:13960]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_sts_mngr' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:14275]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_cmdsts_if' (8#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:13960]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_mm2s_sts_mngr' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:14275]
 	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_sts_mngr' (9#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:14275]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_mngr' (10#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:15178]
-INFO: [Synth 8-638] synthesizing module 'axi_dma_sofeof_gen' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11441]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_sts_mngr' (9#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:14275]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_mm2s_mngr' (10#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:15178]
+INFO: [Synth 8-638] synthesizing module 'axi_dma_sofeof_gen' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11441]
 	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dma_sofeof_gen' (11#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11441]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma_sofeof_gen' (11#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:11441]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
 	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
 	Parameter C_M_AXI_MM2S_ARID bound to: 0 - type: integer 
 	Parameter C_M_AXI_MM2S_ID_WIDTH bound to: 4 - type: integer 
@@ -202,7 +202,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/yuhao_liu/Project
 	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 1 - type: integer 
 	Parameter C_MM2S_BURST_SIZE bound to: 8 - type: integer 
 	Parameter C_MM2S_BTT_USED bound to: 14 - type: integer 
 	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -232,7 +232,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/home/yuhao_liu/Project
 	Parameter C_CMD_WIDTH bound to: 72 - type: integer 
 	Parameter C_MCDMA bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
 	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
 	Parameter C_MM2S_ARID bound to: 0 - type: integer 
 	Parameter C_MM2S_ID_WIDTH bound to: 4 - type: integer 
@@ -242,7 +242,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/yu
 	Parameter C_INCLUDE_MM2S_STSFIFO bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
 	Parameter C_MM2S_STSCMD_IS_ASYNC bound to: 0 - type: integer 
-	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 1 - type: integer 
 	Parameter C_MM2S_BURST_SIZE bound to: 8 - type: integer 
 	Parameter C_MM2S_BTT_USED bound to: 14 - type: integer 
 	Parameter C_MM2S_ADDR_PIPE_DEPTH bound to: 4 - type: integer 
@@ -253,10 +253,10 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/home/yu
 	Parameter C_ENABLE_SKID_BUF bound to: 11111 - type: string 
 	Parameter C_MCDMA bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
 	Parameter C_STSCMD_IS_ASYNC bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (12#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (12#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_STSFIFO bound to: 1 - type: integer 
 	Parameter C_STSCMD_FIFO_DEPTH bound to: 1 - type: integer 
@@ -265,28 +265,28 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/home/yuhao_
 	Parameter C_STS_WIDTH bound to: 8 - type: integer 
 	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 	Parameter C_DWIDTH bound to: 71 - type: integer 
 	Parameter C_DEPTH bound to: 1 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (13#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (13#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_DEPTH bound to: 1 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (13#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (14#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (13#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (14#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
 	Parameter C_STS_WIDTH bound to: 8 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (15#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (15#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
 	Parameter C_IS_MM2S bound to: 1 - type: integer 
-	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 3 - type: integer 
 	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
@@ -298,57 +298,57 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/home/yuhao_liu/Pro
 	Parameter C_NATIVE_XFER_WIDTH bound to: 64 - type: integer 
 	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
 	Parameter C_MCDMA bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
 	Parameter C_OP_MODE bound to: 0 - type: integer 
 	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
 	Parameter C_OFFSET_WIDTH bound to: 3 - type: integer 
 	Parameter C_NUM_BYTES_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (16#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (16#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
 	Parameter C_OP_MODE bound to: 1 - type: integer 
 	Parameter C_STRB_WIDTH bound to: 8 - type: integer 
 	Parameter C_OFFSET_WIDTH bound to: 3 - type: integer 
 	Parameter C_NUM_BYTES_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (16#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-226] default block is never used [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (17#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (16#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (17#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
 	Parameter C_ADDR_FIFO_DEPTH bound to: 4 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_ADDR_ID bound to: 0 - type: integer 
 	Parameter C_ADDR_ID_WIDTH bound to: 4 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
 	Parameter C_DWIDTH bound to: 59 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
 	Parameter C_DWIDTH bound to: 59 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
 	Parameter C_DWIDTH bound to: 59 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 	Parameter C_SIZE bound to: 3 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (18#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (18#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_DWIDTH bound to: 59 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (19#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (20#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (21#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (21#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (22#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
-	Parameter C_INCLUDE_DRE bound to: 0 - type: integer 
-	Parameter C_ALIGN_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (19#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (20#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (21#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (21#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (22#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+	Parameter C_INCLUDE_DRE bound to: 1 - type: integer 
+	Parameter C_ALIGN_WIDTH bound to: 3 - type: integer 
 	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
 	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
@@ -356,69 +356,69 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/home/yuhao
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
 	Parameter C_SEL_ADDR_WIDTH bound to: 3 - type: integer 
 	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (23#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-	Parameter C_DWIDTH bound to: 38 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (23#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 42 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-	Parameter C_DWIDTH bound to: 38 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 42 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-	Parameter C_DWIDTH bound to: 38 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 42 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 4 - type: integer 
-	Parameter C_DWIDTH bound to: 38 - type: integer 
+	Parameter C_DWIDTH bound to: 42 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (23#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (23#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (23#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (23#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (24#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20208]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (23#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (23#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (23#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (23#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (24#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20208]
 	Parameter C_SF_FIFO_DEPTH bound to: 128 - type: integer 
 	Parameter C_MAX_BURST_LEN bound to: 8 - type: integer 
-	Parameter C_DRE_IS_USED bound to: 0 - type: integer 
+	Parameter C_DRE_IS_USED bound to: 1 - type: integer 
 	Parameter C_DRE_CNTL_FIFO_DEPTH bound to: 4 - type: integer 
-	Parameter C_DRE_ALIGN_WIDTH bound to: 1 - type: integer 
+	Parameter C_DRE_ALIGN_WIDTH bound to: 3 - type: integer 
 	Parameter C_MMAP_DWIDTH bound to: 64 - type: integer 
 	Parameter C_STREAM_DWIDTH bound to: 64 - type: integer 
 	Parameter C_STRT_SF_OFFSET_WIDTH bound to: 1 - type: integer 
 	Parameter C_ENABLE_MM2S_TKEEP bound to: 1 - type: integer 
 	Parameter C_TAG_WIDTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-	Parameter C_DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+	Parameter C_DWIDTH bound to: 14 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_IS_ASYNC bound to: 0 - type: integer 
 	Parameter C_PRIM_TYPE bound to: 2 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-	Parameter C_DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+	Parameter C_DWIDTH bound to: 14 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-	Parameter C_DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+	Parameter C_DWIDTH bound to: 14 - type: integer 
 	Parameter C_DEPTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 4 - type: integer 
-	Parameter C_DWIDTH bound to: 8 - type: integer 
+	Parameter C_DWIDTH bound to: 14 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (24#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (24#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (24#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (24#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (24#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (24#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (24#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (24#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
 	Parameter C_DWIDTH bound to: 75 - type: integer 
 	Parameter C_DEPTH bound to: 128 - type: integer 
 	Parameter C_DATA_CNT_WIDTH bound to: 8 - type: integer 
@@ -426,7 +426,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [/home/yuha
 	Parameter C_NEED_ALMOST_FULL bound to: 0 - type: integer 
 	Parameter C_USE_BLKMEM bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_DCOUNT_WIDTH bound to: 8 - type: integer 
 	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
@@ -468,8 +468,8 @@ INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [/home/yuhao_liu/Projects
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter WAKEUP_TIME bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at '/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2627]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947]
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at '/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2627]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947]
 	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
@@ -493,7 +493,7 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/usr/software/Xilinx/V
 	Parameter P_ECC_MODE bound to: 0 - type: integer 
 	Parameter P_READ_MODE bound to: 1 - type: integer 
 	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 	Parameter COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
 	Parameter FIFO_MEMORY_TYPE bound to: 2 - type: integer 
@@ -554,15 +554,15 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/usr/software/Xilinx/V
 	Parameter EN_RDC bound to: 1'b1 
 	Parameter EN_AE bound to: 1'b1 
 	Parameter EN_DVLD bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
 	Parameter RESET_VALUE bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (25#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (25#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
 	Parameter RESET_VALUE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (25#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (25#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 	Parameter MEMORY_TYPE bound to: 1 - type: integer 
 	Parameter MEMORY_SIZE bound to: 9600 - type: integer 
 	Parameter MEMORY_PRIMITIVE bound to: 2 - type: integer 
@@ -630,40 +630,64 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/usr/software/Xilinx
 	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 75 - type: integer 
 	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (26#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
-INFO: [Synth 8-226] default block is never used [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
-INFO: [Synth 8-226] default block is never used [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
-INFO: [Synth 8-226] default block is never used [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (26#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1204]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1271]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1293]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
 	Parameter RST_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (27#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (27#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1902]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (27#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (27#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
 	Parameter COMMON_CLOCK bound to: 1 - type: integer 
 	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (28#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (28#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1618]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 8 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (28#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (28#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 	Parameter COUNTER_WIDTH bound to: 7 - type: integer 
 	Parameter RESET_VALUE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (28#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (29#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (30#1) [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947]
-INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (31#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (32#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (33#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20208]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (28#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (29#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (30#1) [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1947]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (31#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/a5cb/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (32#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (33#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20208]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_dre' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30463]
+	Parameter C_DWIDTH bound to: 64 - type: integer 
+	Parameter C_ALIGN_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:34719]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux2_1_x_n' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29950]
+	Parameter C_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29966]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux2_1_x_n' (34#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:29950]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux4_1_x_n' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30097]
+	Parameter C_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30113]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux4_1_x_n' (35#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30097]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_dre_mux8_1_x_n' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30266]
+	Parameter C_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30285]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_dre_mux8_1_x_n' (36#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30266]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35197]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35251]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35306]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35361]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35416]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35471]
+INFO: [Synth 8-226] default block is never used [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:35526]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_dre' (37#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:30463]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
 	Parameter C_WDATA_WIDTH bound to: 64 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (34#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (35#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49604]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (38#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (39#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49604]
 	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
 	Parameter C_S2MM_AWID bound to: 1 - type: integer 
 	Parameter C_S2MM_ID_WIDTH bound to: 4 - type: integer 
@@ -681,52 +705,52 @@ INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [/home/yu
 	Parameter C_ENABLE_CACHE_USER bound to: 0 - type: integer 
 	Parameter C_MCDMA bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (36#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49604]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (37#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
-INFO: [Synth 8-256] done synthesizing module 'axi_dma' (38#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:22178]
-INFO: [Synth 8-256] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' (39#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/synth/Accumulator_MultiDMA_bd_axi_dma_1_2.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (40#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49604]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (41#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/4ab6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55436]
+INFO: [Synth 8-256] done synthesizing module 'axi_dma' (42#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ipshared/89d8/hdl/axi_dma_v7_1_vh_rfs.vhd:22178]
+INFO: [Synth 8-256] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' (43#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/synth/Accumulator_MultiDMA_bd_axi_dma_1_2.vhd:104]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2863.797 ; gain = 204.812 ; free physical = 34214 ; free virtual = 162304
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 2894.320 ; gain = 210.738 ; free physical = 1725 ; free virtual = 22570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2878.641 ; gain = 219.656 ; free physical = 34139 ; free virtual = 162229
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 2909.164 ; gain = 225.582 ; free physical = 1698 ; free virtual = 22543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2878.641 ; gain = 219.656 ; free physical = 34139 ; free virtual = 162229
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 2909.164 ; gain = 225.582 ; free physical = 1698 ; free virtual = 22543
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2892.578 ; gain = 0.000 ; free physical = 34754 ; free virtual = 162844
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2920.133 ; gain = 0.000 ; free physical = 1816 ; free virtual = 22662
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_axi_dma_1_2_propImpl.xdc].
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_axi_dma_1_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Accumulator_MultiDMA_bd_axi_dma_1_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/dont_touch.xdc]
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_clocks.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/usr/software/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_axi_dma_1_2_propImpl.xdc].
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Accumulator_MultiDMA_bd_axi_dma_1_2_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Accumulator_MultiDMA_bd_axi_dma_1_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3026.422 ; gain = 0.000 ; free physical = 34436 ; free virtual = 162532
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3019.961 ; gain = 0.000 ; free physical = 1542 ; free virtual = 22389
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 12 instances were transformed.
   FDR => FDRE: 12 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3026.422 ; gain = 0.000 ; free physical = 34434 ; free virtual = 162530
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3019.961 ; gain = 0.000 ; free physical = 1540 ; free virtual = 22387
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 3026.422 ; gain = 367.438 ; free physical = 33877 ; free virtual = 161979
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3019.961 ; gain = 336.379 ; free physical = 1547 ; free virtual = 22397
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -734,19 +758,20 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 3026.422 ; gain = 367.438 ; free physical = 33876 ; free virtual = 161978
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3019.961 ; gain = 336.379 ; free physical = 1546 ; free virtual = 22397
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/dont_touch.xdc, line 9).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/I_PRMRY_DATAMOVER/\GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER /\GEN_INCLUDE_MM2S_SF.I_RD_SF /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 3026.422 ; gain = 367.438 ; free physical = 33872 ; free virtual = 161974
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 3019.961 ; gain = 336.379 ; free physical = 1544 ; free virtual = 22395
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+ROM "s_case_i_64" will be implemented in logic because its size less than 1024
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -779,7 +804,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 3026.422 ; gain = 367.438 ; free physical = 33677 ; free virtual = 161786
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 3019.961 ; gain = 336.379 ; free physical = 1547 ; free virtual = 22403
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -808,15 +833,15 @@ Detailed RTL Component Info :
 	               23 Bit    Registers := 2     
 	               16 Bit    Registers := 6     
 	               14 Bit    Registers := 2     
-	               10 Bit    Registers := 3     
+	               10 Bit    Registers := 26    
 	                8 Bit    Registers := 15    
 	                7 Bit    Registers := 6     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 10    
-	                3 Bit    Registers := 9     
+	                3 Bit    Registers := 14    
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 197   
+	                1 Bit    Registers := 206   
 +---RAMs : 
 	               9K Bit	(128 X 75 bit)          RAMs := 1     
 +---Muxes : 
@@ -827,19 +852,22 @@ Detailed RTL Component Info :
 	   2 Input   23 Bit        Muxes := 3     
 	   2 Input   16 Bit        Muxes := 4     
 	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 9     
+	   4 Input   10 Bit        Muxes := 4     
 	   2 Input    8 Bit        Muxes := 24    
 	   8 Input    8 Bit        Muxes := 5     
+	   9 Input    8 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 3     
 	   3 Input    4 Bit        Muxes := 1     
 	  11 Input    3 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 7     
 	   2 Input    2 Bit        Muxes := 38    
 	   3 Input    2 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 7     
-	   2 Input    1 Bit        Muxes := 104   
+	   2 Input    1 Bit        Muxes := 125   
 	   3 Input    1 Bit        Muxes := 5     
-	   8 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 11    
 	   4 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -860,17 +888,25 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 75 bits, new ram width 74 bits.
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 3026.422 ; gain = 367.438 ; free physical = 33332 ; free virtual = 161455
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 3019.961 ; gain = 336.379 ; free physical = 1383 ; free virtual = 22258
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-----------------------+-------------+---------------+----------------+
+|Module Name            | RTL Object  | Depth x Width | Implemented As | 
++-----------------------+-------------+---------------+----------------+
+|axi_datamover_mm2s_dre | s_case_i_64 | 64x3          | LUT            | 
+|axi_datamover_mm2s_dre | s_case_i_64 | 64x3          | LUT            | 
++-----------------------+-------------+---------------+----------------+
+
 
 Block RAM: Preliminary Mapping	Report (see note below)
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
@@ -887,7 +923,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 3307.859 ; gain = 648.875 ; free physical = 37080 ; free virtual = 165276
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:19 . Memory (MB): peak = 3336.445 ; gain = 652.863 ; free physical = 2435 ; free virtual = 23361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -895,7 +931,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 3368.906 ; gain = 709.922 ; free physical = 36965 ; free virtual = 165158
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:22 . Memory (MB): peak = 3403.352 ; gain = 719.770 ; free physical = 2313 ; free virtual = 23214
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -915,7 +951,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 36853 ; free virtual = 165046
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:23 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2302 ; free virtual = 23224
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -935,37 +971,37 @@ Finished Final Netlist Cleanup
 INFO: [Synth 8-3295] tying undriven pin I_AXI_DMA_REG_MODULE/strm_valid_int2_inferred:in0 to constant 0
 INFO: [Synth 8-3295] tying undriven pin I_AXI_DMA_REG_MODULE/strm_valid_int_cdc_to_inferred:in0 to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39210 ; free virtual = 167403
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2296 ; free virtual = 23219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39204 ; free virtual = 167396
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2296 ; free virtual = 23219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39122 ; free virtual = 167314
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2296 ; free virtual = 23219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39122 ; free virtual = 167314
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2296 ; free virtual = 23219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39119 ; free virtual = 167312
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2295 ; free virtual = 23218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39119 ; free virtual = 167311
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2295 ; free virtual = 23218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -976,8 +1012,8 @@ Dynamic Shift Register Report:
 |Module Name | RTL Name                 | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
 +------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
 |dsrl        | INFERRED_GEN.data_reg[3] | 59     | 59         | 59     | 0       | 0      | 0      | 0      | 
-|dsrl__1     | INFERRED_GEN.data_reg[3] | 38     | 38         | 38     | 0       | 0      | 0      | 0      | 
-|dsrl__2     | INFERRED_GEN.data_reg[3] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | INFERRED_GEN.data_reg[3] | 42     | 42         | 42     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | INFERRED_GEN.data_reg[3] | 14     | 14         | 14     | 0       | 0      | 0      | 0      | 
 +------------+--------------------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -999,44 +1035,44 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY8   |     6|
 |2     |LUT1     |    14|
-|3     |LUT2     |    73|
-|4     |LUT3     |   171|
-|5     |LUT4     |   141|
-|6     |LUT5     |   104|
-|7     |LUT6     |   102|
-|8     |MUXF7    |     5|
+|3     |LUT2     |   101|
+|4     |LUT3     |   179|
+|5     |LUT4     |   155|
+|6     |LUT5     |   194|
+|7     |LUT6     |   323|
+|8     |MUXF7    |    36|
 |9     |RAMB18E2 |     1|
 |10    |RAMB36E2 |     1|
-|11    |SRL16E   |    62|
+|11    |SRL16E   |    66|
 |12    |FDR      |     8|
-|13    |FDRE     |   769|
+|13    |FDRE     |  1012|
 |14    |FDSE     |    27|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.914 ; gain = 717.930 ; free physical = 39119 ; free virtual = 167311
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3419.367 ; gain = 735.785 ; free physical = 2295 ; free virtual = 23218
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 3376.914 ; gain = 570.148 ; free physical = 39134 ; free virtual = 167326
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 3376.922 ; gain = 717.930 ; free physical = 39130 ; free virtual = 167322
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:19 . Memory (MB): peak = 3419.367 ; gain = 624.988 ; free physical = 2334 ; free virtual = 23257
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:27 . Memory (MB): peak = 3419.375 ; gain = 735.785 ; free physical = 2334 ; free virtual = 23257
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3376.922 ; gain = 0.000 ; free physical = 39221 ; free virtual = 167414
-INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3419.375 ; gain = 0.000 ; free physical = 2420 ; free virtual = 23341
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3424.805 ; gain = 0.000 ; free physical = 39155 ; free virtual = 167347
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3419.375 ; gain = 0.000 ; free physical = 2360 ; free virtual = 23281
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   FDR => FDRE: 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-160 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+178 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 3424.805 ; gain = 990.211 ; free physical = 39384 ; free virtual = 167577
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/Accumulator_MultiDMA_bd_axi_dma_1_2.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:38 . Memory (MB): peak = 3419.375 ; gain = 999.266 ; free physical = 2508 ; free virtual = 23429
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/Accumulator_MultiDMA_bd_axi_dma_1_2.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Accumulator_MultiDMA_bd_axi_dma_1_2, cache-ID = 7f373c078f11a7de
-INFO: [Coretcl 2-1174] Renamed 51 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/Accumulator_MultiDMA_bd_axi_dma_1_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Accumulator_MultiDMA_bd_axi_dma_1_2, cache-ID = 3cad74b749bba6be
+INFO: [Coretcl 2-1174] Renamed 53 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1/Accumulator_MultiDMA_bd_axi_dma_1_2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Accumulator_MultiDMA_bd_axi_dma_1_2_utilization_synth.rpt -pb Accumulator_MultiDMA_bd_axi_dma_1_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 03:56:25 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 15:11:33 2022...

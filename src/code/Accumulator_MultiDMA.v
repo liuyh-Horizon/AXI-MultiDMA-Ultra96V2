@@ -35,6 +35,9 @@ module Accumulator_MultiDMA
     
         output  reg                 accu_finished,
         
+        output  wire    [31 : 0]    sum_debug,
+        output  wire    [7:0]       step_debug,
+        
     // AXI Stream Interface
     
         input   wire                s_axis_0_aresetn,
@@ -226,6 +229,9 @@ reg                 [63 : 0]    accu_length_0;
 reg                 [63 : 0]    accu_length_1;
 reg                 [63 : 0]    accu_length_2;
 
+assign sum_debug = sum[31:0];
+assign step_debug = step;
+
 always @(posedge sys_clk or negedge sys_rst_n)
     begin
         if (!sys_rst_n)
@@ -277,7 +283,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         in_m_axis_tready_2  <= 0;
                                         in_m_axis_tready_3  <= 0;
                                         
-                                        if ((in_m_axis_tvalid_0 && (in_m_axis_tkeep_0==8'b1111_1111)) && (in_m_axis_tvalid_1 && (in_m_axis_tkeep_1==8'b1111_1111)) && (in_m_axis_tvalid_2 && (in_m_axis_tkeep_2==8'b1111_1111)) && (in_m_axis_tvalid_3 && (in_m_axis_tkeep_3==8'b1111_1111)))
+                                        if (in_m_axis_tvalid_0 && in_m_axis_tvalid_1 && in_m_axis_tvalid_2 && in_m_axis_tvalid_3 )
                                             begin
                                                 step                <= 1;
                                                 accu_length_0       <= signed_in_0;
@@ -307,7 +313,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         accu_length_2       <= accu_length_2;
                                         accu_length_3       <= accu_length_3;
                                         
-                                        if ((in_m_axis_tvalid_0 && (in_m_axis_tkeep_0==8'b1111_1111)) || (in_m_axis_tvalid_1 && (in_m_axis_tkeep_1==8'b1111_1111)) || (in_m_axis_tvalid_2 && (in_m_axis_tkeep_2==8'b1111_1111)) || (in_m_axis_tvalid_3 && (in_m_axis_tkeep_3==8'b1111_1111)))
+                                        if (in_m_axis_tvalid_0 && in_m_axis_tvalid_1 && in_m_axis_tvalid_2 && in_m_axis_tvalid_3 )
                                             begin
                                                 step                <= 2;
                                                 
@@ -446,7 +452,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     
                             5   :   begin
                                         rst                 <= 1;
-                                        sum                 <= 0;
+                                        sum                 <= sum;
                                         step                <= 6;
                                         accu_finished       <= 0;
                                         cnt_0               <= 0;
@@ -469,7 +475,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     
                             6   :   begin
                                         rst                 <= 0;
-                                        sum                 <= 0;
+                                        sum                 <= sum;
                                         cnt_0               <= 0;
                                         cnt_1               <= 0;
                                         cnt_2               <= 0;
@@ -498,7 +504,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     
                             7   :   begin
                                         rst                 <= 0;
-                                        sum                 <= 0;
+                                        sum                 <= sum;
                                         step                <= 7;
                                         if (s_axis_tready_0 && s_axis_tready_1 && s_axis_tready_2 && s_axis_tready_3)
                                             begin

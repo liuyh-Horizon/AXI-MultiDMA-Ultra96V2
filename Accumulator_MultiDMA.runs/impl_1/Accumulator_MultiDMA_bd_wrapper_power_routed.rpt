@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Mon Aug 29 03:59:42 2022
-| Host             : Yuhao running 64-bit Ubuntu 22.04.1 LTS
+| Date             : Thu Sep 22 16:13:23 2022
+| Host             : atlas running 64-bit Ubuntu 20.04.1 LTS
 | Command          : report_power -file Accumulator_MultiDMA_bd_wrapper_power_routed.rpt -pb Accumulator_MultiDMA_bd_wrapper_power_summary_routed.pb -rpx Accumulator_MultiDMA_bd_wrapper_power_routed.rpx
 | Design           : Accumulator_MultiDMA_bd_wrapper
 | Device           : xczu3eg-sbva484-1-i
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.159        |
+| Total On-Chip Power (W)  | 2.163        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.843        |
+| Dynamic (W)              | 1.847        |
 | Device Static (W)        | 0.316        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 94.1         |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.028 |        3 |       --- |             --- |
-| CLB Logic                |     0.038 |    24414 |       --- |             --- |
+| Clocks                   |     0.031 |        3 |       --- |             --- |
+| CLB Logic                |     0.040 |    28086 |       --- |             --- |
 |   LUT as Distributed RAM |     0.027 |      834 |     28800 |            2.90 |
-|   LUT as Logic           |     0.010 |     7316 |     70560 |           10.37 |
-|   Register               |     0.001 |    11639 |    141120 |            8.25 |
-|   LUT as Shift Register  |    <0.001 |      297 |     28800 |            1.03 |
+|   LUT as Logic           |     0.011 |     9041 |     70560 |           12.81 |
+|   Register               |     0.001 |    13196 |    141120 |            9.35 |
+|   LUT as Shift Register  |    <0.001 |      318 |     28800 |            1.10 |
 |   CARRY8                 |    <0.001 |      105 |      8820 |            1.19 |
-|   Others                 |     0.000 |      831 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |       22 |     70560 |            0.03 |
+|   Others                 |     0.000 |      860 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      166 |     70560 |            0.24 |
 |   BUFG                   |     0.000 |        1 |        24 |            4.17 |
-| Signals                  |     0.015 |    17014 |       --- |             --- |
-| Block RAM                |     0.007 |       20 |       216 |            9.26 |
+| Signals                  |     0.016 |    19641 |       --- |             --- |
+| Block RAM                |     0.005 |       18 |       216 |            8.33 |
 | PS8                      |     1.755 |        1 |       --- |             --- |
 | Static Power             |     0.316 |          |           |                 |
 |   PS Static              |     0.100 |          |           |                 |
 |   PL Static              |     0.216 |          |           |                 |
-| Total                    |     2.159 |          |           |                 |
+| Total                    |     2.163 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     0.158 |       0.104 |      0.055 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     0.163 |       0.108 |      0.055 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.027 |       0.000 |      0.027 |       NA    | Unspecified | NA         |
 | Vccbram         |       0.850 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.048 |       0.000 |      0.048 |       NA    | Unspecified | NA         |
@@ -162,22 +162,23 @@ Table of Contents
 +---------------------------------+-----------+
 | Name                            | Power (W) |
 +---------------------------------+-----------+
-| Accumulator_MultiDMA_bd_wrapper |     1.843 |
-|   Accumulator_MultiDMA_bd_i     |     1.843 |
-|     Accumulator_MultiDMA_0      |     0.008 |
-|       inst                      |     0.008 |
-|     axi_dma_0                   |     0.007 |
-|       U0                        |     0.007 |
-|     axi_dma_1                   |     0.002 |
-|       U0                        |     0.002 |
-|     axi_dma_2                   |     0.002 |
-|       U0                        |     0.002 |
-|     axi_dma_3                   |     0.002 |
-|       U0                        |     0.002 |
+| Accumulator_MultiDMA_bd_wrapper |     1.847 |
+|   Accumulator_MultiDMA_bd_i     |     1.847 |
+|     Accumulator_MultiDMA_0      |     0.007 |
+|       inst                      |     0.007 |
+|     axi_dma_0                   |     0.008 |
+|       U0                        |     0.008 |
+|     axi_dma_1                   |     0.003 |
+|       U0                        |     0.003 |
+|     axi_dma_2                   |     0.003 |
+|       U0                        |     0.003 |
+|     axi_dma_3                   |     0.003 |
+|       U0                        |     0.003 |
 |     axi_smc                     |     0.059 |
 |       inst                      |     0.059 |
-|     ps8_0_axi_periph            |     0.006 |
-|       s00_couplers              |     0.005 |
+|     ps8_0_axi_periph            |     0.007 |
+|       s00_couplers              |     0.006 |
+|       xbar                      |     0.001 |
 |     zynq_ultra_ps_e_0           |     1.756 |
 |       inst                      |     1.756 |
 +---------------------------------+-----------+

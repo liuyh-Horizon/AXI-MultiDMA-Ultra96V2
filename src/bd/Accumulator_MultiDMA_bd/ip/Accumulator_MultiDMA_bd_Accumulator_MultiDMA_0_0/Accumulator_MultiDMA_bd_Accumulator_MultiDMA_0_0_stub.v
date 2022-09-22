@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Mon Aug 29 03:56:16 2022
-// Host        : Yuhao running 64-bit Ubuntu 22.04.1 LTS
+// Date        : Thu Sep 22 16:07:15 2022
+// Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_stub.v
+//               /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_stub.v
 // Design      : Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-i
@@ -15,18 +15,20 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "Accumulator_MultiDMA,Vivado 2020.2" *)
 module Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0(sys_clk, sys_rst_n, accu_en, accu_finished, 
-  s_axis_0_aresetn, s_axis_0_aclk, s_axis_tvalid_0, s_axis_tready_0, s_axis_tdata_0, 
-  s_axis_tkeep_0, s_axis_tlast_0, s_axis_1_aresetn, s_axis_1_aclk, s_axis_tvalid_1, 
-  s_axis_tready_1, s_axis_tdata_1, s_axis_tkeep_1, s_axis_tlast_1, s_axis_2_aresetn, 
-  s_axis_2_aclk, s_axis_tvalid_2, s_axis_tready_2, s_axis_tdata_2, s_axis_tkeep_2, 
-  s_axis_tlast_2, s_axis_3_aresetn, s_axis_3_aclk, s_axis_tvalid_3, s_axis_tready_3, 
-  s_axis_tdata_3, s_axis_tkeep_3, s_axis_tlast_3, m_axis_aresetn, m_axis_aclk, m_axis_tvalid, 
-  m_axis_tready, m_axis_tdata, m_axis_tkeep, m_axis_tlast)
-/* synthesis syn_black_box black_box_pad_pin="sys_clk,sys_rst_n,accu_en,accu_finished,s_axis_0_aresetn,s_axis_0_aclk,s_axis_tvalid_0,s_axis_tready_0,s_axis_tdata_0[63:0],s_axis_tkeep_0[7:0],s_axis_tlast_0,s_axis_1_aresetn,s_axis_1_aclk,s_axis_tvalid_1,s_axis_tready_1,s_axis_tdata_1[63:0],s_axis_tkeep_1[7:0],s_axis_tlast_1,s_axis_2_aresetn,s_axis_2_aclk,s_axis_tvalid_2,s_axis_tready_2,s_axis_tdata_2[63:0],s_axis_tkeep_2[7:0],s_axis_tlast_2,s_axis_3_aresetn,s_axis_3_aclk,s_axis_tvalid_3,s_axis_tready_3,s_axis_tdata_3[63:0],s_axis_tkeep_3[7:0],s_axis_tlast_3,m_axis_aresetn,m_axis_aclk,m_axis_tvalid,m_axis_tready,m_axis_tdata[63:0],m_axis_tkeep[7:0],m_axis_tlast" */;
+  sum_debug, step_debug, s_axis_0_aresetn, s_axis_0_aclk, s_axis_tvalid_0, s_axis_tready_0, 
+  s_axis_tdata_0, s_axis_tkeep_0, s_axis_tlast_0, s_axis_1_aresetn, s_axis_1_aclk, 
+  s_axis_tvalid_1, s_axis_tready_1, s_axis_tdata_1, s_axis_tkeep_1, s_axis_tlast_1, 
+  s_axis_2_aresetn, s_axis_2_aclk, s_axis_tvalid_2, s_axis_tready_2, s_axis_tdata_2, 
+  s_axis_tkeep_2, s_axis_tlast_2, s_axis_3_aresetn, s_axis_3_aclk, s_axis_tvalid_3, 
+  s_axis_tready_3, s_axis_tdata_3, s_axis_tkeep_3, s_axis_tlast_3, m_axis_aresetn, 
+  m_axis_aclk, m_axis_tvalid, m_axis_tready, m_axis_tdata, m_axis_tkeep, m_axis_tlast)
+/* synthesis syn_black_box black_box_pad_pin="sys_clk,sys_rst_n,accu_en,accu_finished,sum_debug[31:0],step_debug[7:0],s_axis_0_aresetn,s_axis_0_aclk,s_axis_tvalid_0,s_axis_tready_0,s_axis_tdata_0[63:0],s_axis_tkeep_0[7:0],s_axis_tlast_0,s_axis_1_aresetn,s_axis_1_aclk,s_axis_tvalid_1,s_axis_tready_1,s_axis_tdata_1[63:0],s_axis_tkeep_1[7:0],s_axis_tlast_1,s_axis_2_aresetn,s_axis_2_aclk,s_axis_tvalid_2,s_axis_tready_2,s_axis_tdata_2[63:0],s_axis_tkeep_2[7:0],s_axis_tlast_2,s_axis_3_aresetn,s_axis_3_aclk,s_axis_tvalid_3,s_axis_tready_3,s_axis_tdata_3[63:0],s_axis_tkeep_3[7:0],s_axis_tlast_3,m_axis_aresetn,m_axis_aclk,m_axis_tvalid,m_axis_tready,m_axis_tdata[63:0],m_axis_tkeep[7:0],m_axis_tlast" */;
   input sys_clk;
   input sys_rst_n;
   input accu_en;
   output accu_finished;
+  output [31:0]sum_debug;
+  output [7:0]step_debug;
   input s_axis_0_aresetn;
   input s_axis_0_aclk;
   input s_axis_tvalid_0;

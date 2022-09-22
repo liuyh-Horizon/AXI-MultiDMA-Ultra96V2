@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.xpr">
+<Project Version="7" Minor="54" Path="/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1548111bc05b4dc9bbb6f744d2b25cfa"/>
@@ -46,7 +46,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="ultra96v2"/>
-    <Option Name="WTXSimLaunchSim" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="17"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -95,29 +95,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_1_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_1_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.xci">
           <Proxy FileSetName="Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_auto_ds_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_smc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0.xci">
           <Proxy FileSetName="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0"/>
@@ -128,11 +107,29 @@
         <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1.xci">
           <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_1_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_1_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0.xci">
           <Proxy FileSetName="Accumulator_MultiDMA_bd_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0.xci">
-          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_dma_0_0"/>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_gpio_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Accumulator_MultiDMA_bd.bd" FileRelPathName="ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3.xci">
+          <Proxy FileSetName="Accumulator_MultiDMA_bd_axi_gpio_0_3"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PPRDIR/src/bd/Accumulator_MultiDMA_bd/hdl/Accumulator_MultiDMA_bd_wrapper.v">
@@ -154,6 +151,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <File Path="$PPRDIR/src/sim/Accumulator_MultiDMA_tb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -187,12 +185,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="Accumulator_MultiDMA_bd_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_auto_pc_0" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_auto_pc_0">
-      <Config>
-        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_auto_pc_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="Accumulator_MultiDMA_bd_axi_dma_1_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_axi_dma_1_2" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_axi_dma_1_2">
       <Config>
         <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_axi_dma_1_2"/>
@@ -208,24 +200,6 @@
     <FileSet Name="Accumulator_MultiDMA_bd_axi_dma_1_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_axi_dma_1_1" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_axi_dma_1_1">
       <Config>
         <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_axi_dma_1_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0">
-      <Config>
-        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Accumulator_MultiDMA_bd_auto_ds_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_auto_ds_0" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_auto_ds_0">
-      <Config>
-        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_auto_ds_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Accumulator_MultiDMA_bd_axi_smc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_axi_smc_0" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_axi_smc_0">
-      <Config>
-        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_axi_smc_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -265,6 +239,24 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0">
+      <Config>
+        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Accumulator_MultiDMA_bd_axi_gpio_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_axi_gpio_0_2" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_axi_gpio_0_2">
+      <Config>
+        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_axi_gpio_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Accumulator_MultiDMA_bd_axi_gpio_0_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Accumulator_MultiDMA_bd_axi_gpio_0_3" RelGenDir="$PGENDIR/Accumulator_MultiDMA_bd_axi_gpio_0_3">
+      <Config>
+        <Option Name="TopModule" Val="Accumulator_MultiDMA_bd_axi_gpio_0_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -291,11 +283,9 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu3eg-sbva484-1-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu3eg-sbva484-1-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -303,11 +293,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_auto_pc_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_auto_pc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_auto_pc_0_synth_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_1_2" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -315,11 +303,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_1_2" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_1_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -327,11 +313,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_1_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_1_1" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -339,11 +323,59 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_1_1" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1">
+    <Run Id="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_gpio_0_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_gpio_0_1" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_xbar_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_xbar_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_0_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -363,7 +395,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_auto_ds_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_auto_ds_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_auto_ds_0_synth_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_2_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_gpio_0_2" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_gpio_0_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_2_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -375,7 +407,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_smc_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_smc_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_smc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_smc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_smc_0_synth_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_3_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_gpio_0_3" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_gpio_0_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_3_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -387,83 +419,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_gpio_0_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_gpio_0_1" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_xbar_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_xbar_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="Accumulator_MultiDMA_bd_axi_dma_0_0" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -479,11 +437,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_auto_pc_0_impl_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_2_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -498,11 +454,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_2_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_1_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_2_impl_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -517,11 +471,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_0_impl_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_1_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_1_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -536,11 +488,94 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_1_1_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_1_1_impl_1">
+    <Run Id="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_xbar_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="Accumulator_MultiDMA_bd_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.srcs/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -574,7 +609,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_auto_ds_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_auto_ds_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_auto_ds_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_auto_ds_0_impl_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_2_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_gpio_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_2_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -593,121 +628,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_smc_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_smc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_smc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_smc_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_gpio_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_1_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_xbar_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="Accumulator_MultiDMA_bd_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_dma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_dma_0_0_impl_1">
+    <Run Id="Accumulator_MultiDMA_bd_axi_gpio_0_3_impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sbva484-1-i" ConstrsSet="Accumulator_MultiDMA_bd_axi_gpio_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Accumulator_MultiDMA_bd_axi_gpio_0_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Accumulator_MultiDMA_bd_axi_gpio_0_3_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

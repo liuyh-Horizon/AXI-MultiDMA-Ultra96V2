@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Mon Aug 29 03:56:32 2022
+// Date        : Mon Aug 29 03:56:31 2022
 // Host        : Yuhao running 64-bit Ubuntu 22.04.1 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top Accumulator_MultiDMA_bd_auto_pc_0 -prefix
+//               Accumulator_MultiDMA_bd_auto_pc_0_ Accumulator_MultiDMA_bd_auto_pc_0_stub.v
 // Design      : Accumulator_MultiDMA_bd_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-i

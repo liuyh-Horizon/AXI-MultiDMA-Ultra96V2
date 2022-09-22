@@ -1,12 +1,12 @@
-04:01:12 INFO  : Launching XSCT server: xsct -n  -interactive /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/app/temp_xsdb_launch_script.tcl
-04:01:12 INFO  : Registering command handlers for Vitis TCF services
-04:01:14 INFO  : Platform repository initialization has completed.
-04:01:14 INFO  : XSCT server has started successfully.
-04:01:14 INFO  : Successfully done setting XSCT server connection channel  
-04:01:14 INFO  : plnx-install-location is set to ''
-04:01:14 INFO  : Successfully done query RDI_DATADIR 
-04:01:14 INFO  : Successfully done setting workspace for the tool. 
-04:02:03 INFO  : Result from executing command 'getProjects': AXI_MultiDMA_Accumulator_Platform
-04:02:03 INFO  : Result from executing command 'getPlatforms': 
-04:03:00 INFO  : Result from executing command 'getProjects': AXI_MultiDMA_Accumulator_Platform
-04:03:00 INFO  : Result from executing command 'getPlatforms': AXI_MultiDMA_Accumulator_Platform|/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/app/AXI_MultiDMA_Accumulator_Platform/export/AXI_MultiDMA_Accumulator_Platform/AXI_MultiDMA_Accumulator_Platform.xpfm
+16:20:22 INFO  : Launching XSCT server: xsct -n  -interactive /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/temp_xsdb_launch_script.tcl
+16:20:22 INFO  : Registering command handlers for Vitis TCF services
+16:20:26 INFO  : Platform repository initialization has completed.
+16:20:26 INFO  : XSCT server has started successfully.
+16:20:27 INFO  : plnx-install-location is set to ''
+16:20:27 INFO  : Successfully done setting XSCT server connection channel  
+16:20:27 INFO  : Successfully done query RDI_DATADIR 
+16:20:27 INFO  : Successfully done setting workspace for the tool. 
+16:21:47 INFO  : Result from executing command 'getProjects': AXI_MultiDMA_Accumulator_Platform
+16:21:47 INFO  : Result from executing command 'getPlatforms': 
+16:28:00 INFO  : Result from executing command 'getProjects': AXI_MultiDMA_Accumulator_Platform
+16:28:00 INFO  : Result from executing command 'getPlatforms': AXI_MultiDMA_Accumulator_Platform|/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/export/AXI_MultiDMA_Accumulator_Platform/AXI_MultiDMA_Accumulator_Platform.xpfm
