@@ -218,19 +218,473 @@ assign signed_in_1 = in_m_axis_tdata_1;
 assign signed_in_2 = in_m_axis_tdata_2;
 assign signed_in_3 = in_m_axis_tdata_3;
 
+reg     signed      [63 : 0]    sum_0;
+reg     signed      [63 : 0]    sum_1;
+reg     signed      [63 : 0]    sum_2;
+reg     signed      [63 : 0]    sum_3;
 reg     signed      [63 : 0]    sum;
 reg                 [63 : 0]    cnt_0;
 reg                 [63 : 0]    cnt_1;
 reg                 [63 : 0]    cnt_2;
 reg                 [63 : 0]    cnt_3;
+reg                 [7 : 0]     step_0;
+reg                 [7 : 0]     step_1;
+reg                 [7 : 0]     step_2;
+reg                 [7 : 0]     step_3;
 reg                 [7 : 0]     step;
 reg                 [63 : 0]    accu_length_3;
 reg                 [63 : 0]    accu_length_0;
 reg                 [63 : 0]    accu_length_1;
 reg                 [63 : 0]    accu_length_2;
 
+reg                             accu_finished_0;
+reg                             accu_finished_1;
+reg                             accu_finished_2;
+reg                             accu_finished_3;
+
 assign sum_debug = sum[31:0];
 assign step_debug = step;
+
+always @(posedge sys_clk or negedge sys_rst_n)
+    begin
+        if (!sys_rst_n)
+            begin
+                sum_0               <= 0;
+                cnt_0               <= 0;
+                step_0              <= 0;
+                in_m_axis_tready_0  <= 0;
+                accu_length_0       <= 0;
+                accu_finished_0     <= 0;
+            end
+            else begin
+                if (accu_en)
+                    begin
+                        case (step_0)
+                        
+                            0   :   begin
+                                        sum_0               <= sum_0;
+                                        cnt_0               <= 0;
+                                        in_m_axis_tready_0  <= 0;
+                                        accu_finished_0     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_0)
+                                            begin
+                                                step_0              <= 1;
+                                                accu_length_0       <= signed_in_0;
+                                            end
+                                            else begin
+                                                step_0              <= 0;
+                                                accu_length_0       <= 0;
+                                            end
+                                    end
+                        
+                            1   :   begin
+                                        sum_0               <= sum_0;
+                                        accu_length_0       <= accu_length_0;
+                                        accu_finished_0     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_0)
+                                            begin
+                                                step_0              <= 2;
+                                                
+                                                cnt_0               <= cnt_0 + 1;
+                                                in_m_axis_tready_0  <= 1;
+                                            end
+                                            else begin
+                                                step_0              <= 1;
+                                               
+                                                cnt_0               <= cnt_0;
+                                                in_m_axis_tready_0  <= 0;
+                                            end
+                                    end
+                        
+                            2   :   begin
+                                        sum_0               <= sum_0;
+                                        cnt_0               <= cnt_0;
+                                        step_0              <= 3;
+                                        in_m_axis_tready_0  <= 0;
+                                        accu_length_0       <= accu_length_0;
+                                        accu_finished_0     <= 0;
+                                    end
+                        
+                            3   :   begin
+                                        sum_0               <= sum_0 + signed_in_0;
+                                        cnt_0               <= cnt_0;
+                                        in_m_axis_tready_0  <= 0;
+                                        accu_length_0       <= accu_length_0;
+                                        
+                                        if (cnt_0==accu_length_0)
+                                            begin
+                                                step_0              <= 4;
+                                                accu_finished_0     <= 1;
+                                            end
+                                            else begin
+                                                step_0              <= 1;
+                                                accu_finished_0     <= 0;
+                                            end 
+                                    end
+                        
+                            4   :   begin
+                                        sum_0               <= sum_0;
+                                        cnt_0               <= 0;
+                                        in_m_axis_tready_0  <= 0;
+                                        accu_length_0       <= 0;
+                                        step_0              <= 4;
+                                        accu_finished_0     <= 1;
+                                    end
+                                    
+                            default :   begin
+                                            sum_0               <= 0;
+                                            cnt_0               <= 0;
+                                            in_m_axis_tready_0  <= 0;
+                                            accu_length_0       <= 0;
+                                            step_0              <= 0;
+                                            accu_finished_0     <= 0;
+                                        end
+                                        
+                        endcase
+                    end
+                    else begin
+                        sum_0               <= 0;
+                        cnt_0               <= 0;
+                        in_m_axis_tready_0  <= 0;
+                        accu_length_0       <= 0;
+                        step_0              <= 0;
+                        accu_finished_0     <= 0;
+                    end
+            end 
+    end 
+    
+always @(posedge sys_clk or negedge sys_rst_n)
+    begin
+        if (!sys_rst_n)
+            begin
+                sum_1               <= 0;
+                cnt_1               <= 0;
+                step_1              <= 0;
+                in_m_axis_tready_1  <= 0;
+                accu_length_1       <= 0;
+                accu_finished_1     <= 0;
+            end
+            else begin
+                if (accu_en)
+                    begin
+                        case (step_1)
+                        
+                            0   :   begin
+                                        sum_1               <= sum_1;
+                                        cnt_1               <= 0;
+                                        in_m_axis_tready_1  <= 0;
+                                        accu_finished_1     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_1)
+                                            begin
+                                                step_1              <= 1;
+                                                accu_length_1       <= signed_in_1;
+                                            end
+                                            else begin
+                                                step_1              <= 0;
+                                                accu_length_1       <= 0;
+                                            end
+                                    end
+                        
+                            1   :   begin
+                                        sum_1               <= sum_1;
+                                        accu_length_1       <= accu_length_1;
+                                        accu_finished_1     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_1)
+                                            begin
+                                                step_1              <= 2;
+                                                
+                                                cnt_1               <= cnt_1 + 1;
+                                                in_m_axis_tready_1  <= 1;
+                                            end
+                                            else begin
+                                                step_1              <= 1;
+                                               
+                                                cnt_1               <= cnt_1;
+                                                in_m_axis_tready_1  <= 1;
+                                            end
+                                    end
+                        
+                            2   :   begin
+                                        sum_1               <= sum_1;
+                                        cnt_1               <= cnt_1;
+                                        step_1              <= 3;
+                                        in_m_axis_tready_1  <= 0;
+                                        accu_length_1       <= accu_length_1;
+                                        accu_finished_1     <= 0;
+                                    end
+                        
+                            3   :   begin
+                                        sum_1               <= sum_1 + signed_in_1;
+                                        cnt_1               <= cnt_1;
+                                        in_m_axis_tready_1  <= 0;
+                                        accu_length_1       <= accu_length_1;
+                                        
+                                        if (cnt_1==accu_length_1)
+                                            begin
+                                                step_1              <= 4;
+                                                accu_finished_1     <= 1;
+                                            end
+                                            else begin
+                                                step_1              <= 1;
+                                                accu_finished_1     <= 0;
+                                            end 
+                                    end
+                        
+                            4   :   begin
+                                        sum_1               <= sum_1;
+                                        cnt_1               <= 0;
+                                        in_m_axis_tready_1  <= 0;
+                                        accu_length_1       <= 0;
+                                        step_1              <= 4;
+                                        accu_finished_1     <= 1;
+                                    end
+                                    
+                            default :   begin
+                                            sum_1               <= 0;
+                                            cnt_1               <= 0;
+                                            in_m_axis_tready_1  <= 0;
+                                            accu_length_1       <= 0;
+                                            step_1              <= 0;
+                                            accu_finished_1     <= 0;
+                                        end
+                                        
+                        endcase
+                    end
+                    else begin
+                        sum_1               <= 0;
+                        cnt_1               <= 0;
+                        in_m_axis_tready_1  <= 0;
+                        accu_length_1       <= 0;
+                        step_1              <= 0;
+                        accu_finished_1     <= 0;
+                    end
+            end 
+    end 
+
+    
+always @(posedge sys_clk or negedge sys_rst_n)
+    begin
+        if (!sys_rst_n)
+            begin
+                sum_2               <= 0;
+                cnt_2               <= 0;
+                step_2              <= 0;
+                in_m_axis_tready_2  <= 0;
+                accu_length_2       <= 0;
+                accu_finished_2     <= 0;
+            end
+            else begin
+                if (accu_en)
+                    begin
+                        case (step_2)
+                        
+                            0   :   begin
+                                        sum_2               <= sum_2;
+                                        cnt_2               <= 0;
+                                        in_m_axis_tready_2  <= 0;
+                                        accu_finished_2     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_2)
+                                            begin
+                                                step_2             <= 1;
+                                                accu_length_2       <= signed_in_2;
+                                            end
+                                            else begin
+                                                step_2              <= 0;
+                                                accu_length_2       <= 0;
+                                            end
+                                    end
+                        
+                            1   :   begin
+                                        sum_2               <= sum_2;
+                                        accu_length_2       <= accu_length_2;
+                                        accu_finished_2     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_2)
+                                            begin
+                                                step_2              <= 2;
+                                                
+                                                cnt_2               <= cnt_2 + 1;
+                                                in_m_axis_tready_2  <= 1;
+                                            end
+                                            else begin
+                                                step_2              <= 1;
+                                               
+                                                cnt_2               <= cnt_2;
+                                                in_m_axis_tready_2  <= 1;
+                                            end
+                                    end
+                        
+                            2   :   begin
+                                        sum_2               <= sum_2;
+                                        cnt_2               <= cnt_2;
+                                        step_2              <= 3;
+                                        in_m_axis_tready_2  <= 0;
+                                        accu_length_2       <= accu_length_2;
+                                        accu_finished_2     <= 0;
+                                    end
+                        
+                            3   :   begin
+                                        sum_2               <= sum_2 + signed_in_2;
+                                        cnt_2               <= cnt_2;
+                                        in_m_axis_tready_2  <= 0;
+                                        accu_length_2       <= accu_length_2;
+                                        
+                                        if (cnt_2==accu_length_2)
+                                            begin
+                                                step_2              <= 4;
+                                                accu_finished_2     <= 1;
+                                            end
+                                            else begin
+                                                step_2              <= 1;
+                                                accu_finished_2     <= 0;
+                                            end 
+                                    end
+                        
+                            4   :   begin
+                                        sum_2               <= sum_2;
+                                        cnt_2               <= 0;
+                                        in_m_axis_tready_2  <= 0;
+                                        accu_length_2       <= 0;
+                                        step_2              <= 4;
+                                        accu_finished_2     <= 1;
+                                    end
+                                    
+                            default :   begin
+                                            sum_2               <= 0;
+                                            cnt_2               <= 0;
+                                            in_m_axis_tready_2  <= 0;
+                                            accu_length_2       <= 0;
+                                            step_2              <= 0;
+                                            accu_finished_2     <= 0;
+                                        end
+                                        
+                        endcase
+                    end
+                    else begin
+                        sum_2               <= 0;
+                        cnt_2               <= 0;
+                        in_m_axis_tready_2  <= 0;
+                        accu_length_2       <= 0;
+                        step_2              <= 0;
+                        accu_finished_2     <= 0;
+                    end
+            end 
+    end 
+    
+always @(posedge sys_clk or negedge sys_rst_n)
+    begin
+        if (!sys_rst_n)
+            begin
+                sum_3               <= 0;
+                cnt_3               <= 0;
+                step_3              <= 0;
+                in_m_axis_tready_3  <= 0;
+                accu_length_3       <= 0;
+                accu_finished_3     <= 0;
+            end
+            else begin
+                if (accu_en)
+                    begin
+                        case (step_3)
+                        
+                            0   :   begin
+                                        sum_3               <= sum_3;
+                                        cnt_3               <= 0;
+                                        in_m_axis_tready_3  <= 0;
+                                        accu_finished_3     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_3)
+                                            begin
+                                                step_3              <= 1;
+                                                accu_length_3       <= signed_in_3;
+                                            end
+                                            else begin
+                                                step_3              <= 0;
+                                                accu_length_3       <= 0;
+                                            end
+                                    end
+                        
+                            1   :   begin
+                                        sum_3               <= sum_3;
+                                        accu_length_3       <= accu_length_3;
+                                        accu_finished_3     <= 0;
+                                        
+                                        if (in_m_axis_tvalid_3)
+                                            begin
+                                                step_3              <= 2;
+                                                
+                                                cnt_3               <= cnt_3 + 1;
+                                                in_m_axis_tready_3  <= 1;
+                                            end
+                                            else begin
+                                                step_3              <= 1;
+                                               
+                                                cnt_3               <= cnt_3;
+                                                in_m_axis_tready_3  <= 1;
+                                            end
+                                    end
+                        
+                            2   :   begin
+                                        sum_3               <= sum_3;
+                                        cnt_3               <= cnt_3;
+                                        step_3              <= 3;
+                                        in_m_axis_tready_3  <= 0;
+                                        accu_length_3       <= accu_length_3;
+                                        accu_finished_3     <= 0;
+                                    end
+                        
+                            3   :   begin
+                                        sum_3               <= sum_3 + signed_in_3;
+                                        cnt_3               <= cnt_3;
+                                        in_m_axis_tready_3  <= 0;
+                                        accu_length_3       <= accu_length_3;
+                                        
+                                        if (cnt_3==accu_length_3)
+                                            begin
+                                                step_3              <= 4;
+                                                accu_finished_3     <= 1;
+                                            end
+                                            else begin
+                                                step_3              <= 1;
+                                                accu_finished_3     <= 0;
+                                            end 
+                                    end
+                        
+                            4   :   begin
+                                        sum_3               <= sum_3;
+                                        cnt_3               <= 0;
+                                        in_m_axis_tready_3  <= 0;
+                                        accu_length_3       <= 0;
+                                        step_3              <= 4;
+                                        accu_finished_3     <= 1;
+                                    end
+                                    
+                            default :   begin
+                                            sum_3               <= 0;
+                                            cnt_3               <= 0;
+                                            in_m_axis_tready_3  <= 0;
+                                            accu_length_3       <= 0;
+                                            step_3              <= 0;
+                                            accu_finished_3     <= 0;
+                                        end
+                                        
+                        endcase
+                    end
+                    else begin
+                        sum_3               <= 0;
+                        cnt_3               <= 0;
+                        in_m_axis_tready_3  <= 0;
+                        accu_length_3       <= 0;
+                        step_3              <= 0;
+                        accu_finished_3     <= 0;
+                    end
+            end 
+    end 
 
 always @(posedge sys_clk or negedge sys_rst_n)
     begin

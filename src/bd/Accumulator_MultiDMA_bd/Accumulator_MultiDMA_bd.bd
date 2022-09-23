@@ -6,8 +6,7 @@
       "name": "Accumulator_MultiDMA_bd",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2020.2",
-      "validated": "true"
+      "tool_version": "2020.2"
     },
     "design_tree": {
       "zynq_ultra_ps_e_0": "",
@@ -34,9 +33,9 @@
         "m07_couplers": {}
       },
       "axi_smc": "",
-      "Accumulator_MultiDMA_0": "",
       "axi_gpio_2": "",
-      "axi_gpio_3": ""
+      "axi_gpio_3": "",
+      "Accumulator_MultiDMA_0": ""
     },
     "components": {
       "zynq_ultra_ps_e_0": {
@@ -2560,6 +2559,12 @@
           }
         },
         "interface_nets": {
+          "xbar_to_m06_couplers": {
+            "interface_ports": [
+              "xbar/M06_AXI",
+              "m06_couplers/S_AXI"
+            ]
+          },
           "ps8_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
               "S00_AXI",
@@ -2654,12 +2659,6 @@
             "interface_ports": [
               "M06_AXI",
               "m06_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m06_couplers": {
-            "interface_ports": [
-              "xbar/M06_AXI",
-              "m06_couplers/S_AXI"
             ]
           },
           "m07_couplers_to_ps8_0_axi_periph": {
@@ -2864,6 +2863,34 @@
           }
         }
       },
+      "axi_gpio_2": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "Accumulator_MultiDMA_bd_axi_gpio_0_2",
+        "xci_path": "ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2.xci",
+        "inst_hier_path": "axi_gpio_2",
+        "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "axi_gpio_3": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "Accumulator_MultiDMA_bd_axi_gpio_0_3",
+        "xci_path": "ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3.xci",
+        "inst_hier_path": "axi_gpio_3",
+        "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
       "Accumulator_MultiDMA_0": {
         "vlnv": "xilinx.com:module_ref:Accumulator_MultiDMA:1.0",
         "xci_name": "Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0",
@@ -2910,14 +2937,6 @@
               "HAS_TLAST": {
                 "value": "1",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -2982,14 +3001,6 @@
               "HAS_TLAST": {
                 "value": "1",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -3054,14 +3065,6 @@
               "HAS_TLAST": {
                 "value": "1",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -3126,14 +3129,6 @@
               "HAS_TLAST": {
                 "value": "1",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -3198,14 +3193,6 @@
               "HAS_TLAST": {
                 "value": "1",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -3244,14 +3231,6 @@
               "ASSOCIATED_RESET": {
                 "value": "sys_rst_n",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             }
           },
@@ -3302,14 +3281,6 @@
               "ASSOCIATED_RESET": {
                 "value": "s_axis_0_aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             }
           },
@@ -3334,14 +3305,6 @@
               "ASSOCIATED_RESET": {
                 "value": "s_axis_1_aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             }
           },
@@ -3366,14 +3329,6 @@
               "ASSOCIATED_RESET": {
                 "value": "s_axis_2_aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             }
           },
@@ -3398,14 +3353,6 @@
               "ASSOCIATED_RESET": {
                 "value": "s_axis_3_aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             }
           },
@@ -3430,49 +3377,19 @@
               "ASSOCIATED_RESET": {
                 "value": "m_axis_aresetn",
                 "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_pl_clk0",
-                "value_src": "default_prop"
               }
             }
-          }
-        }
-      },
-      "axi_gpio_2": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "Accumulator_MultiDMA_bd_axi_gpio_0_2",
-        "xci_path": "ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2.xci",
-        "inst_hier_path": "axi_gpio_2",
-        "parameters": {
-          "C_ALL_INPUTS": {
-            "value": "1"
-          },
-          "C_GPIO_WIDTH": {
-            "value": "32"
-          }
-        }
-      },
-      "axi_gpio_3": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "Accumulator_MultiDMA_bd_axi_gpio_0_3",
-        "xci_path": "ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3.xci",
-        "inst_hier_path": "axi_gpio_3",
-        "parameters": {
-          "C_ALL_INPUTS": {
-            "value": "1"
-          },
-          "C_GPIO_WIDTH": {
-            "value": "8"
           }
         }
       }
     },
     "interface_nets": {
+      "axi_dma_1_M_AXIS_MM2S": {
+        "interface_ports": [
+          "axi_dma_1/M_AXIS_MM2S",
+          "Accumulator_MultiDMA_0/s_axis_1"
+        ]
+      },
       "axi_dma_3_M_AXI_MM2S": {
         "interface_ports": [
           "axi_dma_3/M_AXI_MM2S",
@@ -3569,12 +3486,6 @@
           "Accumulator_MultiDMA_0/s_axis_2"
         ]
       },
-      "axi_dma_1_M_AXIS_MM2S": {
-        "interface_ports": [
-          "axi_dma_1/M_AXIS_MM2S",
-          "Accumulator_MultiDMA_0/s_axis_1"
-        ]
-      },
       "ps8_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps8_0_axi_periph/M00_AXI",
@@ -3633,16 +3544,16 @@
           "axi_dma_1/m_axi_mm2s_aclk",
           "axi_dma_2/m_axi_mm2s_aclk",
           "axi_dma_3/m_axi_mm2s_aclk",
+          "axi_gpio_2/s_axi_aclk",
+          "ps8_0_axi_periph/M06_ACLK",
+          "axi_gpio_3/s_axi_aclk",
+          "ps8_0_axi_periph/M07_ACLK",
           "Accumulator_MultiDMA_0/sys_clk",
           "Accumulator_MultiDMA_0/s_axis_0_aclk",
           "Accumulator_MultiDMA_0/s_axis_1_aclk",
           "Accumulator_MultiDMA_0/s_axis_2_aclk",
           "Accumulator_MultiDMA_0/s_axis_3_aclk",
-          "Accumulator_MultiDMA_0/m_axis_aclk",
-          "axi_gpio_2/s_axi_aclk",
-          "ps8_0_axi_periph/M06_ACLK",
-          "axi_gpio_3/s_axi_aclk",
-          "ps8_0_axi_periph/M07_ACLK"
+          "Accumulator_MultiDMA_0/m_axis_aclk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {
@@ -3669,16 +3580,16 @@
           "axi_gpio_1/s_axi_aresetn",
           "ps8_0_axi_periph/M05_ARESETN",
           "axi_smc/aresetn",
+          "axi_gpio_2/s_axi_aresetn",
+          "ps8_0_axi_periph/M06_ARESETN",
+          "axi_gpio_3/s_axi_aresetn",
+          "ps8_0_axi_periph/M07_ARESETN",
           "Accumulator_MultiDMA_0/sys_rst_n",
           "Accumulator_MultiDMA_0/s_axis_0_aresetn",
           "Accumulator_MultiDMA_0/s_axis_1_aresetn",
           "Accumulator_MultiDMA_0/s_axis_2_aresetn",
           "Accumulator_MultiDMA_0/s_axis_3_aresetn",
-          "Accumulator_MultiDMA_0/m_axis_aresetn",
-          "axi_gpio_2/s_axi_aresetn",
-          "ps8_0_axi_periph/M06_ARESETN",
-          "axi_gpio_3/s_axi_aresetn",
-          "ps8_0_axi_periph/M07_ARESETN"
+          "Accumulator_MultiDMA_0/m_axis_aresetn"
         ]
       },
       "Accumulator_MultiDMA_0_sum_debug": {

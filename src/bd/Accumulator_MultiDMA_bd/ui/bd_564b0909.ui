@@ -15,9 +15,9 @@ preplace inst axi_dma_3 -pg 1 -lvl 2 -x 560 -y 740 -defaultsOSRD
 preplace inst rst_ps8_0_100M -pg 1 -lvl 1 -x 170 -y 750 -defaultsOSRD
 preplace inst ps8_0_axi_periph -pg 1 -lvl 5 -x 1910 -y 170 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 3 -x 950 -y 690 -defaultsOSRD
-preplace inst Accumulator_MultiDMA_0 -pg 1 -lvl 7 -x 2790 -y 640 -defaultsOSRD
 preplace inst axi_gpio_2 -pg 1 -lvl 5 -x 1910 -y 540 -defaultsOSRD
 preplace inst axi_gpio_3 -pg 1 -lvl 5 -x 1910 -y 680 -defaultsOSRD
+preplace inst Accumulator_MultiDMA_0 -pg 1 -lvl 7 -x 2790 -y 640 -defaultsOSRD
 preplace netloc axi_gpio_1_gpio_io_o 1 6 1 2580 440n
 preplace netloc Accumulator_MultiDMA_0_accu_finished 1 6 2 NJ 860 2970
 preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 7 -20 860 350 860 760 860 1090 860 1730 780 2160 590 2610
@@ -25,24 +25,24 @@ preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 5 -10 850 NJ 850 NJ 850 NJ 850 
 preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 6 360 830 740 880 NJ 880 1750 770 2110 580 2600
 preplace netloc Accumulator_MultiDMA_0_sum_debug 1 5 3 NJ 550 2560J 880 2980
 preplace netloc Accumulator_MultiDMA_0_step_debug 1 5 3 2120 760 2540J 870 2960
+preplace netloc axi_dma_3_M_AXI_MM2S 1 2 1 N 710
+preplace netloc ps8_0_axi_periph_M03_AXI 1 1 5 380 870 NJ 870 NJ 870 NJ 870 2090
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 1710 -30n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 1 5 380 470 NJ 470 NJ 470 1740J 460 2080
+preplace netloc ps8_0_axi_periph_M04_AXI 1 5 1 2130 180n
+preplace netloc axi_dma_1_M_AXI_MM2S 1 2 1 760 350n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 6 1 2590 210n
+preplace netloc Accumulator_MultiDMA_0_m_axis 1 5 3 2180 510 2560J 420 2980
+preplace netloc axi_dma_2_M_AXI_MM2S 1 2 1 750 530n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 2 5 780 820 NJ 820 NJ 820 2140J 740 2540
+preplace netloc ps8_0_axi_periph_M05_AXI 1 5 1 2170 200n
 preplace netloc axi_dma_2_M_AXIS_MM2S 1 2 5 740J 440 NJ 440 NJ 440 2120J 530 2570
-preplace netloc axi_smc_M00_AXI 1 3 1 N 690
+preplace netloc axi_dma_0_M_AXI_MM2S 1 2 5 770 810 NJ 810 NJ 810 2150J 750 2550
 preplace netloc ps8_0_axi_periph_M02_AXI 1 1 5 370 840 NJ 840 NJ 840 NJ 840 2100
+preplace netloc axi_smc_M00_AXI 1 3 1 N 690
+preplace netloc axi_dma_3_M_AXIS_MM2S 1 2 5 750 830 NJ 830 NJ 830 2120J 770 2590J
 preplace netloc axi_dma_1_M_AXIS_MM2S 1 2 5 NJ 370 NJ 370 1720J 430 2150J 520 2570
 preplace netloc ps8_0_axi_periph_M00_AXI 1 5 1 2170 100n
-preplace netloc axi_dma_3_M_AXIS_MM2S 1 2 5 750 830 NJ 830 NJ 830 2120J 770 2590J
-preplace netloc axi_dma_2_M_AXI_MM2S 1 2 1 750 530n
-preplace netloc Accumulator_MultiDMA_0_m_axis 1 5 3 2180 510 2560J 420 2980
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 6 1 2590 210n
-preplace netloc axi_dma_1_M_AXI_MM2S 1 2 1 760 350n
-preplace netloc ps8_0_axi_periph_M04_AXI 1 5 1 2130 180n
-preplace netloc ps8_0_axi_periph_M01_AXI 1 1 5 380 470 NJ 470 NJ 470 1740J 460 2080
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 1710 -30n
-preplace netloc ps8_0_axi_periph_M03_AXI 1 1 5 380 870 NJ 870 NJ 870 NJ 870 2090
-preplace netloc axi_dma_3_M_AXI_MM2S 1 2 1 N 710
-preplace netloc axi_dma_0_M_AXI_S2MM 1 2 5 780 820 NJ 820 NJ 820 2140J 740 2540
-preplace netloc axi_dma_0_M_AXI_MM2S 1 2 5 770 810 NJ 810 NJ 810 2150J 750 2550
-preplace netloc ps8_0_axi_periph_M05_AXI 1 5 1 2170 200n
 preplace netloc ps8_0_axi_periph_M06_AXI 1 4 2 1760 450 2060
 preplace netloc ps8_0_axi_periph_M07_AXI 1 4 2 1760 760 2070
 levelinfo -pg 1 -40 170 560 950 1400 1910 2360 2790 3010
