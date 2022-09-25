@@ -692,28 +692,12 @@ always @(posedge sys_clk or negedge sys_rst_n)
             begin
                 rst                 <= 0;
                 sum                 <= 0;
-                cnt_0               <= 0;
-                cnt_1               <= 0;
-                cnt_2               <= 0;
-                cnt_3               <= 0;
                 step                <= 0;
                 accu_finished       <= 1;
-                in_m_axis_tready_0  <= 0;
-                in_m_axis_tready_1  <= 0;
-                in_m_axis_tready_2  <= 0;
-                in_m_axis_tready_3  <= 0;
-                signed_in_valid_0   <= 0;
-                signed_in_valid_1   <= 0;
-                signed_in_valid_2   <= 0;
-                signed_in_valid_3   <= 0;
                 out_s_axis_tvalid   <= 0;
                 out_s_axis_tdata    <= 0;
                 out_s_axis_tkeep    <= 0;
                 out_s_axis_tlast    <= 0;
-                accu_length_0       <= 0;
-                accu_length_1       <= 0;
-                accu_length_2       <= 0;
-                accu_length_3       <= 0;
             end
             else begin
                 if (accu_en)
@@ -721,245 +705,61 @@ always @(posedge sys_clk or negedge sys_rst_n)
                         case (step)
                         
                             0   :   begin
-                                        rst                 <= 0;
-                                        sum                 <= sum;
-                                        cnt_0               <= 0;
-                                        cnt_1               <= 0;
-                                        cnt_2               <= 0;
-                                        cnt_3               <= 0;
-                                        accu_finished       <= 0;
-                                        out_s_axis_tvalid   <= 0;
-                                        out_s_axis_tdata    <= 0;
-                                        out_s_axis_tkeep    <= 0;
-                                        out_s_axis_tlast    <= 0;
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
-                                        
-                                        if (in_m_axis_tvalid_0 && in_m_axis_tvalid_1 && in_m_axis_tvalid_2 && in_m_axis_tvalid_3 )
+                                        if (accu_finished_0 && accu_finished_1 && accu_finished_2 && accu_finished_3)
                                             begin
+                                                rst                 <= 1;
+                                                sum                 <= sum_0 + sum_1 + sum_2 + sum_3;
+                                                accu_finished       <= 0;
+                                                out_s_axis_tvalid   <= 0;
+                                                out_s_axis_tdata    <= 0;
+                                                out_s_axis_tkeep    <= 0;
+                                                out_s_axis_tlast    <= 0;
                                                 step                <= 1;
-                                                accu_length_0       <= signed_in_0;
-                                                accu_length_1       <= signed_in_1;
-                                                accu_length_2       <= signed_in_2;
-                                                accu_length_3       <= signed_in_3;
                                             end
                                             else begin
+                                                rst                 <= 0;
+                                                sum                 <= 0;
+                                                accu_finished       <= 0;
+                                                out_s_axis_tvalid   <= 0;
+                                                out_s_axis_tdata    <= 0;
+                                                out_s_axis_tkeep    <= 0;
+                                                out_s_axis_tlast    <= 0;
                                                 step                <= 0;
-                                                accu_length_0       <= 0;
-                                                accu_length_1       <= 0;
-                                                accu_length_2       <= 0;
-                                                accu_length_3       <= 0;
-                                            end
+                                            end 
                                     end
                         
                             1   :   begin
                                         rst                 <= 0;
                                         sum                 <= sum;
                                         accu_finished       <= 0;
-                                        out_s_axis_tvalid   <= 0;
-                                        out_s_axis_tdata    <= 0;
-                                        out_s_axis_tkeep    <= 0;
-                                        out_s_axis_tlast    <= 0;
-                                        accu_length_0       <= accu_length_0;
-                                        accu_length_1       <= accu_length_1;
-                                        accu_length_2       <= accu_length_2;
-                                        accu_length_3       <= accu_length_3;
-                                        
-                                        if (in_m_axis_tvalid_0 && in_m_axis_tvalid_1 && in_m_axis_tvalid_2 && in_m_axis_tvalid_3 )
-                                            begin
-                                                step                <= 2;
-                                                
-                                                cnt_0               <= cnt_0 + 1;
-                                                signed_in_valid_0   <= 1;
-                                                in_m_axis_tready_0  <= 1;
-                                                
-                                                cnt_1               <= cnt_1 + 1;
-                                                signed_in_valid_1   <= 1;
-                                                in_m_axis_tready_1  <= 1;
-                                                
-                                                cnt_2               <= cnt_2 + 1;
-                                                signed_in_valid_2   <= 1;
-                                                in_m_axis_tready_2  <= 1;
-                                                
-                                                cnt_3               <= cnt_3 + 1;
-                                                signed_in_valid_3   <= 1;
-                                                in_m_axis_tready_3  <= 1;
-                                            end
-                                            else begin
-                                                step                <= 1;
-                                                
-                                                cnt_0               <= cnt_0;
-                                                signed_in_valid_0   <= 0;
-                                                in_m_axis_tready_0  <= 0;
-                                                
-                                                cnt_1               <= cnt_1;
-                                                signed_in_valid_1   <= 0;
-                                                in_m_axis_tready_1  <= 0;
-                                                
-                                                cnt_2               <= cnt_2;
-                                                signed_in_valid_2   <= 0;
-                                                in_m_axis_tready_2  <= 0;
-                                                
-                                                cnt_3               <= cnt_3;
-                                                signed_in_valid_3   <= 0;
-                                                in_m_axis_tready_3  <= 0;
-                                            end
+                                        out_s_axis_tvalid   <= 1;
+                                        out_s_axis_tdata    <= sum;
+                                        out_s_axis_tkeep    <= 8'b1111_1111;
+                                        out_s_axis_tlast    <= 1;
+                                        step                <= 2;
                                     end
-                        
+                                    
                             2   :   begin
                                         rst                 <= 0;
                                         sum                 <= sum;
-                                        cnt_0               <= cnt_0;
-                                        cnt_1               <= cnt_1;
-                                        cnt_2               <= cnt_2;
-                                        cnt_3               <= cnt_3;
-                                        step                <= 3;
-                                        accu_finished       <= 0;
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
-                                        signed_in_valid_0   <= signed_in_valid_0;
-                                        signed_in_valid_1   <= signed_in_valid_1;
-                                        signed_in_valid_2   <= signed_in_valid_2;
-                                        signed_in_valid_3   <= signed_in_valid_3;
-                                        out_s_axis_tvalid   <= 0;
-                                        out_s_axis_tdata    <= 0;
-                                        out_s_axis_tkeep    <= 0;
-                                        out_s_axis_tlast    <= 0;
-                                        accu_length_0       <= accu_length_0;
-                                        accu_length_1       <= accu_length_1;
-                                        accu_length_2       <= accu_length_2;
-                                        accu_length_3       <= accu_length_3;
-                                    end
-                        
-                            3   :   begin
-                                        rst                 <= 0;
-                                        sum                 <= sum + ((signed_in_valid_0) ? signed_in_0 : 0) + ((signed_in_valid_1) ? signed_in_1 : 0) + ((signed_in_valid_2) ? signed_in_2 : 0) + ((signed_in_valid_3) ? signed_in_3 : 0);
-                                        cnt_0               <= cnt_0;
-                                        cnt_1               <= cnt_1;
-                                        cnt_2               <= cnt_2;
-                                        cnt_3               <= cnt_3;
-                                        out_s_axis_tvalid   <= 0;
-                                        out_s_axis_tdata    <= 0;
-                                        out_s_axis_tkeep    <= 0;
-                                        out_s_axis_tlast    <= 0;
-                                        accu_length_0       <= accu_length_0;
-                                        accu_length_1       <= accu_length_1;
-                                        accu_length_2       <= accu_length_2;
-                                        accu_length_3       <= accu_length_3;
-                                        
-                                        if ((cnt_0==accu_length_0) && (cnt_1==accu_length_1) && (cnt_2==accu_length_2) && (cnt_3==accu_length_3))
-                                            begin
-                                                step                <= 4;
-                                                accu_finished       <= 0;
-                                            end
-                                            else begin
-                                                step                <= 1;
-                                                accu_finished       <= 0;
-                                            end 
-                                            
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
-                                    end
-                        
-                            4   :   begin
-                                        cnt_0               <= 0;
-                                        cnt_1               <= 0;
-                                        cnt_2               <= 0;
-                                        cnt_3               <= 0;
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
-                                        accu_length_0       <= accu_length_0;
-                                        accu_length_1       <= accu_length_1;
-                                        accu_length_2       <= accu_length_2;
-                                        accu_length_3       <= accu_length_3;
-                                        
-                                        if (out_s_axis_tready)
-                                            begin
-                                                rst                 <= 0;
-                                                accu_finished       <= 0;
-                                                sum                 <= sum;
-                                                out_s_axis_tvalid   <= 1;
-                                                out_s_axis_tdata    <= sum;
-                                                out_s_axis_tkeep    <= 8'b1111_1111;
-                                                out_s_axis_tlast    <= 1;
-                                                step                <= 5;
-                                            end
-                                            else begin
-                                                rst                 <= 0;
-                                                accu_finished       <= 0;
-                                                sum                 <= sum;
-                                                out_s_axis_tvalid   <= 0;
-                                                out_s_axis_tdata    <= 0;
-                                                out_s_axis_tkeep    <= 0;
-                                                out_s_axis_tlast    <= 0;
-                                                step                <= 4;
-                                            end 
-                                    end
-                                    
-                            5   :   begin
-                                        rst                 <= 1;
-                                        sum                 <= sum;
-                                        step                <= 6;
-                                        accu_finished       <= 0;
-                                        cnt_0               <= 0;
-                                        cnt_1               <= 0;
-                                        cnt_2               <= 0;
-                                        cnt_3               <= 0;
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
-                                        out_s_axis_tvalid   <= 0;
-                                        out_s_axis_tdata    <= 0;
-                                        out_s_axis_tkeep    <= 0;
-                                        out_s_axis_tlast    <= 0;
-                                        accu_length_0       <= 0;
-                                        accu_length_1       <= 0;
-                                        accu_length_2       <= 0;
-                                        accu_length_3       <= 0;
-                                    end
-                                    
-                            6   :   begin
-                                        rst                 <= 0;
-                                        sum                 <= sum;
-                                        cnt_0               <= 0;
-                                        cnt_1               <= 0;
-                                        cnt_2               <= 0;
-                                        cnt_3               <= 0;
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
                                         if ((!s_axis_tready_0) && (!s_axis_tready_1) && (!s_axis_tready_2) && (!s_axis_tready_3))
                                             begin
-                                                step        <= 7;
+                                                step        <= 3;
                                             end
                                             else begin
-                                                step        <= 6;
+                                                step        <= 2;
                                             end
                                         accu_finished       <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
                                         out_s_axis_tkeep    <= 0;
                                         out_s_axis_tlast    <= 0;
-                                        accu_length_0       <= 0;
-                                        accu_length_1       <= 0;
-                                        accu_length_2       <= 0;
-                                        accu_length_3       <= 0;
                                     end
                                     
-                            7   :   begin
+                            3   :   begin
                                         rst                 <= 0;
                                         sum                 <= sum;
-                                        step                <= 7;
+                                        step                <= 3;
                                         if (s_axis_tready_0 && s_axis_tready_1 && s_axis_tready_2 && s_axis_tready_3)
                                             begin
                                                 accu_finished       <= 1;
@@ -967,22 +767,10 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                             else begin
                                                 accu_finished       <= 0;
                                             end
-                                        cnt_0               <= 0;
-                                        cnt_1               <= 0;
-                                        cnt_2               <= 0;
-                                        cnt_3               <= 0;
-                                        in_m_axis_tready_0  <= 0;
-                                        in_m_axis_tready_1  <= 0;
-                                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
                                         out_s_axis_tkeep    <= 0;
                                         out_s_axis_tlast    <= 0;
-                                        accu_length_0       <= 0;
-                                        accu_length_1       <= 0;
-                                        accu_length_2       <= 0;
-                                        accu_length_3       <= 0;
                                     end
                                     
                             default :   begin
@@ -990,22 +778,10 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                             sum                 <= 0;
                                             step                <= 0;
                                             accu_finished       <= 1;
-                                            cnt_0               <= 0;
-                                            cnt_1               <= 0;
-                                            cnt_2               <= 0;
-                                            cnt_3               <= 0;
-                                            in_m_axis_tready_0  <= 0;
-                                            in_m_axis_tready_1  <= 0;
-                                            in_m_axis_tready_2  <= 0;
-                                            in_m_axis_tready_3  <= 0;
                                             out_s_axis_tvalid   <= 0;
                                             out_s_axis_tdata    <= 0;
                                             out_s_axis_tkeep    <= 0;
                                             out_s_axis_tlast    <= 0;
-                                            accu_length_0       <= 0;
-                                            accu_length_1       <= 0;
-                                            accu_length_2       <= 0;
-                                            accu_length_3       <= 0;
                                         end
                                         
                         endcase
@@ -1015,20 +791,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                         sum                 <= 0;
                         step                <= 0;
                         accu_finished       <= 1;
-                        cnt_0               <= 0;
-                        cnt_1               <= 0;
-                        cnt_2               <= 0;
-                        cnt_3               <= 0;
-                        in_m_axis_tready_0  <= 0;
-                        in_m_axis_tready_1  <= 0;
-                        in_m_axis_tready_2  <= 0;
-                                        in_m_axis_tready_3  <= 0;
                         out_s_axis_tvalid   <= 0;
                         out_s_axis_tdata    <= 0;
-                        accu_length_0       <= 0;
-                        accu_length_1       <= 0;
-                        accu_length_2       <= 0;
-                        accu_length_3       <= 0;
                         out_s_axis_tkeep    <= 0;
                         out_s_axis_tlast    <= 0;
                     end

@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Thu Sep 22 16:07:26 2022
+-- Date        : Thu Sep 22 16:07:25 2022
 -- Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top Accumulator_MultiDMA_bd_xbar_0 -prefix
+--               Accumulator_MultiDMA_bd_xbar_0_ Accumulator_MultiDMA_bd_xbar_0_sim_netlist.vhdl
 -- Design      : Accumulator_MultiDMA_bd_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -77,8 +77,6 @@ entity Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_addr_arbiter_sasd is
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_23_addr_arbiter_sasd";
 end Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_addr_arbiter_sasd;
 
 architecture STRUCTURE of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_addr_arbiter_sasd is
@@ -2089,8 +2087,6 @@ entity Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_decerr_slave is
     m_axi_awready : in STD_LOGIC_VECTOR ( 1 downto 0 );
     aa_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_decerr_slave : entity is "axi_crossbar_v2_1_23_decerr_slave";
 end Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_decerr_slave;
 
 architecture STRUCTURE of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_decerr_slave is
@@ -2325,8 +2321,6 @@ entity Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_splitter is
     D : in STD_LOGIC_VECTOR ( 2 downto 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_splitter : entity is "axi_crossbar_v2_1_23_splitter";
 end Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_splitter;
 
 architecture STRUCTURE of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_splitter is
@@ -2595,8 +2589,6 @@ entity Accumulator_MultiDMA_bd_xbar_0_axi_register_slice_v2_1_22_axic_register_s
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Accumulator_MultiDMA_bd_xbar_0_axi_register_slice_v2_1_22_axic_register_slice : entity is "axi_register_slice_v2_1_22_axic_register_slice";
 end Accumulator_MultiDMA_bd_xbar_0_axi_register_slice_v2_1_22_axic_register_slice;
 
 architecture STRUCTURE of Accumulator_MultiDMA_bd_xbar_0_axi_register_slice_v2_1_22_axic_register_slice is
@@ -5541,8 +5533,6 @@ entity Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 39 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_crossbar_sasd : entity is "axi_crossbar_v2_1_23_crossbar_sasd";
 end Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_crossbar_sasd;
 
 architecture STRUCTURE of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_crossbar_sasd is
@@ -6236,8 +6226,6 @@ entity Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_axi_crossbar : entity is "axi_crossbar_v2_1_23_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of Accumulator_MultiDMA_bd_xbar_0_axi_crossbar_v2_1_23_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;
