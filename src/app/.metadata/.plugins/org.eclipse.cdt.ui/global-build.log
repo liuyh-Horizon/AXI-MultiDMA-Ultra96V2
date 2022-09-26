@@ -1,6 +1,6 @@
 Nothing to build in platform 'AXI_MultiDMA_Accumulator_Platform'
 
-16:48:33 **** Incremental Build of configuration Debug for project AXI_MultiDMA_Accumulator_app ****
+15:07:44 **** Incremental Build of configuration Debug for project AXI_MultiDMA_Accumulator_app ****
 make all 
 Building file: ../src/AXI_MultiDMA_Accumulator_exe.c
 Invoking: ARM v8 gcc compiler
@@ -15,10 +15,10 @@ Finished building target: AXI_MultiDMA_Accumulator_app.elf
 Invoking: ARM v8 Print Size
 aarch64-none-elf-size AXI_MultiDMA_Accumulator_app.elf  |tee "AXI_MultiDMA_Accumulator_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  46024	   4904	  20804	  71732	  11834	AXI_MultiDMA_Accumulator_app.elf
+  47976	   5000	  20804	  73780	  12034	AXI_MultiDMA_Accumulator_app.elf
 Finished building: AXI_MultiDMA_Accumulator_app.elf.size
  
-16:48:35 **** Incremental Build of configuration Debug for project AXI_MultiDMA_Accumulator_app_system ****
+15:07:46 **** Incremental Build of configuration Debug for project AXI_MultiDMA_Accumulator_app_system ****
 make all 
 Generating bif file for the system project
 Executing command '::scw::generate_bif -xpfm /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_Platform/export/AXI_MultiDMA_Accumulator_Platform/AXI_MultiDMA_Accumulator_Platform.xpfm -domains standalone_domain -bifpath /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/app/AXI_MultiDMA_Accumulator_app_system/Debug/system.bif' on XSCT

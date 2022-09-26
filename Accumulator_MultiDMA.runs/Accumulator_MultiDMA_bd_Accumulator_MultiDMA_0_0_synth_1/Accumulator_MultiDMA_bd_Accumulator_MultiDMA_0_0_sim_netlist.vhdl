@@ -1,8 +1,8 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Sun Sep 25 02:12:35 2022
--- Host        : Yuhao running 64-bit Ubuntu 22.04.1 LTS
+-- Date        : Mon Sep 26 13:49:03 2022
+-- Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_
 --               Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_sim_netlist.vhdl
@@ -20286,6 +20286,10 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_MultiDMA is
     accu_finished : out STD_LOGIC;
     sum_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
     step_debug : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    accu_length_0_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    accu_length_1_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    accu_length_2_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    accu_length_3_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axis_0_aresetn : in STD_LOGIC;
     s_axis_0_aclk : in STD_LOGIC;
     s_axis_tvalid_0 : in STD_LOGIC;
@@ -20356,7 +20360,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal accu_finished_i_1_n_0 : STD_LOGIC;
   signal accu_finished_i_2_n_0 : STD_LOGIC;
   signal accu_finished_i_3_n_0 : STD_LOGIC;
-  signal accu_length_0 : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal accu_length_0 : STD_LOGIC_VECTOR ( 63 downto 32 );
   signal \accu_length_0[0]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[10]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[11]_i_1_n_0\ : STD_LOGIC;
@@ -20382,6 +20386,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_0[2]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[30]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[31]_i_1_n_0\ : STD_LOGIC;
+  signal \accu_length_0[31]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_0[32]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[33]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[34]_i_1_n_0\ : STD_LOGIC;
@@ -20417,12 +20422,12 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_0[61]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[62]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[63]_i_1_n_0\ : STD_LOGIC;
-  signal \accu_length_0[63]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_0[6]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[7]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[8]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_0[9]_i_1_n_0\ : STD_LOGIC;
-  signal accu_length_1 : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal \^accu_length_0_debug\ : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal accu_length_1 : STD_LOGIC_VECTOR ( 63 downto 32 );
   signal \accu_length_1[0]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[10]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[11]_i_1_n_0\ : STD_LOGIC;
@@ -20448,6 +20453,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_1[2]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[30]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[31]_i_1_n_0\ : STD_LOGIC;
+  signal \accu_length_1[31]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_1[32]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[33]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[34]_i_1_n_0\ : STD_LOGIC;
@@ -20483,12 +20489,12 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_1[61]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[62]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[63]_i_1_n_0\ : STD_LOGIC;
-  signal \accu_length_1[63]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_1[6]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[7]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[8]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_1[9]_i_1_n_0\ : STD_LOGIC;
-  signal accu_length_2 : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal \^accu_length_1_debug\ : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal accu_length_2 : STD_LOGIC_VECTOR ( 63 downto 32 );
   signal \accu_length_2[0]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[10]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[11]_i_1_n_0\ : STD_LOGIC;
@@ -20514,6 +20520,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_2[2]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[30]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[31]_i_1_n_0\ : STD_LOGIC;
+  signal \accu_length_2[31]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_2[32]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[33]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[34]_i_1_n_0\ : STD_LOGIC;
@@ -20549,12 +20556,12 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_2[61]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[62]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[63]_i_1_n_0\ : STD_LOGIC;
-  signal \accu_length_2[63]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_2[6]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[7]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[8]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_2[9]_i_1_n_0\ : STD_LOGIC;
-  signal accu_length_3 : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal \^accu_length_2_debug\ : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal accu_length_3 : STD_LOGIC_VECTOR ( 63 downto 32 );
   signal \accu_length_3[0]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[10]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[11]_i_1_n_0\ : STD_LOGIC;
@@ -20580,6 +20587,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_3[2]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[30]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[31]_i_1_n_0\ : STD_LOGIC;
+  signal \accu_length_3[31]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_3[32]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[33]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[34]_i_1_n_0\ : STD_LOGIC;
@@ -20615,11 +20623,11 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   signal \accu_length_3[61]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[62]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[63]_i_1_n_0\ : STD_LOGIC;
-  signal \accu_length_3[63]_i_2_n_0\ : STD_LOGIC;
   signal \accu_length_3[6]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[7]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[8]_i_1_n_0\ : STD_LOGIC;
   signal \accu_length_3[9]_i_1_n_0\ : STD_LOGIC;
+  signal \^accu_length_3_debug\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal cnt_0 : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal cnt_00 : STD_LOGIC_VECTOR ( 63 downto 1 );
   signal \cnt_0[0]_i_1_n_0\ : STD_LOGIC;
@@ -22786,7 +22794,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_0[29]_i_1\ : label is "soft_lutpair218";
   attribute SOFT_HLUTNM of \accu_length_0[2]_i_1\ : label is "soft_lutpair215";
   attribute SOFT_HLUTNM of \accu_length_0[30]_i_1\ : label is "soft_lutpair321";
-  attribute SOFT_HLUTNM of \accu_length_0[31]_i_1\ : label is "soft_lutpair239";
+  attribute SOFT_HLUTNM of \accu_length_0[31]_i_2\ : label is "soft_lutpair239";
   attribute SOFT_HLUTNM of \accu_length_0[32]_i_1\ : label is "soft_lutpair255";
   attribute SOFT_HLUTNM of \accu_length_0[33]_i_1\ : label is "soft_lutpair264";
   attribute SOFT_HLUTNM of \accu_length_0[34]_i_1\ : label is "soft_lutpair265";
@@ -22821,7 +22829,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_0[60]_i_1\ : label is "soft_lutpair273";
   attribute SOFT_HLUTNM of \accu_length_0[61]_i_1\ : label is "soft_lutpair257";
   attribute SOFT_HLUTNM of \accu_length_0[62]_i_1\ : label is "soft_lutpair293";
-  attribute SOFT_HLUTNM of \accu_length_0[63]_i_2\ : label is "soft_lutpair241";
+  attribute SOFT_HLUTNM of \accu_length_0[63]_i_1\ : label is "soft_lutpair241";
   attribute SOFT_HLUTNM of \accu_length_0[6]_i_1\ : label is "soft_lutpair254";
   attribute SOFT_HLUTNM of \accu_length_0[7]_i_1\ : label is "soft_lutpair283";
   attribute SOFT_HLUTNM of \accu_length_0[8]_i_1\ : label is "soft_lutpair264";
@@ -22850,7 +22858,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_1[29]_i_1\ : label is "soft_lutpair197";
   attribute SOFT_HLUTNM of \accu_length_1[2]_i_1\ : label is "soft_lutpair194";
   attribute SOFT_HLUTNM of \accu_length_1[30]_i_1\ : label is "soft_lutpair318";
-  attribute SOFT_HLUTNM of \accu_length_1[31]_i_1\ : label is "soft_lutpair224";
+  attribute SOFT_HLUTNM of \accu_length_1[31]_i_2\ : label is "soft_lutpair224";
   attribute SOFT_HLUTNM of \accu_length_1[32]_i_1\ : label is "soft_lutpair243";
   attribute SOFT_HLUTNM of \accu_length_1[33]_i_1\ : label is "soft_lutpair258";
   attribute SOFT_HLUTNM of \accu_length_1[34]_i_1\ : label is "soft_lutpair259";
@@ -22885,7 +22893,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_1[60]_i_1\ : label is "soft_lutpair267";
   attribute SOFT_HLUTNM of \accu_length_1[61]_i_1\ : label is "soft_lutpair245";
   attribute SOFT_HLUTNM of \accu_length_1[62]_i_1\ : label is "soft_lutpair287";
-  attribute SOFT_HLUTNM of \accu_length_1[63]_i_2\ : label is "soft_lutpair226";
+  attribute SOFT_HLUTNM of \accu_length_1[63]_i_1\ : label is "soft_lutpair226";
   attribute SOFT_HLUTNM of \accu_length_1[6]_i_1\ : label is "soft_lutpair242";
   attribute SOFT_HLUTNM of \accu_length_1[7]_i_1\ : label is "soft_lutpair274";
   attribute SOFT_HLUTNM of \accu_length_1[8]_i_1\ : label is "soft_lutpair258";
@@ -22914,7 +22922,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_2[29]_i_1\ : label is "soft_lutpair204";
   attribute SOFT_HLUTNM of \accu_length_2[2]_i_1\ : label is "soft_lutpair201";
   attribute SOFT_HLUTNM of \accu_length_2[30]_i_1\ : label is "soft_lutpair319";
-  attribute SOFT_HLUTNM of \accu_length_2[31]_i_1\ : label is "soft_lutpair229";
+  attribute SOFT_HLUTNM of \accu_length_2[31]_i_2\ : label is "soft_lutpair229";
   attribute SOFT_HLUTNM of \accu_length_2[32]_i_1\ : label is "soft_lutpair247";
   attribute SOFT_HLUTNM of \accu_length_2[33]_i_1\ : label is "soft_lutpair260";
   attribute SOFT_HLUTNM of \accu_length_2[34]_i_1\ : label is "soft_lutpair261";
@@ -22949,7 +22957,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_2[60]_i_1\ : label is "soft_lutpair269";
   attribute SOFT_HLUTNM of \accu_length_2[61]_i_1\ : label is "soft_lutpair249";
   attribute SOFT_HLUTNM of \accu_length_2[62]_i_1\ : label is "soft_lutpair289";
-  attribute SOFT_HLUTNM of \accu_length_2[63]_i_2\ : label is "soft_lutpair231";
+  attribute SOFT_HLUTNM of \accu_length_2[63]_i_1\ : label is "soft_lutpair231";
   attribute SOFT_HLUTNM of \accu_length_2[6]_i_1\ : label is "soft_lutpair246";
   attribute SOFT_HLUTNM of \accu_length_2[7]_i_1\ : label is "soft_lutpair277";
   attribute SOFT_HLUTNM of \accu_length_2[8]_i_1\ : label is "soft_lutpair260";
@@ -22978,7 +22986,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_3[29]_i_1\ : label is "soft_lutpair211";
   attribute SOFT_HLUTNM of \accu_length_3[2]_i_1\ : label is "soft_lutpair208";
   attribute SOFT_HLUTNM of \accu_length_3[30]_i_1\ : label is "soft_lutpair320";
-  attribute SOFT_HLUTNM of \accu_length_3[31]_i_1\ : label is "soft_lutpair234";
+  attribute SOFT_HLUTNM of \accu_length_3[31]_i_2\ : label is "soft_lutpair234";
   attribute SOFT_HLUTNM of \accu_length_3[32]_i_1\ : label is "soft_lutpair251";
   attribute SOFT_HLUTNM of \accu_length_3[33]_i_1\ : label is "soft_lutpair262";
   attribute SOFT_HLUTNM of \accu_length_3[34]_i_1\ : label is "soft_lutpair263";
@@ -23013,7 +23021,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute SOFT_HLUTNM of \accu_length_3[60]_i_1\ : label is "soft_lutpair271";
   attribute SOFT_HLUTNM of \accu_length_3[61]_i_1\ : label is "soft_lutpair253";
   attribute SOFT_HLUTNM of \accu_length_3[62]_i_1\ : label is "soft_lutpair291";
-  attribute SOFT_HLUTNM of \accu_length_3[63]_i_2\ : label is "soft_lutpair236";
+  attribute SOFT_HLUTNM of \accu_length_3[63]_i_1\ : label is "soft_lutpair236";
   attribute SOFT_HLUTNM of \accu_length_3[6]_i_1\ : label is "soft_lutpair250";
   attribute SOFT_HLUTNM of \accu_length_3[7]_i_1\ : label is "soft_lutpair280";
   attribute SOFT_HLUTNM of \accu_length_3[8]_i_1\ : label is "soft_lutpair262";
@@ -23695,6 +23703,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_
   attribute ADDER_THRESHOLD of \sum_reg[63]_i_2\ : label is 35;
   attribute ADDER_THRESHOLD of \sum_reg[7]_i_2\ : label is 35;
 begin
+  accu_length_0_debug(31 downto 0) <= \^accu_length_0_debug\(31 downto 0);
+  accu_length_1_debug(31 downto 0) <= \^accu_length_1_debug\(31 downto 0);
+  accu_length_2_debug(31 downto 0) <= \^accu_length_2_debug\(31 downto 0);
+  accu_length_3_debug(31 downto 0) <= \^accu_length_3_debug\(31 downto 0);
   s_axis_tready_0 <= \^s_axis_tready_0\;
   s_axis_tready_1 <= \^s_axis_tready_1\;
   s_axis_tready_2 <= \^s_axis_tready_2\;
@@ -24317,6 +24329,17 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_0[31]_i_1\: unisim.vcomponents.LUT4
     generic map(
+      INIT => X"F1FF"
+    )
+        port map (
+      I0 => step_0(0),
+      I1 => step_0(1),
+      I2 => accu_finished_0_reg_rep_n_0,
+      I3 => accu_en,
+      O => \accu_length_0[31]_i_1_n_0\
+    );
+\accu_length_0[31]_i_2\: unisim.vcomponents.LUT4
+    generic map(
       INIT => X"2000"
     )
         port map (
@@ -24324,7 +24347,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_0_reg_rep_n_0,
       I2 => in_m_axis_tvalid_0,
       I3 => in_m_axis_tdata_0(31),
-      O => \accu_length_0[31]_i_1_n_0\
+      O => \accu_length_0[31]_i_2_n_0\
     );
 \accu_length_0[32]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -24702,17 +24725,6 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_0[63]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"F1FF"
-    )
-        port map (
-      I0 => step_0(0),
-      I1 => step_0(1),
-      I2 => accu_finished_0_reg_rep_n_0,
-      I3 => accu_en,
-      O => \accu_length_0[63]_i_1_n_0\
-    );
-\accu_length_0[63]_i_2\: unisim.vcomponents.LUT4
-    generic map(
       INIT => X"2000"
     )
         port map (
@@ -24720,7 +24732,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_0_reg_rep_n_0,
       I2 => in_m_axis_tvalid_0,
       I3 => in_m_axis_tdata_0(63),
-      O => \accu_length_0[63]_i_2_n_0\
+      O => \accu_length_0[63]_i_1_n_0\
     );
 \accu_length_0[6]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -24769,207 +24781,207 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[0]_i_1_n_0\,
-      Q => accu_length_0(0)
+      Q => \^accu_length_0_debug\(0)
     );
 \accu_length_0_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[10]_i_1_n_0\,
-      Q => accu_length_0(10)
+      Q => \^accu_length_0_debug\(10)
     );
 \accu_length_0_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[11]_i_1_n_0\,
-      Q => accu_length_0(11)
+      Q => \^accu_length_0_debug\(11)
     );
 \accu_length_0_reg[12]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[12]_i_1_n_0\,
-      Q => accu_length_0(12)
+      Q => \^accu_length_0_debug\(12)
     );
 \accu_length_0_reg[13]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[13]_i_1_n_0\,
-      Q => accu_length_0(13)
+      Q => \^accu_length_0_debug\(13)
     );
 \accu_length_0_reg[14]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[14]_i_1_n_0\,
-      Q => accu_length_0(14)
+      Q => \^accu_length_0_debug\(14)
     );
 \accu_length_0_reg[15]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[15]_i_1_n_0\,
-      Q => accu_length_0(15)
+      Q => \^accu_length_0_debug\(15)
     );
 \accu_length_0_reg[16]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[16]_i_1_n_0\,
-      Q => accu_length_0(16)
+      Q => \^accu_length_0_debug\(16)
     );
 \accu_length_0_reg[17]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[17]_i_1_n_0\,
-      Q => accu_length_0(17)
+      Q => \^accu_length_0_debug\(17)
     );
 \accu_length_0_reg[18]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[18]_i_1_n_0\,
-      Q => accu_length_0(18)
+      Q => \^accu_length_0_debug\(18)
     );
 \accu_length_0_reg[19]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[19]_i_1_n_0\,
-      Q => accu_length_0(19)
+      Q => \^accu_length_0_debug\(19)
     );
 \accu_length_0_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[1]_i_1_n_0\,
-      Q => accu_length_0(1)
+      Q => \^accu_length_0_debug\(1)
     );
 \accu_length_0_reg[20]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[20]_i_1_n_0\,
-      Q => accu_length_0(20)
+      Q => \^accu_length_0_debug\(20)
     );
 \accu_length_0_reg[21]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[21]_i_1_n_0\,
-      Q => accu_length_0(21)
+      Q => \^accu_length_0_debug\(21)
     );
 \accu_length_0_reg[22]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[22]_i_1_n_0\,
-      Q => accu_length_0(22)
+      Q => \^accu_length_0_debug\(22)
     );
 \accu_length_0_reg[23]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[23]_i_1_n_0\,
-      Q => accu_length_0(23)
+      Q => \^accu_length_0_debug\(23)
     );
 \accu_length_0_reg[24]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[24]_i_1_n_0\,
-      Q => accu_length_0(24)
+      Q => \^accu_length_0_debug\(24)
     );
 \accu_length_0_reg[25]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[25]_i_1_n_0\,
-      Q => accu_length_0(25)
+      Q => \^accu_length_0_debug\(25)
     );
 \accu_length_0_reg[26]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[26]_i_1_n_0\,
-      Q => accu_length_0(26)
+      Q => \^accu_length_0_debug\(26)
     );
 \accu_length_0_reg[27]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[27]_i_1_n_0\,
-      Q => accu_length_0(27)
+      Q => \^accu_length_0_debug\(27)
     );
 \accu_length_0_reg[28]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[28]_i_1_n_0\,
-      Q => accu_length_0(28)
+      Q => \^accu_length_0_debug\(28)
     );
 \accu_length_0_reg[29]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[29]_i_1_n_0\,
-      Q => accu_length_0(29)
+      Q => \^accu_length_0_debug\(29)
     );
 \accu_length_0_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[2]_i_1_n_0\,
-      Q => accu_length_0(2)
+      Q => \^accu_length_0_debug\(2)
     );
 \accu_length_0_reg[30]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[30]_i_1_n_0\,
-      Q => accu_length_0(30)
+      Q => \^accu_length_0_debug\(30)
     );
 \accu_length_0_reg[31]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_0[31]_i_1_n_0\,
-      Q => accu_length_0(31)
+      D => \accu_length_0[31]_i_2_n_0\,
+      Q => \^accu_length_0_debug\(31)
     );
 \accu_length_0_reg[32]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[32]_i_1_n_0\,
       Q => accu_length_0(32)
@@ -24977,7 +24989,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[33]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[33]_i_1_n_0\,
       Q => accu_length_0(33)
@@ -24985,7 +24997,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[34]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[34]_i_1_n_0\,
       Q => accu_length_0(34)
@@ -24993,7 +25005,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[35]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[35]_i_1_n_0\,
       Q => accu_length_0(35)
@@ -25001,7 +25013,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[36]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[36]_i_1_n_0\,
       Q => accu_length_0(36)
@@ -25009,7 +25021,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[37]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[37]_i_1_n_0\,
       Q => accu_length_0(37)
@@ -25017,7 +25029,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[38]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[38]_i_1_n_0\,
       Q => accu_length_0(38)
@@ -25025,7 +25037,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[39]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[39]_i_1_n_0\,
       Q => accu_length_0(39)
@@ -25033,15 +25045,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[3]_i_1_n_0\,
-      Q => accu_length_0(3)
+      Q => \^accu_length_0_debug\(3)
     );
 \accu_length_0_reg[40]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[40]_i_1_n_0\,
       Q => accu_length_0(40)
@@ -25049,7 +25061,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[41]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[41]_i_1_n_0\,
       Q => accu_length_0(41)
@@ -25057,7 +25069,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[42]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[42]_i_1_n_0\,
       Q => accu_length_0(42)
@@ -25065,7 +25077,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[43]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[43]_i_1_n_0\,
       Q => accu_length_0(43)
@@ -25073,7 +25085,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[44]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[44]_i_1_n_0\,
       Q => accu_length_0(44)
@@ -25081,7 +25093,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[45]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[45]_i_1_n_0\,
       Q => accu_length_0(45)
@@ -25089,7 +25101,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[46]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[46]_i_1_n_0\,
       Q => accu_length_0(46)
@@ -25097,7 +25109,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[47]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[47]_i_1_n_0\,
       Q => accu_length_0(47)
@@ -25105,7 +25117,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[48]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[48]_i_1_n_0\,
       Q => accu_length_0(48)
@@ -25113,7 +25125,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[49]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[49]_i_1_n_0\,
       Q => accu_length_0(49)
@@ -25121,15 +25133,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[4]_i_1_n_0\,
-      Q => accu_length_0(4)
+      Q => \^accu_length_0_debug\(4)
     );
 \accu_length_0_reg[50]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[50]_i_1_n_0\,
       Q => accu_length_0(50)
@@ -25137,7 +25149,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[51]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[51]_i_1_n_0\,
       Q => accu_length_0(51)
@@ -25145,7 +25157,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[52]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[52]_i_1_n_0\,
       Q => accu_length_0(52)
@@ -25153,7 +25165,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[53]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[53]_i_1_n_0\,
       Q => accu_length_0(53)
@@ -25161,7 +25173,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[54]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[54]_i_1_n_0\,
       Q => accu_length_0(54)
@@ -25169,7 +25181,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[55]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[55]_i_1_n_0\,
       Q => accu_length_0(55)
@@ -25177,7 +25189,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[56]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[56]_i_1_n_0\,
       Q => accu_length_0(56)
@@ -25185,7 +25197,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[57]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[57]_i_1_n_0\,
       Q => accu_length_0(57)
@@ -25193,7 +25205,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[58]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[58]_i_1_n_0\,
       Q => accu_length_0(58)
@@ -25201,7 +25213,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[59]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[59]_i_1_n_0\,
       Q => accu_length_0(59)
@@ -25209,15 +25221,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[5]_i_1_n_0\,
-      Q => accu_length_0(5)
+      Q => \^accu_length_0_debug\(5)
     );
 \accu_length_0_reg[60]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[60]_i_1_n_0\,
       Q => accu_length_0(60)
@@ -25225,7 +25237,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[61]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[61]_i_1_n_0\,
       Q => accu_length_0(61)
@@ -25233,7 +25245,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[62]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[62]_i_1_n_0\,
       Q => accu_length_0(62)
@@ -25241,42 +25253,42 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_0_reg[63]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_0[63]_i_2_n_0\,
+      D => \accu_length_0[63]_i_1_n_0\,
       Q => accu_length_0(63)
     );
 \accu_length_0_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[6]_i_1_n_0\,
-      Q => accu_length_0(6)
+      Q => \^accu_length_0_debug\(6)
     );
 \accu_length_0_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[7]_i_1_n_0\,
-      Q => accu_length_0(7)
+      Q => \^accu_length_0_debug\(7)
     );
 \accu_length_0_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[8]_i_1_n_0\,
-      Q => accu_length_0(8)
+      Q => \^accu_length_0_debug\(8)
     );
 \accu_length_0_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_0[63]_i_1_n_0\,
+      CE => \accu_length_0[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_0[9]_i_1_n_0\,
-      Q => accu_length_0(9)
+      Q => \^accu_length_0_debug\(9)
     );
 \accu_length_1[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -25544,6 +25556,17 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_1[31]_i_1\: unisim.vcomponents.LUT4
     generic map(
+      INIT => X"F1FF"
+    )
+        port map (
+      I0 => step_1(0),
+      I1 => step_1(1),
+      I2 => accu_finished_1_reg_rep_n_0,
+      I3 => accu_en,
+      O => \accu_length_1[31]_i_1_n_0\
+    );
+\accu_length_1[31]_i_2\: unisim.vcomponents.LUT4
+    generic map(
       INIT => X"2000"
     )
         port map (
@@ -25551,7 +25574,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_1_reg_rep_n_0,
       I2 => in_m_axis_tvalid_1,
       I3 => in_m_axis_tdata_1(31),
-      O => \accu_length_1[31]_i_1_n_0\
+      O => \accu_length_1[31]_i_2_n_0\
     );
 \accu_length_1[32]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -25929,17 +25952,6 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_1[63]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"F1FF"
-    )
-        port map (
-      I0 => step_1(0),
-      I1 => step_1(1),
-      I2 => accu_finished_1_reg_rep_n_0,
-      I3 => accu_en,
-      O => \accu_length_1[63]_i_1_n_0\
-    );
-\accu_length_1[63]_i_2\: unisim.vcomponents.LUT4
-    generic map(
       INIT => X"2000"
     )
         port map (
@@ -25947,7 +25959,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_1_reg_rep_n_0,
       I2 => in_m_axis_tvalid_1,
       I3 => in_m_axis_tdata_1(63),
-      O => \accu_length_1[63]_i_2_n_0\
+      O => \accu_length_1[63]_i_1_n_0\
     );
 \accu_length_1[6]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -25996,207 +26008,207 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[0]_i_1_n_0\,
-      Q => accu_length_1(0)
+      Q => \^accu_length_1_debug\(0)
     );
 \accu_length_1_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[10]_i_1_n_0\,
-      Q => accu_length_1(10)
+      Q => \^accu_length_1_debug\(10)
     );
 \accu_length_1_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[11]_i_1_n_0\,
-      Q => accu_length_1(11)
+      Q => \^accu_length_1_debug\(11)
     );
 \accu_length_1_reg[12]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[12]_i_1_n_0\,
-      Q => accu_length_1(12)
+      Q => \^accu_length_1_debug\(12)
     );
 \accu_length_1_reg[13]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[13]_i_1_n_0\,
-      Q => accu_length_1(13)
+      Q => \^accu_length_1_debug\(13)
     );
 \accu_length_1_reg[14]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[14]_i_1_n_0\,
-      Q => accu_length_1(14)
+      Q => \^accu_length_1_debug\(14)
     );
 \accu_length_1_reg[15]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[15]_i_1_n_0\,
-      Q => accu_length_1(15)
+      Q => \^accu_length_1_debug\(15)
     );
 \accu_length_1_reg[16]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[16]_i_1_n_0\,
-      Q => accu_length_1(16)
+      Q => \^accu_length_1_debug\(16)
     );
 \accu_length_1_reg[17]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[17]_i_1_n_0\,
-      Q => accu_length_1(17)
+      Q => \^accu_length_1_debug\(17)
     );
 \accu_length_1_reg[18]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[18]_i_1_n_0\,
-      Q => accu_length_1(18)
+      Q => \^accu_length_1_debug\(18)
     );
 \accu_length_1_reg[19]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[19]_i_1_n_0\,
-      Q => accu_length_1(19)
+      Q => \^accu_length_1_debug\(19)
     );
 \accu_length_1_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[1]_i_1_n_0\,
-      Q => accu_length_1(1)
+      Q => \^accu_length_1_debug\(1)
     );
 \accu_length_1_reg[20]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[20]_i_1_n_0\,
-      Q => accu_length_1(20)
+      Q => \^accu_length_1_debug\(20)
     );
 \accu_length_1_reg[21]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[21]_i_1_n_0\,
-      Q => accu_length_1(21)
+      Q => \^accu_length_1_debug\(21)
     );
 \accu_length_1_reg[22]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[22]_i_1_n_0\,
-      Q => accu_length_1(22)
+      Q => \^accu_length_1_debug\(22)
     );
 \accu_length_1_reg[23]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[23]_i_1_n_0\,
-      Q => accu_length_1(23)
+      Q => \^accu_length_1_debug\(23)
     );
 \accu_length_1_reg[24]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[24]_i_1_n_0\,
-      Q => accu_length_1(24)
+      Q => \^accu_length_1_debug\(24)
     );
 \accu_length_1_reg[25]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[25]_i_1_n_0\,
-      Q => accu_length_1(25)
+      Q => \^accu_length_1_debug\(25)
     );
 \accu_length_1_reg[26]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[26]_i_1_n_0\,
-      Q => accu_length_1(26)
+      Q => \^accu_length_1_debug\(26)
     );
 \accu_length_1_reg[27]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[27]_i_1_n_0\,
-      Q => accu_length_1(27)
+      Q => \^accu_length_1_debug\(27)
     );
 \accu_length_1_reg[28]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[28]_i_1_n_0\,
-      Q => accu_length_1(28)
+      Q => \^accu_length_1_debug\(28)
     );
 \accu_length_1_reg[29]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[29]_i_1_n_0\,
-      Q => accu_length_1(29)
+      Q => \^accu_length_1_debug\(29)
     );
 \accu_length_1_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[2]_i_1_n_0\,
-      Q => accu_length_1(2)
+      Q => \^accu_length_1_debug\(2)
     );
 \accu_length_1_reg[30]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[30]_i_1_n_0\,
-      Q => accu_length_1(30)
+      Q => \^accu_length_1_debug\(30)
     );
 \accu_length_1_reg[31]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_1[31]_i_1_n_0\,
-      Q => accu_length_1(31)
+      D => \accu_length_1[31]_i_2_n_0\,
+      Q => \^accu_length_1_debug\(31)
     );
 \accu_length_1_reg[32]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[32]_i_1_n_0\,
       Q => accu_length_1(32)
@@ -26204,7 +26216,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[33]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[33]_i_1_n_0\,
       Q => accu_length_1(33)
@@ -26212,7 +26224,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[34]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[34]_i_1_n_0\,
       Q => accu_length_1(34)
@@ -26220,7 +26232,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[35]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[35]_i_1_n_0\,
       Q => accu_length_1(35)
@@ -26228,7 +26240,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[36]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[36]_i_1_n_0\,
       Q => accu_length_1(36)
@@ -26236,7 +26248,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[37]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[37]_i_1_n_0\,
       Q => accu_length_1(37)
@@ -26244,7 +26256,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[38]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[38]_i_1_n_0\,
       Q => accu_length_1(38)
@@ -26252,7 +26264,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[39]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[39]_i_1_n_0\,
       Q => accu_length_1(39)
@@ -26260,15 +26272,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[3]_i_1_n_0\,
-      Q => accu_length_1(3)
+      Q => \^accu_length_1_debug\(3)
     );
 \accu_length_1_reg[40]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[40]_i_1_n_0\,
       Q => accu_length_1(40)
@@ -26276,7 +26288,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[41]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[41]_i_1_n_0\,
       Q => accu_length_1(41)
@@ -26284,7 +26296,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[42]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[42]_i_1_n_0\,
       Q => accu_length_1(42)
@@ -26292,7 +26304,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[43]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[43]_i_1_n_0\,
       Q => accu_length_1(43)
@@ -26300,7 +26312,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[44]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[44]_i_1_n_0\,
       Q => accu_length_1(44)
@@ -26308,7 +26320,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[45]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[45]_i_1_n_0\,
       Q => accu_length_1(45)
@@ -26316,7 +26328,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[46]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[46]_i_1_n_0\,
       Q => accu_length_1(46)
@@ -26324,7 +26336,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[47]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[47]_i_1_n_0\,
       Q => accu_length_1(47)
@@ -26332,7 +26344,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[48]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[48]_i_1_n_0\,
       Q => accu_length_1(48)
@@ -26340,7 +26352,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[49]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[49]_i_1_n_0\,
       Q => accu_length_1(49)
@@ -26348,15 +26360,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[4]_i_1_n_0\,
-      Q => accu_length_1(4)
+      Q => \^accu_length_1_debug\(4)
     );
 \accu_length_1_reg[50]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[50]_i_1_n_0\,
       Q => accu_length_1(50)
@@ -26364,7 +26376,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[51]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[51]_i_1_n_0\,
       Q => accu_length_1(51)
@@ -26372,7 +26384,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[52]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[52]_i_1_n_0\,
       Q => accu_length_1(52)
@@ -26380,7 +26392,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[53]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[53]_i_1_n_0\,
       Q => accu_length_1(53)
@@ -26388,7 +26400,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[54]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[54]_i_1_n_0\,
       Q => accu_length_1(54)
@@ -26396,7 +26408,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[55]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[55]_i_1_n_0\,
       Q => accu_length_1(55)
@@ -26404,7 +26416,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[56]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[56]_i_1_n_0\,
       Q => accu_length_1(56)
@@ -26412,7 +26424,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[57]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[57]_i_1_n_0\,
       Q => accu_length_1(57)
@@ -26420,7 +26432,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[58]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[58]_i_1_n_0\,
       Q => accu_length_1(58)
@@ -26428,7 +26440,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[59]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[59]_i_1_n_0\,
       Q => accu_length_1(59)
@@ -26436,15 +26448,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[5]_i_1_n_0\,
-      Q => accu_length_1(5)
+      Q => \^accu_length_1_debug\(5)
     );
 \accu_length_1_reg[60]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[60]_i_1_n_0\,
       Q => accu_length_1(60)
@@ -26452,7 +26464,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[61]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[61]_i_1_n_0\,
       Q => accu_length_1(61)
@@ -26460,7 +26472,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[62]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[62]_i_1_n_0\,
       Q => accu_length_1(62)
@@ -26468,42 +26480,42 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_1_reg[63]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_1[63]_i_2_n_0\,
+      D => \accu_length_1[63]_i_1_n_0\,
       Q => accu_length_1(63)
     );
 \accu_length_1_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[6]_i_1_n_0\,
-      Q => accu_length_1(6)
+      Q => \^accu_length_1_debug\(6)
     );
 \accu_length_1_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[7]_i_1_n_0\,
-      Q => accu_length_1(7)
+      Q => \^accu_length_1_debug\(7)
     );
 \accu_length_1_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[8]_i_1_n_0\,
-      Q => accu_length_1(8)
+      Q => \^accu_length_1_debug\(8)
     );
 \accu_length_1_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_1[63]_i_1_n_0\,
+      CE => \accu_length_1[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_1[9]_i_1_n_0\,
-      Q => accu_length_1(9)
+      Q => \^accu_length_1_debug\(9)
     );
 \accu_length_2[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -26771,6 +26783,17 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_2[31]_i_1\: unisim.vcomponents.LUT4
     generic map(
+      INIT => X"F1FF"
+    )
+        port map (
+      I0 => step_2(0),
+      I1 => step_2(1),
+      I2 => accu_finished_2_reg_rep_n_0,
+      I3 => accu_en,
+      O => \accu_length_2[31]_i_1_n_0\
+    );
+\accu_length_2[31]_i_2\: unisim.vcomponents.LUT4
+    generic map(
       INIT => X"2000"
     )
         port map (
@@ -26778,7 +26801,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_2_reg_rep_n_0,
       I2 => in_m_axis_tvalid_2,
       I3 => in_m_axis_tdata_2(31),
-      O => \accu_length_2[31]_i_1_n_0\
+      O => \accu_length_2[31]_i_2_n_0\
     );
 \accu_length_2[32]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -27156,17 +27179,6 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_2[63]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"F1FF"
-    )
-        port map (
-      I0 => step_2(0),
-      I1 => step_2(1),
-      I2 => accu_finished_2_reg_rep_n_0,
-      I3 => accu_en,
-      O => \accu_length_2[63]_i_1_n_0\
-    );
-\accu_length_2[63]_i_2\: unisim.vcomponents.LUT4
-    generic map(
       INIT => X"2000"
     )
         port map (
@@ -27174,7 +27186,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_2_reg_rep_n_0,
       I2 => in_m_axis_tvalid_2,
       I3 => in_m_axis_tdata_2(63),
-      O => \accu_length_2[63]_i_2_n_0\
+      O => \accu_length_2[63]_i_1_n_0\
     );
 \accu_length_2[6]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -27223,207 +27235,207 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[0]_i_1_n_0\,
-      Q => accu_length_2(0)
+      Q => \^accu_length_2_debug\(0)
     );
 \accu_length_2_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[10]_i_1_n_0\,
-      Q => accu_length_2(10)
+      Q => \^accu_length_2_debug\(10)
     );
 \accu_length_2_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[11]_i_1_n_0\,
-      Q => accu_length_2(11)
+      Q => \^accu_length_2_debug\(11)
     );
 \accu_length_2_reg[12]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[12]_i_1_n_0\,
-      Q => accu_length_2(12)
+      Q => \^accu_length_2_debug\(12)
     );
 \accu_length_2_reg[13]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[13]_i_1_n_0\,
-      Q => accu_length_2(13)
+      Q => \^accu_length_2_debug\(13)
     );
 \accu_length_2_reg[14]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[14]_i_1_n_0\,
-      Q => accu_length_2(14)
+      Q => \^accu_length_2_debug\(14)
     );
 \accu_length_2_reg[15]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[15]_i_1_n_0\,
-      Q => accu_length_2(15)
+      Q => \^accu_length_2_debug\(15)
     );
 \accu_length_2_reg[16]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[16]_i_1_n_0\,
-      Q => accu_length_2(16)
+      Q => \^accu_length_2_debug\(16)
     );
 \accu_length_2_reg[17]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[17]_i_1_n_0\,
-      Q => accu_length_2(17)
+      Q => \^accu_length_2_debug\(17)
     );
 \accu_length_2_reg[18]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[18]_i_1_n_0\,
-      Q => accu_length_2(18)
+      Q => \^accu_length_2_debug\(18)
     );
 \accu_length_2_reg[19]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[19]_i_1_n_0\,
-      Q => accu_length_2(19)
+      Q => \^accu_length_2_debug\(19)
     );
 \accu_length_2_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[1]_i_1_n_0\,
-      Q => accu_length_2(1)
+      Q => \^accu_length_2_debug\(1)
     );
 \accu_length_2_reg[20]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[20]_i_1_n_0\,
-      Q => accu_length_2(20)
+      Q => \^accu_length_2_debug\(20)
     );
 \accu_length_2_reg[21]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[21]_i_1_n_0\,
-      Q => accu_length_2(21)
+      Q => \^accu_length_2_debug\(21)
     );
 \accu_length_2_reg[22]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[22]_i_1_n_0\,
-      Q => accu_length_2(22)
+      Q => \^accu_length_2_debug\(22)
     );
 \accu_length_2_reg[23]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[23]_i_1_n_0\,
-      Q => accu_length_2(23)
+      Q => \^accu_length_2_debug\(23)
     );
 \accu_length_2_reg[24]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[24]_i_1_n_0\,
-      Q => accu_length_2(24)
+      Q => \^accu_length_2_debug\(24)
     );
 \accu_length_2_reg[25]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[25]_i_1_n_0\,
-      Q => accu_length_2(25)
+      Q => \^accu_length_2_debug\(25)
     );
 \accu_length_2_reg[26]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[26]_i_1_n_0\,
-      Q => accu_length_2(26)
+      Q => \^accu_length_2_debug\(26)
     );
 \accu_length_2_reg[27]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[27]_i_1_n_0\,
-      Q => accu_length_2(27)
+      Q => \^accu_length_2_debug\(27)
     );
 \accu_length_2_reg[28]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[28]_i_1_n_0\,
-      Q => accu_length_2(28)
+      Q => \^accu_length_2_debug\(28)
     );
 \accu_length_2_reg[29]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[29]_i_1_n_0\,
-      Q => accu_length_2(29)
+      Q => \^accu_length_2_debug\(29)
     );
 \accu_length_2_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[2]_i_1_n_0\,
-      Q => accu_length_2(2)
+      Q => \^accu_length_2_debug\(2)
     );
 \accu_length_2_reg[30]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[30]_i_1_n_0\,
-      Q => accu_length_2(30)
+      Q => \^accu_length_2_debug\(30)
     );
 \accu_length_2_reg[31]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_2[31]_i_1_n_0\,
-      Q => accu_length_2(31)
+      D => \accu_length_2[31]_i_2_n_0\,
+      Q => \^accu_length_2_debug\(31)
     );
 \accu_length_2_reg[32]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[32]_i_1_n_0\,
       Q => accu_length_2(32)
@@ -27431,7 +27443,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[33]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[33]_i_1_n_0\,
       Q => accu_length_2(33)
@@ -27439,7 +27451,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[34]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[34]_i_1_n_0\,
       Q => accu_length_2(34)
@@ -27447,7 +27459,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[35]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[35]_i_1_n_0\,
       Q => accu_length_2(35)
@@ -27455,7 +27467,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[36]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[36]_i_1_n_0\,
       Q => accu_length_2(36)
@@ -27463,7 +27475,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[37]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[37]_i_1_n_0\,
       Q => accu_length_2(37)
@@ -27471,7 +27483,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[38]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[38]_i_1_n_0\,
       Q => accu_length_2(38)
@@ -27479,7 +27491,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[39]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[39]_i_1_n_0\,
       Q => accu_length_2(39)
@@ -27487,15 +27499,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[3]_i_1_n_0\,
-      Q => accu_length_2(3)
+      Q => \^accu_length_2_debug\(3)
     );
 \accu_length_2_reg[40]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[40]_i_1_n_0\,
       Q => accu_length_2(40)
@@ -27503,7 +27515,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[41]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[41]_i_1_n_0\,
       Q => accu_length_2(41)
@@ -27511,7 +27523,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[42]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[42]_i_1_n_0\,
       Q => accu_length_2(42)
@@ -27519,7 +27531,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[43]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[43]_i_1_n_0\,
       Q => accu_length_2(43)
@@ -27527,7 +27539,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[44]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[44]_i_1_n_0\,
       Q => accu_length_2(44)
@@ -27535,7 +27547,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[45]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[45]_i_1_n_0\,
       Q => accu_length_2(45)
@@ -27543,7 +27555,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[46]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[46]_i_1_n_0\,
       Q => accu_length_2(46)
@@ -27551,7 +27563,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[47]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[47]_i_1_n_0\,
       Q => accu_length_2(47)
@@ -27559,7 +27571,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[48]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[48]_i_1_n_0\,
       Q => accu_length_2(48)
@@ -27567,7 +27579,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[49]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[49]_i_1_n_0\,
       Q => accu_length_2(49)
@@ -27575,15 +27587,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[4]_i_1_n_0\,
-      Q => accu_length_2(4)
+      Q => \^accu_length_2_debug\(4)
     );
 \accu_length_2_reg[50]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[50]_i_1_n_0\,
       Q => accu_length_2(50)
@@ -27591,7 +27603,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[51]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[51]_i_1_n_0\,
       Q => accu_length_2(51)
@@ -27599,7 +27611,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[52]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[52]_i_1_n_0\,
       Q => accu_length_2(52)
@@ -27607,7 +27619,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[53]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[53]_i_1_n_0\,
       Q => accu_length_2(53)
@@ -27615,7 +27627,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[54]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[54]_i_1_n_0\,
       Q => accu_length_2(54)
@@ -27623,7 +27635,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[55]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[55]_i_1_n_0\,
       Q => accu_length_2(55)
@@ -27631,7 +27643,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[56]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[56]_i_1_n_0\,
       Q => accu_length_2(56)
@@ -27639,7 +27651,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[57]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[57]_i_1_n_0\,
       Q => accu_length_2(57)
@@ -27647,7 +27659,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[58]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[58]_i_1_n_0\,
       Q => accu_length_2(58)
@@ -27655,7 +27667,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[59]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[59]_i_1_n_0\,
       Q => accu_length_2(59)
@@ -27663,15 +27675,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[5]_i_1_n_0\,
-      Q => accu_length_2(5)
+      Q => \^accu_length_2_debug\(5)
     );
 \accu_length_2_reg[60]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[60]_i_1_n_0\,
       Q => accu_length_2(60)
@@ -27679,7 +27691,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[61]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[61]_i_1_n_0\,
       Q => accu_length_2(61)
@@ -27687,7 +27699,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[62]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[62]_i_1_n_0\,
       Q => accu_length_2(62)
@@ -27695,42 +27707,42 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_2_reg[63]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_2[63]_i_2_n_0\,
+      D => \accu_length_2[63]_i_1_n_0\,
       Q => accu_length_2(63)
     );
 \accu_length_2_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[6]_i_1_n_0\,
-      Q => accu_length_2(6)
+      Q => \^accu_length_2_debug\(6)
     );
 \accu_length_2_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[7]_i_1_n_0\,
-      Q => accu_length_2(7)
+      Q => \^accu_length_2_debug\(7)
     );
 \accu_length_2_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[8]_i_1_n_0\,
-      Q => accu_length_2(8)
+      Q => \^accu_length_2_debug\(8)
     );
 \accu_length_2_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_2[63]_i_1_n_0\,
+      CE => \accu_length_2[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_2[9]_i_1_n_0\,
-      Q => accu_length_2(9)
+      Q => \^accu_length_2_debug\(9)
     );
 \accu_length_3[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -27998,6 +28010,17 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_3[31]_i_1\: unisim.vcomponents.LUT4
     generic map(
+      INIT => X"F1FF"
+    )
+        port map (
+      I0 => step_3(0),
+      I1 => step_3(1),
+      I2 => accu_finished_3_reg_rep_n_0,
+      I3 => accu_en,
+      O => \accu_length_3[31]_i_1_n_0\
+    );
+\accu_length_3[31]_i_2\: unisim.vcomponents.LUT4
+    generic map(
       INIT => X"2000"
     )
         port map (
@@ -28005,7 +28028,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_3_reg_rep_n_0,
       I2 => in_m_axis_tvalid_3,
       I3 => in_m_axis_tdata_3(31),
-      O => \accu_length_3[31]_i_1_n_0\
+      O => \accu_length_3[31]_i_2_n_0\
     );
 \accu_length_3[32]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -28383,17 +28406,6 @@ accu_finished_reg: unisim.vcomponents.FDPE
     );
 \accu_length_3[63]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"F1FF"
-    )
-        port map (
-      I0 => step_3(0),
-      I1 => step_3(1),
-      I2 => accu_finished_3_reg_rep_n_0,
-      I3 => accu_en,
-      O => \accu_length_3[63]_i_1_n_0\
-    );
-\accu_length_3[63]_i_2\: unisim.vcomponents.LUT4
-    generic map(
       INIT => X"2000"
     )
         port map (
@@ -28401,7 +28413,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
       I1 => accu_finished_3_reg_rep_n_0,
       I2 => in_m_axis_tvalid_3,
       I3 => in_m_axis_tdata_3(63),
-      O => \accu_length_3[63]_i_2_n_0\
+      O => \accu_length_3[63]_i_1_n_0\
     );
 \accu_length_3[6]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -28450,207 +28462,207 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[0]_i_1_n_0\,
-      Q => accu_length_3(0)
+      Q => \^accu_length_3_debug\(0)
     );
 \accu_length_3_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[10]_i_1_n_0\,
-      Q => accu_length_3(10)
+      Q => \^accu_length_3_debug\(10)
     );
 \accu_length_3_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[11]_i_1_n_0\,
-      Q => accu_length_3(11)
+      Q => \^accu_length_3_debug\(11)
     );
 \accu_length_3_reg[12]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[12]_i_1_n_0\,
-      Q => accu_length_3(12)
+      Q => \^accu_length_3_debug\(12)
     );
 \accu_length_3_reg[13]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[13]_i_1_n_0\,
-      Q => accu_length_3(13)
+      Q => \^accu_length_3_debug\(13)
     );
 \accu_length_3_reg[14]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[14]_i_1_n_0\,
-      Q => accu_length_3(14)
+      Q => \^accu_length_3_debug\(14)
     );
 \accu_length_3_reg[15]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[15]_i_1_n_0\,
-      Q => accu_length_3(15)
+      Q => \^accu_length_3_debug\(15)
     );
 \accu_length_3_reg[16]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[16]_i_1_n_0\,
-      Q => accu_length_3(16)
+      Q => \^accu_length_3_debug\(16)
     );
 \accu_length_3_reg[17]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[17]_i_1_n_0\,
-      Q => accu_length_3(17)
+      Q => \^accu_length_3_debug\(17)
     );
 \accu_length_3_reg[18]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[18]_i_1_n_0\,
-      Q => accu_length_3(18)
+      Q => \^accu_length_3_debug\(18)
     );
 \accu_length_3_reg[19]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[19]_i_1_n_0\,
-      Q => accu_length_3(19)
+      Q => \^accu_length_3_debug\(19)
     );
 \accu_length_3_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[1]_i_1_n_0\,
-      Q => accu_length_3(1)
+      Q => \^accu_length_3_debug\(1)
     );
 \accu_length_3_reg[20]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[20]_i_1_n_0\,
-      Q => accu_length_3(20)
+      Q => \^accu_length_3_debug\(20)
     );
 \accu_length_3_reg[21]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[21]_i_1_n_0\,
-      Q => accu_length_3(21)
+      Q => \^accu_length_3_debug\(21)
     );
 \accu_length_3_reg[22]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[22]_i_1_n_0\,
-      Q => accu_length_3(22)
+      Q => \^accu_length_3_debug\(22)
     );
 \accu_length_3_reg[23]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[23]_i_1_n_0\,
-      Q => accu_length_3(23)
+      Q => \^accu_length_3_debug\(23)
     );
 \accu_length_3_reg[24]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[24]_i_1_n_0\,
-      Q => accu_length_3(24)
+      Q => \^accu_length_3_debug\(24)
     );
 \accu_length_3_reg[25]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[25]_i_1_n_0\,
-      Q => accu_length_3(25)
+      Q => \^accu_length_3_debug\(25)
     );
 \accu_length_3_reg[26]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[26]_i_1_n_0\,
-      Q => accu_length_3(26)
+      Q => \^accu_length_3_debug\(26)
     );
 \accu_length_3_reg[27]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[27]_i_1_n_0\,
-      Q => accu_length_3(27)
+      Q => \^accu_length_3_debug\(27)
     );
 \accu_length_3_reg[28]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[28]_i_1_n_0\,
-      Q => accu_length_3(28)
+      Q => \^accu_length_3_debug\(28)
     );
 \accu_length_3_reg[29]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[29]_i_1_n_0\,
-      Q => accu_length_3(29)
+      Q => \^accu_length_3_debug\(29)
     );
 \accu_length_3_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[2]_i_1_n_0\,
-      Q => accu_length_3(2)
+      Q => \^accu_length_3_debug\(2)
     );
 \accu_length_3_reg[30]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[30]_i_1_n_0\,
-      Q => accu_length_3(30)
+      Q => \^accu_length_3_debug\(30)
     );
 \accu_length_3_reg[31]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_3[31]_i_1_n_0\,
-      Q => accu_length_3(31)
+      D => \accu_length_3[31]_i_2_n_0\,
+      Q => \^accu_length_3_debug\(31)
     );
 \accu_length_3_reg[32]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[32]_i_1_n_0\,
       Q => accu_length_3(32)
@@ -28658,7 +28670,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[33]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[33]_i_1_n_0\,
       Q => accu_length_3(33)
@@ -28666,7 +28678,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[34]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[34]_i_1_n_0\,
       Q => accu_length_3(34)
@@ -28674,7 +28686,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[35]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[35]_i_1_n_0\,
       Q => accu_length_3(35)
@@ -28682,7 +28694,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[36]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[36]_i_1_n_0\,
       Q => accu_length_3(36)
@@ -28690,7 +28702,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[37]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[37]_i_1_n_0\,
       Q => accu_length_3(37)
@@ -28698,7 +28710,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[38]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[38]_i_1_n_0\,
       Q => accu_length_3(38)
@@ -28706,7 +28718,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[39]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[39]_i_1_n_0\,
       Q => accu_length_3(39)
@@ -28714,15 +28726,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[3]_i_1_n_0\,
-      Q => accu_length_3(3)
+      Q => \^accu_length_3_debug\(3)
     );
 \accu_length_3_reg[40]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[40]_i_1_n_0\,
       Q => accu_length_3(40)
@@ -28730,7 +28742,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[41]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[41]_i_1_n_0\,
       Q => accu_length_3(41)
@@ -28738,7 +28750,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[42]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[42]_i_1_n_0\,
       Q => accu_length_3(42)
@@ -28746,7 +28758,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[43]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[43]_i_1_n_0\,
       Q => accu_length_3(43)
@@ -28754,7 +28766,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[44]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[44]_i_1_n_0\,
       Q => accu_length_3(44)
@@ -28762,7 +28774,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[45]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[45]_i_1_n_0\,
       Q => accu_length_3(45)
@@ -28770,7 +28782,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[46]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[46]_i_1_n_0\,
       Q => accu_length_3(46)
@@ -28778,7 +28790,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[47]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[47]_i_1_n_0\,
       Q => accu_length_3(47)
@@ -28786,7 +28798,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[48]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[48]_i_1_n_0\,
       Q => accu_length_3(48)
@@ -28794,7 +28806,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[49]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[49]_i_1_n_0\,
       Q => accu_length_3(49)
@@ -28802,15 +28814,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[4]_i_1_n_0\,
-      Q => accu_length_3(4)
+      Q => \^accu_length_3_debug\(4)
     );
 \accu_length_3_reg[50]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[50]_i_1_n_0\,
       Q => accu_length_3(50)
@@ -28818,7 +28830,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[51]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[51]_i_1_n_0\,
       Q => accu_length_3(51)
@@ -28826,7 +28838,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[52]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[52]_i_1_n_0\,
       Q => accu_length_3(52)
@@ -28834,7 +28846,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[53]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[53]_i_1_n_0\,
       Q => accu_length_3(53)
@@ -28842,7 +28854,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[54]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[54]_i_1_n_0\,
       Q => accu_length_3(54)
@@ -28850,7 +28862,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[55]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[55]_i_1_n_0\,
       Q => accu_length_3(55)
@@ -28858,7 +28870,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[56]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[56]_i_1_n_0\,
       Q => accu_length_3(56)
@@ -28866,7 +28878,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[57]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[57]_i_1_n_0\,
       Q => accu_length_3(57)
@@ -28874,7 +28886,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[58]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[58]_i_1_n_0\,
       Q => accu_length_3(58)
@@ -28882,7 +28894,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[59]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[59]_i_1_n_0\,
       Q => accu_length_3(59)
@@ -28890,15 +28902,15 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[5]_i_1_n_0\,
-      Q => accu_length_3(5)
+      Q => \^accu_length_3_debug\(5)
     );
 \accu_length_3_reg[60]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[60]_i_1_n_0\,
       Q => accu_length_3(60)
@@ -28906,7 +28918,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[61]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[61]_i_1_n_0\,
       Q => accu_length_3(61)
@@ -28914,7 +28926,7 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[62]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[62]_i_1_n_0\,
       Q => accu_length_3(62)
@@ -28922,42 +28934,42 @@ accu_finished_reg: unisim.vcomponents.FDPE
 \accu_length_3_reg[63]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
-      D => \accu_length_3[63]_i_2_n_0\,
+      D => \accu_length_3[63]_i_1_n_0\,
       Q => accu_length_3(63)
     );
 \accu_length_3_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[6]_i_1_n_0\,
-      Q => accu_length_3(6)
+      Q => \^accu_length_3_debug\(6)
     );
 \accu_length_3_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[7]_i_1_n_0\,
-      Q => accu_length_3(7)
+      Q => \^accu_length_3_debug\(7)
     );
 \accu_length_3_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[8]_i_1_n_0\,
-      Q => accu_length_3(8)
+      Q => \^accu_length_3_debug\(8)
     );
 \accu_length_3_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
-      CE => \accu_length_3[63]_i_1_n_0\,
+      CE => \accu_length_3[31]_i_1_n_0\,
       CLR => accu_finished_i_2_n_0,
       D => \accu_length_3[9]_i_1_n_0\,
-      Q => accu_length_3(9)
+      Q => \^accu_length_3_debug\(9)
     );
 \cnt_0[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -35994,10 +36006,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(30),
-      I1 => accu_length_0(30),
+      I1 => \^accu_length_0_debug\(30),
       I2 => accu_length_0(32),
       I3 => cnt_0(32),
-      I4 => accu_length_0(31),
+      I4 => \^accu_length_0_debug\(31),
       I5 => cnt_0(31),
       O => \step_0[0]_i_16_n_0\
     );
@@ -36007,10 +36019,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(27),
-      I1 => accu_length_0(27),
-      I2 => accu_length_0(29),
+      I1 => \^accu_length_0_debug\(27),
+      I2 => \^accu_length_0_debug\(29),
       I3 => cnt_0(29),
-      I4 => accu_length_0(28),
+      I4 => \^accu_length_0_debug\(28),
       I5 => cnt_0(28),
       O => \step_0[0]_i_17_n_0\
     );
@@ -36020,10 +36032,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(24),
-      I1 => accu_length_0(24),
-      I2 => accu_length_0(26),
+      I1 => \^accu_length_0_debug\(24),
+      I2 => \^accu_length_0_debug\(26),
       I3 => cnt_0(26),
-      I4 => accu_length_0(25),
+      I4 => \^accu_length_0_debug\(25),
       I5 => cnt_0(25),
       O => \step_0[0]_i_18_n_0\
     );
@@ -36033,10 +36045,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(21),
-      I1 => accu_length_0(21),
-      I2 => accu_length_0(23),
+      I1 => \^accu_length_0_debug\(21),
+      I2 => \^accu_length_0_debug\(23),
       I3 => cnt_0(23),
-      I4 => accu_length_0(22),
+      I4 => \^accu_length_0_debug\(22),
       I5 => cnt_0(22),
       O => \step_0[0]_i_19_n_0\
     );
@@ -36046,10 +36058,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(18),
-      I1 => accu_length_0(18),
-      I2 => accu_length_0(20),
+      I1 => \^accu_length_0_debug\(18),
+      I2 => \^accu_length_0_debug\(20),
       I3 => cnt_0(20),
-      I4 => accu_length_0(19),
+      I4 => \^accu_length_0_debug\(19),
       I5 => cnt_0(19),
       O => \step_0[0]_i_20_n_0\
     );
@@ -36059,10 +36071,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(15),
-      I1 => accu_length_0(15),
-      I2 => accu_length_0(17),
+      I1 => \^accu_length_0_debug\(15),
+      I2 => \^accu_length_0_debug\(17),
       I3 => cnt_0(17),
-      I4 => accu_length_0(16),
+      I4 => \^accu_length_0_debug\(16),
       I5 => cnt_0(16),
       O => \step_0[0]_i_21_n_0\
     );
@@ -36072,10 +36084,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(12),
-      I1 => accu_length_0(12),
-      I2 => accu_length_0(14),
+      I1 => \^accu_length_0_debug\(12),
+      I2 => \^accu_length_0_debug\(14),
       I3 => cnt_0(14),
-      I4 => accu_length_0(13),
+      I4 => \^accu_length_0_debug\(13),
       I5 => cnt_0(13),
       O => \step_0[0]_i_22_n_0\
     );
@@ -36085,10 +36097,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(9),
-      I1 => accu_length_0(9),
-      I2 => accu_length_0(11),
+      I1 => \^accu_length_0_debug\(9),
+      I2 => \^accu_length_0_debug\(11),
       I3 => cnt_0(11),
-      I4 => accu_length_0(10),
+      I4 => \^accu_length_0_debug\(10),
       I5 => cnt_0(10),
       O => \step_0[0]_i_23_n_0\
     );
@@ -36098,10 +36110,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(6),
-      I1 => accu_length_0(6),
-      I2 => accu_length_0(8),
+      I1 => \^accu_length_0_debug\(6),
+      I2 => \^accu_length_0_debug\(8),
       I3 => cnt_0(8),
-      I4 => accu_length_0(7),
+      I4 => \^accu_length_0_debug\(7),
       I5 => cnt_0(7),
       O => \step_0[0]_i_24_n_0\
     );
@@ -36111,10 +36123,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(3),
-      I1 => accu_length_0(3),
-      I2 => accu_length_0(5),
+      I1 => \^accu_length_0_debug\(3),
+      I2 => \^accu_length_0_debug\(5),
       I3 => cnt_0(5),
-      I4 => accu_length_0(4),
+      I4 => \^accu_length_0_debug\(4),
       I5 => cnt_0(4),
       O => \step_0[0]_i_25_n_0\
     );
@@ -36124,10 +36136,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_0(0),
-      I1 => accu_length_0(0),
-      I2 => accu_length_0(2),
+      I1 => \^accu_length_0_debug\(0),
+      I2 => \^accu_length_0_debug\(2),
       I3 => cnt_0(2),
-      I4 => accu_length_0(1),
+      I4 => \^accu_length_0_debug\(1),
       I5 => cnt_0(1),
       O => \step_0[0]_i_26_n_0\
     );
@@ -36384,10 +36396,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(30),
-      I1 => accu_length_1(30),
+      I1 => \^accu_length_1_debug\(30),
       I2 => accu_length_1(32),
       I3 => cnt_1(32),
-      I4 => accu_length_1(31),
+      I4 => \^accu_length_1_debug\(31),
       I5 => cnt_1(31),
       O => \step_1[0]_i_16_n_0\
     );
@@ -36397,10 +36409,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(27),
-      I1 => accu_length_1(27),
-      I2 => accu_length_1(29),
+      I1 => \^accu_length_1_debug\(27),
+      I2 => \^accu_length_1_debug\(29),
       I3 => cnt_1(29),
-      I4 => accu_length_1(28),
+      I4 => \^accu_length_1_debug\(28),
       I5 => cnt_1(28),
       O => \step_1[0]_i_17_n_0\
     );
@@ -36410,10 +36422,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(24),
-      I1 => accu_length_1(24),
-      I2 => accu_length_1(26),
+      I1 => \^accu_length_1_debug\(24),
+      I2 => \^accu_length_1_debug\(26),
       I3 => cnt_1(26),
-      I4 => accu_length_1(25),
+      I4 => \^accu_length_1_debug\(25),
       I5 => cnt_1(25),
       O => \step_1[0]_i_18_n_0\
     );
@@ -36423,10 +36435,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(21),
-      I1 => accu_length_1(21),
-      I2 => accu_length_1(23),
+      I1 => \^accu_length_1_debug\(21),
+      I2 => \^accu_length_1_debug\(23),
       I3 => cnt_1(23),
-      I4 => accu_length_1(22),
+      I4 => \^accu_length_1_debug\(22),
       I5 => cnt_1(22),
       O => \step_1[0]_i_19_n_0\
     );
@@ -36436,10 +36448,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(18),
-      I1 => accu_length_1(18),
-      I2 => accu_length_1(20),
+      I1 => \^accu_length_1_debug\(18),
+      I2 => \^accu_length_1_debug\(20),
       I3 => cnt_1(20),
-      I4 => accu_length_1(19),
+      I4 => \^accu_length_1_debug\(19),
       I5 => cnt_1(19),
       O => \step_1[0]_i_20_n_0\
     );
@@ -36449,10 +36461,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(15),
-      I1 => accu_length_1(15),
-      I2 => accu_length_1(17),
+      I1 => \^accu_length_1_debug\(15),
+      I2 => \^accu_length_1_debug\(17),
       I3 => cnt_1(17),
-      I4 => accu_length_1(16),
+      I4 => \^accu_length_1_debug\(16),
       I5 => cnt_1(16),
       O => \step_1[0]_i_21_n_0\
     );
@@ -36462,10 +36474,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(12),
-      I1 => accu_length_1(12),
-      I2 => accu_length_1(14),
+      I1 => \^accu_length_1_debug\(12),
+      I2 => \^accu_length_1_debug\(14),
       I3 => cnt_1(14),
-      I4 => accu_length_1(13),
+      I4 => \^accu_length_1_debug\(13),
       I5 => cnt_1(13),
       O => \step_1[0]_i_22_n_0\
     );
@@ -36475,10 +36487,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(9),
-      I1 => accu_length_1(9),
-      I2 => accu_length_1(11),
+      I1 => \^accu_length_1_debug\(9),
+      I2 => \^accu_length_1_debug\(11),
       I3 => cnt_1(11),
-      I4 => accu_length_1(10),
+      I4 => \^accu_length_1_debug\(10),
       I5 => cnt_1(10),
       O => \step_1[0]_i_23_n_0\
     );
@@ -36488,10 +36500,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(6),
-      I1 => accu_length_1(6),
-      I2 => accu_length_1(8),
+      I1 => \^accu_length_1_debug\(6),
+      I2 => \^accu_length_1_debug\(8),
       I3 => cnt_1(8),
-      I4 => accu_length_1(7),
+      I4 => \^accu_length_1_debug\(7),
       I5 => cnt_1(7),
       O => \step_1[0]_i_24_n_0\
     );
@@ -36501,10 +36513,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(3),
-      I1 => accu_length_1(3),
-      I2 => accu_length_1(5),
+      I1 => \^accu_length_1_debug\(3),
+      I2 => \^accu_length_1_debug\(5),
       I3 => cnt_1(5),
-      I4 => accu_length_1(4),
+      I4 => \^accu_length_1_debug\(4),
       I5 => cnt_1(4),
       O => \step_1[0]_i_25_n_0\
     );
@@ -36514,10 +36526,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_1(0),
-      I1 => accu_length_1(0),
-      I2 => accu_length_1(2),
+      I1 => \^accu_length_1_debug\(0),
+      I2 => \^accu_length_1_debug\(2),
       I3 => cnt_1(2),
-      I4 => accu_length_1(1),
+      I4 => \^accu_length_1_debug\(1),
       I5 => cnt_1(1),
       O => \step_1[0]_i_26_n_0\
     );
@@ -36774,10 +36786,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(30),
-      I1 => accu_length_2(30),
+      I1 => \^accu_length_2_debug\(30),
       I2 => accu_length_2(32),
       I3 => cnt_2(32),
-      I4 => accu_length_2(31),
+      I4 => \^accu_length_2_debug\(31),
       I5 => cnt_2(31),
       O => \step_2[0]_i_16_n_0\
     );
@@ -36787,10 +36799,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(27),
-      I1 => accu_length_2(27),
-      I2 => accu_length_2(29),
+      I1 => \^accu_length_2_debug\(27),
+      I2 => \^accu_length_2_debug\(29),
       I3 => cnt_2(29),
-      I4 => accu_length_2(28),
+      I4 => \^accu_length_2_debug\(28),
       I5 => cnt_2(28),
       O => \step_2[0]_i_17_n_0\
     );
@@ -36800,10 +36812,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(24),
-      I1 => accu_length_2(24),
-      I2 => accu_length_2(26),
+      I1 => \^accu_length_2_debug\(24),
+      I2 => \^accu_length_2_debug\(26),
       I3 => cnt_2(26),
-      I4 => accu_length_2(25),
+      I4 => \^accu_length_2_debug\(25),
       I5 => cnt_2(25),
       O => \step_2[0]_i_18_n_0\
     );
@@ -36813,10 +36825,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(21),
-      I1 => accu_length_2(21),
-      I2 => accu_length_2(23),
+      I1 => \^accu_length_2_debug\(21),
+      I2 => \^accu_length_2_debug\(23),
       I3 => cnt_2(23),
-      I4 => accu_length_2(22),
+      I4 => \^accu_length_2_debug\(22),
       I5 => cnt_2(22),
       O => \step_2[0]_i_19_n_0\
     );
@@ -36826,10 +36838,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(18),
-      I1 => accu_length_2(18),
-      I2 => accu_length_2(20),
+      I1 => \^accu_length_2_debug\(18),
+      I2 => \^accu_length_2_debug\(20),
       I3 => cnt_2(20),
-      I4 => accu_length_2(19),
+      I4 => \^accu_length_2_debug\(19),
       I5 => cnt_2(19),
       O => \step_2[0]_i_20_n_0\
     );
@@ -36839,10 +36851,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(15),
-      I1 => accu_length_2(15),
-      I2 => accu_length_2(17),
+      I1 => \^accu_length_2_debug\(15),
+      I2 => \^accu_length_2_debug\(17),
       I3 => cnt_2(17),
-      I4 => accu_length_2(16),
+      I4 => \^accu_length_2_debug\(16),
       I5 => cnt_2(16),
       O => \step_2[0]_i_21_n_0\
     );
@@ -36852,10 +36864,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(12),
-      I1 => accu_length_2(12),
-      I2 => accu_length_2(14),
+      I1 => \^accu_length_2_debug\(12),
+      I2 => \^accu_length_2_debug\(14),
       I3 => cnt_2(14),
-      I4 => accu_length_2(13),
+      I4 => \^accu_length_2_debug\(13),
       I5 => cnt_2(13),
       O => \step_2[0]_i_22_n_0\
     );
@@ -36865,10 +36877,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(9),
-      I1 => accu_length_2(9),
-      I2 => accu_length_2(11),
+      I1 => \^accu_length_2_debug\(9),
+      I2 => \^accu_length_2_debug\(11),
       I3 => cnt_2(11),
-      I4 => accu_length_2(10),
+      I4 => \^accu_length_2_debug\(10),
       I5 => cnt_2(10),
       O => \step_2[0]_i_23_n_0\
     );
@@ -36878,10 +36890,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(6),
-      I1 => accu_length_2(6),
-      I2 => accu_length_2(8),
+      I1 => \^accu_length_2_debug\(6),
+      I2 => \^accu_length_2_debug\(8),
       I3 => cnt_2(8),
-      I4 => accu_length_2(7),
+      I4 => \^accu_length_2_debug\(7),
       I5 => cnt_2(7),
       O => \step_2[0]_i_24_n_0\
     );
@@ -36891,10 +36903,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(3),
-      I1 => accu_length_2(3),
-      I2 => accu_length_2(5),
+      I1 => \^accu_length_2_debug\(3),
+      I2 => \^accu_length_2_debug\(5),
       I3 => cnt_2(5),
-      I4 => accu_length_2(4),
+      I4 => \^accu_length_2_debug\(4),
       I5 => cnt_2(4),
       O => \step_2[0]_i_25_n_0\
     );
@@ -36904,10 +36916,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_2(0),
-      I1 => accu_length_2(0),
-      I2 => accu_length_2(2),
+      I1 => \^accu_length_2_debug\(0),
+      I2 => \^accu_length_2_debug\(2),
       I3 => cnt_2(2),
-      I4 => accu_length_2(1),
+      I4 => \^accu_length_2_debug\(1),
       I5 => cnt_2(1),
       O => \step_2[0]_i_26_n_0\
     );
@@ -37164,10 +37176,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(30),
-      I1 => accu_length_3(30),
+      I1 => \^accu_length_3_debug\(30),
       I2 => accu_length_3(32),
       I3 => cnt_3(32),
-      I4 => accu_length_3(31),
+      I4 => \^accu_length_3_debug\(31),
       I5 => cnt_3(31),
       O => \step_3[0]_i_16_n_0\
     );
@@ -37177,10 +37189,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(27),
-      I1 => accu_length_3(27),
-      I2 => accu_length_3(29),
+      I1 => \^accu_length_3_debug\(27),
+      I2 => \^accu_length_3_debug\(29),
       I3 => cnt_3(29),
-      I4 => accu_length_3(28),
+      I4 => \^accu_length_3_debug\(28),
       I5 => cnt_3(28),
       O => \step_3[0]_i_17_n_0\
     );
@@ -37190,10 +37202,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(24),
-      I1 => accu_length_3(24),
-      I2 => accu_length_3(26),
+      I1 => \^accu_length_3_debug\(24),
+      I2 => \^accu_length_3_debug\(26),
       I3 => cnt_3(26),
-      I4 => accu_length_3(25),
+      I4 => \^accu_length_3_debug\(25),
       I5 => cnt_3(25),
       O => \step_3[0]_i_18_n_0\
     );
@@ -37203,10 +37215,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(21),
-      I1 => accu_length_3(21),
-      I2 => accu_length_3(23),
+      I1 => \^accu_length_3_debug\(21),
+      I2 => \^accu_length_3_debug\(23),
       I3 => cnt_3(23),
-      I4 => accu_length_3(22),
+      I4 => \^accu_length_3_debug\(22),
       I5 => cnt_3(22),
       O => \step_3[0]_i_19_n_0\
     );
@@ -37216,10 +37228,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(18),
-      I1 => accu_length_3(18),
-      I2 => accu_length_3(20),
+      I1 => \^accu_length_3_debug\(18),
+      I2 => \^accu_length_3_debug\(20),
       I3 => cnt_3(20),
-      I4 => accu_length_3(19),
+      I4 => \^accu_length_3_debug\(19),
       I5 => cnt_3(19),
       O => \step_3[0]_i_20_n_0\
     );
@@ -37229,10 +37241,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(15),
-      I1 => accu_length_3(15),
-      I2 => accu_length_3(17),
+      I1 => \^accu_length_3_debug\(15),
+      I2 => \^accu_length_3_debug\(17),
       I3 => cnt_3(17),
-      I4 => accu_length_3(16),
+      I4 => \^accu_length_3_debug\(16),
       I5 => cnt_3(16),
       O => \step_3[0]_i_21_n_0\
     );
@@ -37242,10 +37254,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(12),
-      I1 => accu_length_3(12),
-      I2 => accu_length_3(14),
+      I1 => \^accu_length_3_debug\(12),
+      I2 => \^accu_length_3_debug\(14),
       I3 => cnt_3(14),
-      I4 => accu_length_3(13),
+      I4 => \^accu_length_3_debug\(13),
       I5 => cnt_3(13),
       O => \step_3[0]_i_22_n_0\
     );
@@ -37255,10 +37267,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(9),
-      I1 => accu_length_3(9),
-      I2 => accu_length_3(11),
+      I1 => \^accu_length_3_debug\(9),
+      I2 => \^accu_length_3_debug\(11),
       I3 => cnt_3(11),
-      I4 => accu_length_3(10),
+      I4 => \^accu_length_3_debug\(10),
       I5 => cnt_3(10),
       O => \step_3[0]_i_23_n_0\
     );
@@ -37268,10 +37280,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(6),
-      I1 => accu_length_3(6),
-      I2 => accu_length_3(8),
+      I1 => \^accu_length_3_debug\(6),
+      I2 => \^accu_length_3_debug\(8),
       I3 => cnt_3(8),
-      I4 => accu_length_3(7),
+      I4 => \^accu_length_3_debug\(7),
       I5 => cnt_3(7),
       O => \step_3[0]_i_24_n_0\
     );
@@ -37281,10 +37293,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(3),
-      I1 => accu_length_3(3),
-      I2 => accu_length_3(5),
+      I1 => \^accu_length_3_debug\(3),
+      I2 => \^accu_length_3_debug\(5),
       I3 => cnt_3(5),
-      I4 => accu_length_3(4),
+      I4 => \^accu_length_3_debug\(4),
       I5 => cnt_3(4),
       O => \step_3[0]_i_25_n_0\
     );
@@ -37294,10 +37306,10 @@ rst_reg: unisim.vcomponents.FDCE
     )
         port map (
       I0 => cnt_3(0),
-      I1 => accu_length_3(0),
-      I2 => accu_length_3(2),
+      I1 => \^accu_length_3_debug\(0),
+      I2 => \^accu_length_3_debug\(2),
       I3 => cnt_3(2),
-      I4 => accu_length_3(1),
+      I4 => \^accu_length_3_debug\(1),
       I5 => cnt_3(1),
       O => \step_3[0]_i_26_n_0\
     );
@@ -49199,6 +49211,10 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     accu_finished : out STD_LOGIC;
     sum_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
     step_debug : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    accu_length_0_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    accu_length_1_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    accu_length_2_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    accu_length_3_debug : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axis_0_aresetn : in STD_LOGIC;
     s_axis_0_aclk : in STD_LOGIC;
     s_axis_tvalid_0 : in STD_LOGIC;
@@ -49323,6 +49339,10 @@ inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator_MultiDMA
      port map (
       accu_en => accu_en,
       accu_finished => accu_finished,
+      accu_length_0_debug(31 downto 0) => accu_length_0_debug(31 downto 0),
+      accu_length_1_debug(31 downto 0) => accu_length_1_debug(31 downto 0),
+      accu_length_2_debug(31 downto 0) => accu_length_2_debug(31 downto 0),
+      accu_length_3_debug(31 downto 0) => accu_length_3_debug(31 downto 0),
       m_axis_aclk => m_axis_aclk,
       m_axis_aresetn => m_axis_aresetn,
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),

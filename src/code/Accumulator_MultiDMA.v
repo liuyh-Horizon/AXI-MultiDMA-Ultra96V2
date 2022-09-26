@@ -37,6 +37,10 @@ module Accumulator_MultiDMA
         
         output  wire    [31 : 0]    sum_debug,
         output  wire    [7:0]       step_debug,
+        output  wire    [31 : 0]    accu_length_0_debug,
+        output  wire    [31 : 0]    accu_length_1_debug,
+        output  wire    [31 : 0]    accu_length_2_debug,
+        output  wire    [31 : 0]    accu_length_3_debug,
         
     // AXI Stream Interface
     
@@ -208,11 +212,6 @@ wire    signed      [63 : 0]    signed_in_1;
 wire    signed      [63 : 0]    signed_in_2;
 wire    signed      [63 : 0]    signed_in_3;
 
-reg                             signed_in_valid_0;
-reg                             signed_in_valid_1;
-reg                             signed_in_valid_2;
-reg                             signed_in_valid_3;
-
 assign signed_in_0 = in_m_axis_tdata_0;
 assign signed_in_1 = in_m_axis_tdata_1;
 assign signed_in_2 = in_m_axis_tdata_2;
@@ -232,10 +231,15 @@ reg                 [7 : 0]     step_1;
 reg                 [7 : 0]     step_2;
 reg                 [7 : 0]     step_3;
 reg                 [7 : 0]     step;
-reg                 [63 : 0]    accu_length_3;
 reg                 [63 : 0]    accu_length_0;
 reg                 [63 : 0]    accu_length_1;
 reg                 [63 : 0]    accu_length_2;
+reg                 [63 : 0]    accu_length_3;
+
+assign accu_length_0_debug = accu_length_0[31:0];
+assign accu_length_1_debug = accu_length_1[31:0];
+assign accu_length_2_debug = accu_length_2[31:0];
+assign accu_length_3_debug = accu_length_3[31:0];
 
 reg                             accu_finished_0;
 reg                             accu_finished_1;

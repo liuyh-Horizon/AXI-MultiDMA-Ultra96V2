@@ -4,58 +4,70 @@
 # IP: ip/axis_data_fifo_0/axis_data_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_data_fifo_0 || ORIG_REF_NAME==axis_data_fifo_0} -quiet] -quiet
 
-# Block Designs: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/Accumulator_MultiDMA_bd.bd
+# Block Designs: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/Accumulator_MultiDMA_bd.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd || ORIG_REF_NAME==Accumulator_MultiDMA_bd} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_1 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_1} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_dma_0_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_dma_0_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_dma_1_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_dma_1_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_dma_1_1 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_dma_1_1} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_dma_1_2 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_dma_1_2} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_rst_ps8_0_100M_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_rst_ps8_0_100M_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_xbar_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_xbar_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_ps8_0_axi_periph_0/Accumulator_MultiDMA_bd_ps8_0_axi_periph_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_ps8_0_axi_periph_0/Accumulator_MultiDMA_bd_ps8_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_ps8_0_axi_periph_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_ps8_0_axi_periph_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_smc_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_smc_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_2 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_2} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_3 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_0_3} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0} -quiet] -quiet
 
 # IP: ip/axis_data_fifo_0/axis_data_fifo_0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_data_fifo_0 || ORIG_REF_NAME==axis_data_fifo_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_auto_ds_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_auto_ds_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0.xci
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_auto_pc_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_auto_pc_0} -quiet] -quiet
 
-# XDC: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/Accumulator_MultiDMA_bd_ooc.xdc
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_2_0/Accumulator_MultiDMA_bd_axi_gpio_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_2_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_2_0} -quiet] -quiet
+
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_2_1/Accumulator_MultiDMA_bd_axi_gpio_2_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_2_1 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_2_1} -quiet] -quiet
+
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_5_0/Accumulator_MultiDMA_bd_axi_gpio_5_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_5_0 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_5_0} -quiet] -quiet
+
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_5_1/Accumulator_MultiDMA_bd_axi_gpio_5_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_5_1 || ORIG_REF_NAME==Accumulator_MultiDMA_bd_axi_gpio_5_1} -quiet] -quiet
+
+# XDC: /home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/Accumulator_MultiDMA_bd_ooc.xdc

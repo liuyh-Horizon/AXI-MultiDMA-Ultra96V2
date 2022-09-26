@@ -73,7 +73,14 @@ int main()
     u32 Accu_finised;
 
     XGpio_Config *GPIO_Config;
-	XGpio Accu_en_IO, Accu_finished_IO, sum_debug_IO, step_debug_IO;
+	XGpio Accu_en_IO, Accu_finished_IO;
+
+	XGpio sum_debug_IO, step_debug_IO;
+	XGpio accu_length_0_debug_IO;
+	XGpio accu_length_1_debug_IO;
+	XGpio accu_length_2_debug_IO;
+	XGpio accu_length_3_debug_IO;
+
     XAxiDma_Config *DMA_Config_0;
     XAxiDma_Config *DMA_Config_1;
     XAxiDma_Config *DMA_Config_2;
@@ -84,6 +91,11 @@ int main()
     XAxiDma DMA_3;
 
     int32_t sum_debug, step_debug;
+
+    int32_t accu_length_0_debug;
+    int32_t accu_length_1_debug;
+    int32_t accu_length_2_debug;
+    int32_t accu_length_3_debug;
 
 	for(int i=0; i<11; i++)
 	{
@@ -110,10 +122,26 @@ int main()
     GPIO_Config = XGpio_LookupConfig(XPAR_AXI_GPIO_3_DEVICE_ID);
 	XGpio_CfgInitialize(&step_debug_IO, GPIO_Config, GPIO_Config->BaseAddress);
 
+    GPIO_Config = XGpio_LookupConfig(XPAR_AXI_GPIO_4_DEVICE_ID);
+	XGpio_CfgInitialize(&accu_length_0_debug_IO, GPIO_Config, GPIO_Config->BaseAddress);
+
+    GPIO_Config = XGpio_LookupConfig(XPAR_AXI_GPIO_5_DEVICE_ID);
+	XGpio_CfgInitialize(&accu_length_1_debug_IO, GPIO_Config, GPIO_Config->BaseAddress);
+
+    GPIO_Config = XGpio_LookupConfig(XPAR_AXI_GPIO_6_DEVICE_ID);
+	XGpio_CfgInitialize(&accu_length_2_debug_IO, GPIO_Config, GPIO_Config->BaseAddress);
+
+    GPIO_Config = XGpio_LookupConfig(XPAR_AXI_GPIO_7_DEVICE_ID);
+	XGpio_CfgInitialize(&accu_length_3_debug_IO, GPIO_Config, GPIO_Config->BaseAddress);
+
 	XGpio_SetDataDirection(&Accu_finished_IO, 1, 1);
 	XGpio_SetDataDirection(&Accu_en_IO, 1, 0);
 	XGpio_SetDataDirection(&sum_debug_IO, 1, 0xFFFFFFFF);
 	XGpio_SetDataDirection(&step_debug_IO, 1, 0xFF);
+	XGpio_SetDataDirection(&accu_length_0_debug_IO, 1, 0xFFFFFFFF);
+	XGpio_SetDataDirection(&accu_length_1_debug_IO, 1, 0xFFFFFFFF);
+	XGpio_SetDataDirection(&accu_length_2_debug_IO, 1, 0xFFFFFFFF);
+	XGpio_SetDataDirection(&accu_length_3_debug_IO, 1, 0xFFFFFFFF);
 
     DMA_Config_0 = XAxiDma_LookupConfigBaseAddr(XPAR_AXI_DMA_0_BASEADDR);
     DMA_status_0 = XAxiDma_CfgInitialize(&DMA_0, DMA_Config_0);
@@ -174,6 +202,12 @@ int main()
         	XAxiDma_IntrDisable(&DMA_3, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
         	XAxiDma_IntrDisable(&DMA_3, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
 
+        	Xil_DCacheFlushRange((UINTPTR)in_0, 11*sizeof(int64_t));
+        	Xil_DCacheFlushRange((UINTPTR)in_1, 11*sizeof(int64_t));
+        	Xil_DCacheFlushRange((UINTPTR)in_2, 11*sizeof(int64_t));
+        	Xil_DCacheFlushRange((UINTPTR)in_3, 11*sizeof(int64_t));
+        	Xil_DCacheFlushRange((UINTPTR)out, MAX_REPEAT_NUM*sizeof(int64_t));
+
         	XAxiDma_Reset(&DMA_0);
         	XAxiDma_Reset(&DMA_1);
         	XAxiDma_Reset(&DMA_2);
@@ -204,6 +238,82 @@ int main()
 				return -1;
 			}
 
+    		DMA_status_3 = XAxiDma_SimpleTransfer(&DMA_3, (UINTPTR)in_3, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
+
+    		if (DMA_status_3!=XST_SUCCESS)
+			{
+				print("XAXIDMA_DMA_3_TO_DEVICE transfer failed...\r\n");
+				cleanup_platform();
+				return -1;
+			}
+
+        	while(	XAxiDma_Busy(&DMA_3,XAXIDMA_DMA_TO_DEVICE) )
+        	{
+				xil_printf("MM2S_3 channel is busy...\r\n");
+			}
+
+    		DMA_status_2 = XAxiDma_SimpleTransfer(&DMA_2, (UINTPTR)in_2, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
+
+    		if (DMA_status_2!=XST_SUCCESS)
+			{
+				print("XAXIDMA_DMA_2_TO_DEVICE transfer failed...\r\n");
+				cleanup_platform();
+				return -1;
+			}
+
+        	while(	XAxiDma_Busy(&DMA_2,XAXIDMA_DMA_TO_DEVICE) )
+        	{
+				xil_printf("MM2S_2 channel is busy...\r\n");
+			}
+
+    		DMA_status_1 = XAxiDma_SimpleTransfer(&DMA_1, (UINTPTR)in_1, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
+
+    		if (DMA_status_1!=XST_SUCCESS)
+			{
+				print("XAXIDMA_DMA_1_TO_DEVICE transfer failed...\r\n");
+				cleanup_platform();
+				return -1;
+			}
+
+        	while(	XAxiDma_Busy(&DMA_1,XAXIDMA_DMA_TO_DEVICE) )
+        	{
+				xil_printf("MM2S_1 channel is busy...\r\n");
+			}
+
+    		DMA_status_0 = XAxiDma_SimpleTransfer(&DMA_0, (UINTPTR)in_0, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
+
+    		if (DMA_status_0!=XST_SUCCESS)
+			{
+				print("XAXIDMA_DMA_0_TO_DEVICE transfer failed...\r\n");
+				cleanup_platform();
+				return -1;
+			}
+
+        	while(	XAxiDma_Busy(&DMA_0,XAXIDMA_DEVICE_TO_DMA) || XAxiDma_Busy(&DMA_0,XAXIDMA_DMA_TO_DEVICE) )
+        	{
+				if (XAxiDma_Busy(&DMA_0,XAXIDMA_DEVICE_TO_DMA))
+				{
+					xil_printf("S2MM channel is busy...\r\n");
+		    		sum_debug = XGpio_DiscreteRead(&sum_debug_IO, 1);
+		    		step_debug = XGpio_DiscreteRead(&step_debug_IO, 1);
+					xil_printf("Sum: %0d. \n", sum_debug);
+					xil_printf("Step: %0d. \r\n", step_debug);
+					accu_length_0_debug = XGpio_DiscreteRead(&accu_length_0_debug_IO, 1);
+					accu_length_1_debug = XGpio_DiscreteRead(&accu_length_1_debug_IO, 1);
+					accu_length_2_debug = XGpio_DiscreteRead(&accu_length_2_debug_IO, 1);
+					accu_length_3_debug = XGpio_DiscreteRead(&accu_length_3_debug_IO, 1);
+					xil_printf("Accu 0 length: %0d. \n", accu_length_0_debug);
+					xil_printf("Accu 1 length: %0d. \n", accu_length_1_debug);
+					xil_printf("Accu 2 length: %0d. \n", accu_length_2_debug);
+					xil_printf("Accu 3 length: %0d. \n", accu_length_3_debug);
+				}
+				if (XAxiDma_Busy(&DMA_0,XAXIDMA_DMA_TO_DEVICE))
+				{
+					xil_printf("MM2S_0 channel is busy...\r\n");
+				}
+			}
+
+    		/*
     		DMA_status_0 = XAxiDma_SimpleTransfer(&DMA_0, (UINTPTR)in_0, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
     		DMA_status_1 = XAxiDma_SimpleTransfer(&DMA_1, (UINTPTR)in_1, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
     		DMA_status_2 = XAxiDma_SimpleTransfer(&DMA_2, (UINTPTR)in_2, 11*sizeof(int64_t), XAXIDMA_DMA_TO_DEVICE);
@@ -248,6 +358,14 @@ int main()
 		    		step_debug = XGpio_DiscreteRead(&step_debug_IO, 1);
 					xil_printf("Sum: %0d. \n", sum_debug);
 					xil_printf("Step: %0d. \r\n", step_debug);
+					accu_length_0_debug = XGpio_DiscreteRead(&accu_length_0_debug_IO, 1);
+					accu_length_1_debug = XGpio_DiscreteRead(&accu_length_1_debug_IO, 1);
+					accu_length_2_debug = XGpio_DiscreteRead(&accu_length_2_debug_IO, 1);
+					accu_length_3_debug = XGpio_DiscreteRead(&accu_length_3_debug_IO, 1);
+					xil_printf("Accu 0 length: %0d. \n", accu_length_0_debug);
+					xil_printf("Accu 1 length: %0d. \n", accu_length_1_debug);
+					xil_printf("Accu 2 length: %0d. \n", accu_length_2_debug);
+					xil_printf("Accu 3 length: %0d. \n", accu_length_3_debug);
 				}
 
 				if (XAxiDma_Busy(&DMA_0,XAXIDMA_DMA_TO_DEVICE))
@@ -270,6 +388,7 @@ int main()
 					xil_printf("MM2S_3 channel is busy...\r\n");
 				}
 			}
+			*/
 
         	print("DMA transfer initial success.\n");
         }

@@ -62,6 +62,10 @@ module Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0 (
   accu_finished,
   sum_debug,
   step_debug,
+  accu_length_0_debug,
+  accu_length_1_debug,
+  accu_length_2_debug,
+  accu_length_3_debug,
   s_axis_0_aresetn,
   s_axis_0_aclk,
   s_axis_tvalid_0,
@@ -109,6 +113,10 @@ input wire accu_en;
 output wire accu_finished;
 output wire [31 : 0] sum_debug;
 output wire [7 : 0] step_debug;
+output wire [31 : 0] accu_length_0_debug;
+output wire [31 : 0] accu_length_1_debug;
+output wire [31 : 0] accu_length_2_debug;
+output wire [31 : 0] accu_length_3_debug;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_0_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 s_axis_0_aresetn RST" *)
 input wire s_axis_0_aresetn;
@@ -202,6 +210,10 @@ output wire m_axis_tlast;
     .accu_finished(accu_finished),
     .sum_debug(sum_debug),
     .step_debug(step_debug),
+    .accu_length_0_debug(accu_length_0_debug),
+    .accu_length_1_debug(accu_length_1_debug),
+    .accu_length_2_debug(accu_length_2_debug),
+    .accu_length_3_debug(accu_length_3_debug),
     .s_axis_0_aresetn(s_axis_0_aresetn),
     .s_axis_0_aclk(s_axis_0_aclk),
     .s_axis_tvalid_0(s_axis_tvalid_0),

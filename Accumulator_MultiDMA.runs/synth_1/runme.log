@@ -11,7 +11,8 @@
 source Accumulator_MultiDMA_bd_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/software/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2427.133 ; gain = 8.020 ; free physical = 4004 ; free virtual = 25439
 Command: synth_design -top Accumulator_MultiDMA_bd_wrapper -part xczu3eg-sbva484-1-i
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
@@ -19,153 +20,177 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24835
+INFO: [Synth 8-7075] Helper process launched with PID 42542
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2769.914 ; gain = 29.906 ; free physical = 52979 ; free virtual = 179868
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2770.586 ; gain = 28.832 ; free physical = 2294 ; free virtual = 23730
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_wrapper' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/hdl/Accumulator_MultiDMA_bd_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:13]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' (1#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_0_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_0_0' (2#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:361]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:361]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:361]
-WARNING: [Synth 8-7071] port 's2mm_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:361]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:361]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' has 64 connections declared, but only 59 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:361]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_0' (3#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_1_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:421]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:421]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:421]
-WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' has 40 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:421]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_1_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_1' (4#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_1_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' is unconnected for instance 'axi_dma_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:459]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' is unconnected for instance 'axi_dma_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:459]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' is unconnected for instance 'axi_dma_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:459]
-WARNING: [Synth 8-7023] instance 'axi_dma_2' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' has 40 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:459]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_1_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' (5#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_dma_1_2_stub.v:6]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' is unconnected for instance 'axi_dma_3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
-WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' is unconnected for instance 'axi_dma_3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' is unconnected for instance 'axi_dma_3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
-WARNING: [Synth 8-7023] instance 'axi_dma_3' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' has 40 connections declared, but only 37 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_0' (6#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_1' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_1' (7#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_2' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_2' (8#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_3' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_3' (9#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_smc_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_smc_0' (10#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_ps8_0_axi_periph_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1012]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_POOG5M' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2293]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_POOG5M' (11#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2293]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_TIJWVT' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2418]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_TIJWVT' (12#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2418]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_DQ45D8' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2543]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_DQ45D8' (13#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2543]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_23499B' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2668]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_23499B' (14#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2668]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_11JXUKM' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2793]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_11JXUKM' (15#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2793]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1DAND9X' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2925]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1DAND9X' (16#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2925]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1T4RPI8' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3057]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1T4RPI8' (17#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3057]
-INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1P4M9EB' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3189]
-INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1P4M9EB' (18#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3189]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_63ISQF' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3321]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_auto_ds_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_auto_ds_0' (19#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_auto_pc_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_auto_pc_0' (20#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_63ISQF' (21#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3321]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' (22#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_xbar_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'Accumulator_MultiDMA_bd_xbar_0' is unconnected for instance 'xbar' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2252]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'Accumulator_MultiDMA_bd_xbar_0' is unconnected for instance 'xbar' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2252]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'Accumulator_MultiDMA_bd_xbar_0' has 40 connections declared, but only 38 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:2252]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_ps8_0_axi_periph_0' (23#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1012]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' (24#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:923]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:923]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:923]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:923]
-WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:923]
-INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' (25#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-24728-Yuhao/realtime/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:930]
-WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:930]
-WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:930]
-WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:930]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:930]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd' (26#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_wrapper' (27#1) [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/hdl/Accumulator_MultiDMA_bd_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_wrapper' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/hdl/Accumulator_MultiDMA_bd_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0' (1#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_0_0' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:437]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:437]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:437]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:437]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:437]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'Accumulator_MultiDMA_bd_axi_dma_0_0' has 64 connections declared, but only 59 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:437]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_0' (3#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' is unconnected for instance 'axi_dma_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
+WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'Accumulator_MultiDMA_bd_axi_dma_1_0' has 40 connections declared, but only 37 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:497]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_1' (4#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_1_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' is unconnected for instance 'axi_dma_2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:535]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' is unconnected for instance 'axi_dma_2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:535]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' is unconnected for instance 'axi_dma_2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:535]
+WARNING: [Synth 8-7023] instance 'axi_dma_2' of module 'Accumulator_MultiDMA_bd_axi_dma_1_1' has 40 connections declared, but only 37 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:535]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_dma_1_2' (5#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_dma_1_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' is unconnected for instance 'axi_dma_3' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:573]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' is unconnected for instance 'axi_dma_3' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:573]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' is unconnected for instance 'axi_dma_3' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:573]
+WARNING: [Synth 8-7023] instance 'axi_dma_3' of module 'Accumulator_MultiDMA_bd_axi_dma_1_2' has 40 connections declared, but only 37 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:573]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_0' (6#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_1' (7#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_2' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_2' (8#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_3' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_0_3' (9#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_2_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_2_0' (10#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_2_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_2_1' (11#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_2_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_5_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_5_0' (12#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_5_1' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_5_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_gpio_5_1' (13#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_gpio_5_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_axi_smc_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_axi_smc_0' (14#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_ps8_0_axi_periph_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1248]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_POOG5M' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3041]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_POOG5M' (15#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3041]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_TIJWVT' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3166]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_TIJWVT' (16#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3166]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_DQ45D8' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3291]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_DQ45D8' (17#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3291]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_23499B' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3416]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_23499B' (18#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3416]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_11JXUKM' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3541]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_11JXUKM' (19#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3541]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1DAND9X' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3673]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1DAND9X' (20#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3673]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1T4RPI8' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3805]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1T4RPI8' (21#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3805]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1P4M9EB' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3937]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1P4M9EB' (22#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3937]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_DG3OCZ' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4069]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_DG3OCZ' (23#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4069]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1T56U8' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4201]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1T56U8' (24#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4201]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_XBAWOS' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4333]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_XBAWOS' (25#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4333]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_LVY58V' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4465]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_LVY58V' (26#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4465]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_63ISQF' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4597]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_auto_ds_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_auto_ds_0' (27#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_auto_pc_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_auto_pc_0' (28#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_63ISQF' (29#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:4597]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_xbar_0' (30#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'Accumulator_MultiDMA_bd_xbar_0' is unconnected for instance 'xbar' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3000]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'Accumulator_MultiDMA_bd_xbar_0' is unconnected for instance 'xbar' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3000]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'Accumulator_MultiDMA_bd_xbar_0' has 40 connections declared, but only 38 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:3000]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_ps8_0_axi_periph_0' (31#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1248]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' (32#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1159]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1159]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1159]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1159]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'Accumulator_MultiDMA_bd_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1159]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' (33#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/.Xil/Vivado-42474-atlas/realtime/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1166]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1166]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1166]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1166]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:1166]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd' (34#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/synth/Accumulator_MultiDMA_bd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_MultiDMA_bd_wrapper' (35#1) [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/hdl/Accumulator_MultiDMA_bd_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2820.820 ; gain = 80.812 ; free physical = 53010 ; free virtual = 179899
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2823.461 ; gain = 81.707 ; free physical = 3016 ; free virtual = 24453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2836.664 ; gain = 96.656 ; free physical = 53698 ; free virtual = 180588
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2840.305 ; gain = 98.551 ; free physical = 3062 ; free virtual = 24499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2836.664 ; gain = 96.656 ; free physical = 53698 ; free virtual = 180588
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2840.305 ; gain = 98.551 ; free physical = 3062 ; free virtual = 24499
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2836.664 ; gain = 0.000 ; free physical = 53695 ; free virtual = 180585
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2840.305 ; gain = 0.000 ; free physical = 3055 ; free virtual = 24491
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/zynq_ultra_ps_e_0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/zynq_ultra_ps_e_0'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_0'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_1'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_1'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_0'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_1'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_1'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_2'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_2'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_3'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_3'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/rst_ps8_0_100M'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/rst_ps8_0_100M'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/xbar'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/xbar'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_smc'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_smc'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_2'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_2'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_3'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_3'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/Accumulator_MultiDMA_0'
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/Accumulator_MultiDMA_0'
-Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0/Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0/Accumulator_MultiDMA_bd_axi_gpio_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_1'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1/Accumulator_MultiDMA_bd_axi_gpio_0_1_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_1'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0/Accumulator_MultiDMA_bd_axi_dma_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_1'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_0/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_1'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_2'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_1/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_2'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_3'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2/Accumulator_MultiDMA_bd_axi_dma_1_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_dma_3'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/rst_ps8_0_100M'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0/Accumulator_MultiDMA_bd_rst_ps8_0_100M_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/rst_ps8_0_100M'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0/Accumulator_MultiDMA_bd_xbar_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0/Accumulator_MultiDMA_bd_auto_ds_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0/Accumulator_MultiDMA_bd_auto_pc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_smc'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0/Accumulator_MultiDMA_bd_axi_smc_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_smc'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_2'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_2'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_3'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3/Accumulator_MultiDMA_bd_axi_gpio_0_3_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_3'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/Accumulator_MultiDMA_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0/Accumulator_MultiDMA_bd_Accumulator_MultiDMA_0_0_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/Accumulator_MultiDMA_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_2_0/Accumulator_MultiDMA_bd_axi_gpio_2_0/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_4'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_2_0/Accumulator_MultiDMA_bd_axi_gpio_2_0/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_4'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_2_1/Accumulator_MultiDMA_bd_axi_gpio_2_1/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_5'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_2_1/Accumulator_MultiDMA_bd_axi_gpio_2_1/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_5'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_5_0/Accumulator_MultiDMA_bd_axi_gpio_5_0/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_6'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_5_0/Accumulator_MultiDMA_bd_axi_gpio_5_0/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_6'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_5_1/Accumulator_MultiDMA_bd_axi_gpio_5_1/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_7'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/bd/Accumulator_MultiDMA_bd/ip/Accumulator_MultiDMA_bd_axi_gpio_5_1/Accumulator_MultiDMA_bd_axi_gpio_5_1/Accumulator_MultiDMA_bd_axi_gpio_0_2_in_context.xdc] for cell 'Accumulator_MultiDMA_bd_i/axi_gpio_7'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.461 ; gain = 0.000 ; free physical = 53654 ; free virtual = 180544
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2884.129 ; gain = 0.000 ; free physical = 2980 ; free virtual = 24416
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.461 ; gain = 0.000 ; free physical = 53654 ; free virtual = 180544
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2884.129 ; gain = 0.000 ; free physical = 2980 ; free virtual = 24416
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2889.461 ; gain = 149.453 ; free physical = 53695 ; free virtual = 180584
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2884.129 ; gain = 142.375 ; free physical = 3050 ; free virtual = 24487
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -173,7 +198,7 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2889.461 ; gain = 149.453 ; free physical = 53695 ; free virtual = 180584
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2884.129 ; gain = 142.375 ; free physical = 3050 ; free virtual = 24487
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -195,11 +220,15 @@ Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_smc
 Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_gpio_2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_gpio_3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/Accumulator_MultiDMA_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_gpio_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_gpio_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_gpio_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_MultiDMA_bd_i/axi_gpio_7. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2889.461 ; gain = 149.453 ; free physical = 53698 ; free virtual = 180588
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2884.129 ; gain = 142.375 ; free physical = 3050 ; free virtual = 24487
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2889.461 ; gain = 149.453 ; free physical = 53700 ; free virtual = 180591
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2884.129 ; gain = 142.375 ; free physical = 3051 ; free virtual = 24489
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -221,25 +250,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2889.461 ; gain = 149.453 ; free physical = 53680 ; free virtual = 180574
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2884.129 ; gain = 142.375 ; free physical = 3037 ; free virtual = 24479
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3340.875 ; gain = 600.867 ; free physical = 53117 ; free virtual = 180012
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 3366.621 ; gain = 624.867 ; free physical = 2475 ; free virtual = 23917
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3340.875 ; gain = 600.867 ; free physical = 53117 ; free virtual = 180012
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 3366.621 ; gain = 624.867 ; free physical = 2475 ; free virtual = 23917
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 3359.906 ; gain = 619.898 ; free physical = 53112 ; free virtual = 180007
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 3387.668 ; gain = 645.914 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -257,37 +286,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -309,9 +338,13 @@ Report BlackBoxes:
 |10    |Accumulator_MultiDMA_bd_axi_gpio_0_1             |         1|
 |11    |Accumulator_MultiDMA_bd_axi_gpio_0_2             |         1|
 |12    |Accumulator_MultiDMA_bd_axi_gpio_0_3             |         1|
-|13    |Accumulator_MultiDMA_bd_axi_smc_0                |         1|
-|14    |Accumulator_MultiDMA_bd_rst_ps8_0_100M_0         |         1|
-|15    |Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0      |         1|
+|13    |Accumulator_MultiDMA_bd_axi_gpio_2_0             |         1|
+|14    |Accumulator_MultiDMA_bd_axi_gpio_2_1             |         1|
+|15    |Accumulator_MultiDMA_bd_axi_gpio_5_0             |         1|
+|16    |Accumulator_MultiDMA_bd_axi_gpio_5_1             |         1|
+|17    |Accumulator_MultiDMA_bd_axi_smc_0                |         1|
+|18    |Accumulator_MultiDMA_bd_rst_ps8_0_100M_0         |         1|
+|19    |Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0_0      |         1|
 +------+-------------------------------------------------+----------+
 
 Report Cell Usage: 
@@ -324,29 +357,31 @@ Report Cell Usage:
 |4     |Accumulator_MultiDMA_bd_axi_dma_0              |     1|
 |5     |Accumulator_MultiDMA_bd_axi_dma_1              |     3|
 |8     |Accumulator_MultiDMA_bd_axi_gpio_0             |     4|
-|12    |Accumulator_MultiDMA_bd_axi_smc                |     1|
-|13    |Accumulator_MultiDMA_bd_rst_ps8_0_100M         |     1|
-|14    |Accumulator_MultiDMA_bd_xbar                   |     1|
-|15    |Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0      |     1|
+|12    |Accumulator_MultiDMA_bd_axi_gpio_2             |     2|
+|14    |Accumulator_MultiDMA_bd_axi_gpio_5             |     2|
+|16    |Accumulator_MultiDMA_bd_axi_smc                |     1|
+|17    |Accumulator_MultiDMA_bd_rst_ps8_0_100M         |     1|
+|18    |Accumulator_MultiDMA_bd_xbar                   |     1|
+|19    |Accumulator_MultiDMA_bd_zynq_ultra_ps_e_0      |     1|
 +------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.844 ; gain = 625.836 ; free physical = 53112 ; free virtual = 180007
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.637 ; gain = 649.883 ; free physical = 2472 ; free virtual = 23914
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3365.844 ; gain = 573.039 ; free physical = 53150 ; free virtual = 180045
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3365.852 ; gain = 625.836 ; free physical = 53150 ; free virtual = 180045
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 3391.637 ; gain = 606.059 ; free physical = 2509 ; free virtual = 23951
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 3391.645 ; gain = 649.883 ; free physical = 2509 ; free virtual = 23951
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3365.852 ; gain = 0.000 ; free physical = 53236 ; free virtual = 180131
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3391.645 ; gain = 0.000 ; free physical = 2596 ; free virtual = 24037
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3394.594 ; gain = 0.000 ; free physical = 53176 ; free virtual = 180071
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3422.355 ; gain = 0.000 ; free physical = 2535 ; free virtual = 23977
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+86 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 3408.531 ; gain = 808.844 ; free physical = 53309 ; free virtual = 180204
-INFO: [Common 17-1381] The checkpoint '/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.runs/synth_1/Accumulator_MultiDMA_bd_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 3434.324 ; gain = 1007.191 ; free physical = 2668 ; free virtual = 24110
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.runs/synth_1/Accumulator_MultiDMA_bd_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Accumulator_MultiDMA_bd_wrapper_utilization_synth.rpt -pb Accumulator_MultiDMA_bd_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Sep 25 02:13:16 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 26 13:50:40 2022...

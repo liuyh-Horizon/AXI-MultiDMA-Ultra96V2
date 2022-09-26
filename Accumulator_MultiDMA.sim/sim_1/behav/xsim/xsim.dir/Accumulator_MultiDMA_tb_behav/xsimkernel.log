@@ -1,7 +1,7 @@
-Running: xsim.dir/Accumulator_MultiDMA_tb_behav/xsimk -simmode gui -wdb Accumulator_MultiDMA_tb_behav.wdb -simrunnum 0 -socket 43033
+Running: xsim.dir/Accumulator_MultiDMA_tb_behav/xsimk -simmode gui -wdb Accumulator_MultiDMA_tb_behav.wdb -simrunnum 0 -socket 43831
 Design successfully loaded
-Design Loading Memory Usage: 34308 KB (Peak: 34308 KB)
-Design Loading CPU Usage: 10 ms
+Design Loading Memory Usage: 34596 KB (Peak: 34596 KB)
+Design Loading CPU Usage: 80 ms
 Simulation completed
-Simulation Memory Usage: 116604 KB (Peak: 173576 KB)
-Simulation CPU Usage: 4050 ms
+Simulation Memory Usage: 116892 KB (Peak: 173864 KB)
+Simulation CPU Usage: 5490 ms

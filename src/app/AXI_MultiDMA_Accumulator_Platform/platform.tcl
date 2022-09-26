@@ -36,5 +36,5 @@ bsp config stdout "psu_uart_1"
 bsp write
 bsp reload
 catch {bsp regenerate}
-platform generate
 bsp reload
+platform generate

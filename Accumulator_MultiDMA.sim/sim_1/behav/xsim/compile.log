@@ -1,8 +1,8 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.gen/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module axis_data_fifo_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/code/Accumulator_MultiDMA.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/code/Accumulator_MultiDMA.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Accumulator_MultiDMA
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/src/sim/Accumulator_MultiDMA_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/src/sim/Accumulator_MultiDMA_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Accumulator_MultiDMA_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-MultiDMA/Accumulator_MultiDMA.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-MultiDMA-Ultra96V2/Accumulator_MultiDMA.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

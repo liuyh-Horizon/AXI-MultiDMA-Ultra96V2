@@ -899,7 +899,7 @@
 /******************************************************************/
 
 /* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 4
+#define XPAR_XGPIO_NUM_INSTANCES 8
 
 /* Definitions for peripheral AXI_GPIO_0 */
 #define XPAR_AXI_GPIO_0_BASEADDR 0xA0040000
@@ -933,6 +933,38 @@
 #define XPAR_AXI_GPIO_3_IS_DUAL 0
 
 
+/* Definitions for peripheral AXI_GPIO_4 */
+#define XPAR_AXI_GPIO_4_BASEADDR 0xA0080000
+#define XPAR_AXI_GPIO_4_HIGHADDR 0xA008FFFF
+#define XPAR_AXI_GPIO_4_DEVICE_ID 4
+#define XPAR_AXI_GPIO_4_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_4_IS_DUAL 0
+
+
+/* Definitions for peripheral AXI_GPIO_5 */
+#define XPAR_AXI_GPIO_5_BASEADDR 0xA0090000
+#define XPAR_AXI_GPIO_5_HIGHADDR 0xA009FFFF
+#define XPAR_AXI_GPIO_5_DEVICE_ID 5
+#define XPAR_AXI_GPIO_5_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_5_IS_DUAL 0
+
+
+/* Definitions for peripheral AXI_GPIO_6 */
+#define XPAR_AXI_GPIO_6_BASEADDR 0xA00A0000
+#define XPAR_AXI_GPIO_6_HIGHADDR 0xA00AFFFF
+#define XPAR_AXI_GPIO_6_DEVICE_ID 6
+#define XPAR_AXI_GPIO_6_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_6_IS_DUAL 0
+
+
+/* Definitions for peripheral AXI_GPIO_7 */
+#define XPAR_AXI_GPIO_7_BASEADDR 0xA00B0000
+#define XPAR_AXI_GPIO_7_HIGHADDR 0xA00BFFFF
+#define XPAR_AXI_GPIO_7_DEVICE_ID 7
+#define XPAR_AXI_GPIO_7_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_7_IS_DUAL 0
+
+
 /******************************************************************/
 
 /* Canonical definitions for peripheral AXI_GPIO_0 */
@@ -962,6 +994,34 @@
 #define XPAR_GPIO_3_DEVICE_ID XPAR_AXI_GPIO_3_DEVICE_ID
 #define XPAR_GPIO_3_INTERRUPT_PRESENT 0
 #define XPAR_GPIO_3_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_4 */
+#define XPAR_GPIO_4_BASEADDR 0xA0080000
+#define XPAR_GPIO_4_HIGHADDR 0xA008FFFF
+#define XPAR_GPIO_4_DEVICE_ID XPAR_AXI_GPIO_4_DEVICE_ID
+#define XPAR_GPIO_4_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_4_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_5 */
+#define XPAR_GPIO_5_BASEADDR 0xA0090000
+#define XPAR_GPIO_5_HIGHADDR 0xA009FFFF
+#define XPAR_GPIO_5_DEVICE_ID XPAR_AXI_GPIO_5_DEVICE_ID
+#define XPAR_GPIO_5_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_5_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_6 */
+#define XPAR_GPIO_6_BASEADDR 0xA00A0000
+#define XPAR_GPIO_6_HIGHADDR 0xA00AFFFF
+#define XPAR_GPIO_6_DEVICE_ID XPAR_AXI_GPIO_6_DEVICE_ID
+#define XPAR_GPIO_6_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_6_IS_DUAL 0
+
+/* Canonical definitions for peripheral AXI_GPIO_7 */
+#define XPAR_GPIO_7_BASEADDR 0xA00B0000
+#define XPAR_GPIO_7_HIGHADDR 0xA00BFFFF
+#define XPAR_GPIO_7_DEVICE_ID XPAR_AXI_GPIO_7_DEVICE_ID
+#define XPAR_GPIO_7_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_7_IS_DUAL 0
 
 
 /******************************************************************/
